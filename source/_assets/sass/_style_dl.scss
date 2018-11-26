@@ -1,0 +1,83 @@
+$dl-border: rgba(0, 0, 0, 0.1);
+dl.list-inline {
+  width: 100%; 
+  dt, dd { margin-bottom:0;}
+  dd {padding: 0 0 1.5rem; }
+  dt { border-top: 1px solid $dl-border; padding: 1.5rem 0 0 0;  }
+  dt:first-of-type { border-top:0;}
+  dt { clear:both;}
+
+  [class*="icon-bg-"] + dd { padding-left: 3.1875rem; }
+  [class*="icon-bg-"]:before {
+    content: "";
+    
+    background-size: 2rem;
+    background-repeat: no-repeat; 
+    position: absolute;
+    height: 32px;
+    width: 32px;
+    left:0;
+    background-image:url('../../resources/img/icons/icons.svg');
+  } 
+
+  [class*="icon-bg-"] {
+    position:relative;
+    padding-left: 3.1875rem; 
+    &.icon-bg-book:before { background-position:0 0;}
+    &.icon-bg-calendar:before{background-position:0 -32px;}
+    &.icon-bg-clock-o:before{background-position:0 -64px;}
+    &.icon-bg-credit-card:before{background-position:0 -96px;}
+    &.icon-bg-map-marker:before{background-position:0 -128px;}
+    &.icon-bg-money:before{background-position:0 -160px;}
+    &.icon-bg-mortar-board:before{background-position:0 -192px;}
+    &.icon-bg-trophy-board:before{background-position:0 -232px;}
+  }
+}
+dl:after { content: ''; clear:both; display:block;}
+
+
+@media (min-width: $screen-md) {
+  dl.list-inline {
+    border-bottom: 1px solid $dl-border; 
+    margin:0; padding:0;
+    display:block;
+
+    dd, dt { width:60%; 
+      //display:inline-block; 
+      padding: 1.5rem 0; 
+      display:block; 
+      float:right;
+    }
+    [class*="icon-bg-"] + dd { padding-left: initial; }
+    dt { 
+      float:left;
+      width: 40%;
+      padding-right: .5rem;
+      clear:both;
+    }
+    dd {
+      border-top: 1px solid $dl-border; }
+    dd:first-of-type { border-top:0;}
+  }
+
+ 
+}
+@media (min-width: $screen-lg) {
+  dl.list-inline {
+    dd { width:66.67%; }
+    dt { width: 33.33%; }
+  }
+}
+
+.dl-inline { display: inline-block; padding-right:0; margin-top: 1rem; margin-bottom:0; }
+.dl-inline + .dl-inline { margin-left: 50px;}
+.dl-small-header { 
+  dt { font-size: 1rem; line-height: 1.5; font-weight: normal; }
+}
+
+.muted-dl {
+  margin-bottom: 0; 
+  dt {    color: $text-midgray;font-size: 1rem;
+    line-height: 1.5; font-weight: 400; }
+    dl { margin-bottom: 0;}
+}

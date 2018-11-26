@@ -1,0 +1,119 @@
+@function pow($number, $exponent) {
+  $value: 1;
+
+  @if $exponent > 0 {
+    @for $i from 1 through $exponent {
+      $value: $value * $number;
+    }
+  }
+
+  @return $value;
+}
+@function luminance($color) {
+  $colors: (
+    'red': red($color),
+    'green': green($color),
+    'blue': blue($color)
+  );
+
+  @each $name, $value in $colors {
+    $adjusted: 0;
+    $value: $value / 255;
+
+    @if $value < 0.03928 {
+      $value: $value / 12.92;
+    } @else {
+      $value: ($value + .055) / 1.055;
+      $value: pow($value, 2.4);
+    }
+
+    $colors: map-merge($colors, ($name: $value));
+  }
+
+  @return (map-get($colors, 'red') * .2126) + (map-get($colors, 'green') * .7152) + (map-get($colors, 'blue') * .0722);
+}
+@function set-text-color($color) {
+  @if (luminance($color) > .45) {
+    @return #222222; // Lighter backgorund, return dark color
+  } @else {
+    @return #ffffff; // Darker background, return light color
+  }
+}
+@function set-heading-color($color) {
+  @if (luminance($color) > .45) {
+    @return #000000; // Lighter backgorund, return dark color
+  } @else {
+    @return #ffffff; // Darker background, return light color
+  }
+}
+@mixin headings($from: 1, $to: 6){
+  @for $i from $from through $to{
+    h#{$i}{
+      @content
+    }
+  }
+}
+@mixin text-underline-crop($background) {
+  text-shadow:  .03em 0 $background, 
+                -.03em 0 $background,
+                0 .03em $background,
+                0 -.03em $background,
+                .06em 0 $background,
+                -.06em 0 $background,
+                .09em 0 $background,
+                -.09em 0 $background,
+                .12em 0 $background,
+                -.12em 0 $background,
+                .15em 0 $background,
+                -.15em 0 $background;
+}
+
+@mixin text-underline($color-bg, $color-text) {
+  background-image: linear-gradient($color-text, $color-text);
+  background-size: 1px 1px;
+  background-repeat: repeat-x;
+  background-position: 0% 95%;
+}
+
+@mixin text-selection($selection) {
+  &::selection {
+    @include text-underline-crop($selection);
+    
+    background: $selection;
+  }
+
+  &::-moz-selection {
+    @include text-underline-crop($selection);
+    
+    background: $selection;
+  }
+}
+
+@mixin link-underline($background, $text, $selection){
+  @include text-underline-crop($background);
+  @include text-underline($background, $text);
+  @include text-selection($selection);
+
+  color: $text;
+  text-decoration: none;
+
+  *,
+  *:after,
+  &:after,
+  *:before,
+  &:before {
+    text-shadow: none;
+  }
+
+  &:visited {
+    color: $text;
+  }
+}
+
+
+@mixin truncate($truncation-boundary) {
+  max-width: $truncation-boundary;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

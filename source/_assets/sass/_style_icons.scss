@@ -1,0 +1,39 @@
+.featureicon {
+  text-align: center; 
+  margin-bottom: 2rem; 
+  p { margin:0; padding:0; line-height: 1.5;}
+  p a.btn:hover { text-decoration: underline;}
+  h3 { 
+  color: $primary;
+  margin: 0;
+  margin-top: 1rem;
+  line-height: 1.2;
+  font-size: 3rem;
+  font-weight: 900;
+  }
+  a.btn { color: $link-blue; font-weight: 400; font-size: 1.1875rem;  }
+  .icon {
+    margin: 0 auto;
+    display:block;
+    text-align: center;
+    img { height: 80px; width: auto;}
+  }
+}
+.featureicon-container { position: relative; z-index: 2;}
+@media (min-width: $screen-md) {
+  .featureicon { 
+    margin-bottom:0;
+    h3 { 
+    font-size: 4.5rem;
+    font-weight: 900;
+    }
+  }
+}
+
+.fa-container { min-width: 2rem; text-align: center; margin: 0 .2rem; }
+.fa-container.fa-2x { min-width: 3rem; }
+
+.header-content .fa-container.fa-2x:before {
+  position: relative;
+  top: .5rem;
+}

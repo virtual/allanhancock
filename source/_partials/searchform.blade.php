@@ -1,0 +1,3 @@
+<form class="searchform" name="searchform" method="get" action="https://ousearch.omniupdate.com/texis/search/">
+  <div id="search"><input type="hidden" name="pr" value="ahc"><input type="hidden" name="sufs" value="2"><label for="search-box"><span class="screenreader">Enter search terms</span>Search</label><input name="query" class=" queryAutocomplete" id="search-box" type="text" placeholder="Enter search terms"><input type="submit" value="Submit" class="submit"></div>
+</form>

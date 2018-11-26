@@ -1,0 +1,104 @@
+// Body
+$body-bg: #fff;
+
+// Typography
+$font-family-sans-serif: 'Raleway', Tahoma, Verdana, Segoe, "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, "Geneva", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !default; 
+$font-awesome: 'Font Awesome\ 5 Free';
+$headings-font-family: $font-family-sans-serif;
+$font-size-base: 1rem;
+$line-height-base: 1.6;
+$body-color:                #000 !default; 
+
+// Variables
+//
+// Variables should follow the `$component-state-property-size` formula for
+// consistent naming. Ex: $nav-link-disabled-color and $modal-content-box-shadow-xs.
+
+//
+// Color system
+//
+ 
+$primary: #003d7b !default;
+$secondary: #f0af13 !default;
+$light-yellow: #ffedc2;
+$text-dark: #444 !default;
+$link-blue: #0074b3;  
+$text-black: #000000;
+$text-midgray: #757575;
+$text-lightgray: rgba(34, 34, 34, 0.6);
+$light: #d4d4d4;
+$white: #ffffff; 
+
+$grid-gutter-width: 40px !default;
+
+$primary:       $primary !default;
+$secondary:     $secondary !default;
+$light:         $light !default;
+$dark:          $text-dark !default;
+$success:       $primary !default; 
+
+
+// FORM overrides 
+
+$input-focus-border-color:              lighten($link-blue, 5) !default;
+$custom-control-indicator-size:         1.2rem !default;
+$custom-control-indicator-checked-bg:   $link-blue !default;
+$custom-control-indicator-active-bg:    $input-focus-border-color !default;
+$custom-control-indicator-bg:           #fff !default;
+
+// Grid breakpoints
+//
+// Define the minimum dimensions at which your layout will change,
+// adapting to different screen sizes, for use in media queries.
+
+$screen-sm: 480px;
+$screen-md: 768px;
+$screen-lg: 992px;
+$screen-xl: 1280px;
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: $screen-sm,
+  md: $screen-md,
+  lg: $screen-lg,
+  xl: $screen-xl
+) !default;
+ 
+  
+// Grid containers
+//
+// Define the maximum width of `.container` for different screen sizes.
+
+$container-max-widths: (
+  sm: $screen-sm,
+  md: $screen-md,
+  lg: $screen-lg,
+  xl: $screen-xl
+) !default;
+ 
+// Mobile first!
+$h1-font-size:                $font-size-base * 2 !default;
+$h2-font-size:                $font-size-base * 1.75 !default; // ?
+$h3-font-size:                $font-size-base * 1.5 !default;  
+$h4-font-size:                $font-size-base * 1.1875 !default;
+$h5-font-size:                $font-size-base !default;
+$h6-font-size:                $font-size-base * 0.8125 !default;  
+
+
+
+// Buttons
+$input-btn-padding-y:         .75rem !default;
+$input-btn-padding-x:         2rem !default;
+$input-btn-line-height:       1.37 !default;
+
+$input-btn-padding-y-sm:      .375rem !default;
+$input-btn-padding-x-sm:      .75rem !default;
+$input-btn-line-height-sm:    $input-btn-line-height;
+
+$input-btn-padding-y-lg:      1rem !default;
+$input-btn-padding-x-lg:      3rem !default;
+$input-btn-line-height-lg:    $input-btn-line-height;
+ 
+$btn-border-radius:           999px !default;
+$btn-border-radius-lg:        $btn-border-radius;
+$btn-border-radius-sm:        $btn-border-radius;

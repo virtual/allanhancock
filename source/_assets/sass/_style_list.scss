@@ -1,0 +1,339 @@
+// Line 189: %list-unstyled
+ul, dl, ol { color: #222; } 
+main, .sectional, .content-container {
+  ol, ul {
+    li { margin-bottom: .75rem; margin-top: .75rem; }
+  }
+  ul li {
+    list-style: none;
+    position: relative;
+    word-break: break-word;
+    padding-left: 1.75rem;
+    text-indent: -2rem;
+  }
+  ul { 
+    list-style: none;
+    padding: 0;
+    li {
+      list-style: none;
+      position: relative;
+      // text-indent: -1rem;
+    }
+    // li:before {
+    //     content:"\2022";
+    //     position: absolute;
+    //     left: -0.8em;          /* Adjust this value so that it appears where you want. */
+    //     font-size: 2em;   
+    //     top: auto;
+    //     bottom: auto;
+    // }
+  }
+
+  ul li:before {
+    content: "";
+    font-size: 2em;
+    height: .5rem;
+    width: .5rem;
+    background: #000;
+    border-radius: 50%;
+    float: left;
+    top: .75rem;
+    margin-right: 0;
+    position: relative;
+    left: -1.5rem;
+    margin-right: 1.5rem;
+    padding: 0;
+  }
+
+  // ol,
+  // ul {
+  //   overflow: hidden;
+  //   padding-left: 2.5em;
+  // }
+  ol a,
+  ul a {
+    // display: inline-block; // ! causing display errors
+    vertical-align: top;
+  }
+  ol ol,
+  ol ul,
+  ul ol,
+  ul ul {
+    margin-bottom: .5em;
+    padding-left: 0;
+  }
+  ol {
+    overflow: visible;
+    margin: 0;
+    margin-left: 2rem;
+    padding: 0;
+    list-style-type: none;
+    counter-reset: li-counter;
+  }
+  ol li {
+    position: relative;
+    overflow: visible;
+    // color: initial;
+    list-style-type: none; 
+  }
+  ol li:before {
+    position: absolute;
+    top: 0;
+    left: -2rem;
+    z-index: -99;
+    overflow: hidden;
+    background-color: #fff;
+    color: #000;
+    content: counter(li-counter);
+    counter-increment: li-counter;
+    text-align: right;
+    font-weight: bold;
+    height: auto; 
+    width: auto;
+    font-size: 1em;
+  }
+  ol, ul {
+    ol, ul { margin-left: 1rem; }
+    ul li {
+      list-style: disc;
+    }
+    ol li {
+      list-style-type: lower-alpha;
+    }
+    ol, ul {
+      ul li {
+        list-style: circle;
+      }
+      ol li {
+        list-style-type: lower-roman;
+      }
+    }
+    ul li, ol li {
+      margin-left: 0;
+      text-indent: 0;
+      padding-left: 0;
+    }
+    ol li:before, ul li:before {
+      content: none;
+      left:auto;
+      top: auto;
+      position: relative;
+      color:#000;
+    }
+
+    
+
+
+  }
+  // ul li {
+  //   margin-bottom: .75em;
+  //   list-style-type: disc;
+  //   line-height: 2em;
+  // }
+  // ul li:hover,
+  // ul li:focus,
+  // ul li:active {
+  //   list-style-type: disc;
+  // }
+}
+
+ul.list-group li {
+  text-indent: initial; 
+  text-indent: 0; // ie
+  padding-left: 1.25rem;
+    &:before { content: none;}
+}
+ul.list-inline li {
+  text-indent: initial;
+  text-indent: 0; // ie
+  padding:0;
+  &:before { content: none;}
+}
+ul.list-inline.inline-list-padded li {
+  display: inline-block; 
+  margin-right: 30px;
+  margin-top: .5rem;
+  margin-bottom: .5rem;
+  &:after { content: " "; display: table; clear:both;}
+}
+ul, ol {
+  &.list-expanded p {
+    font-size: 1.1875rem;
+    strong { font-size: 1.5rem; }
+  }
+}
+
+ul.features, ul.icon-check, ul.icon-x, ul.icon-box {
+  li:before {
+    content: "";
+    font-size: 1em;
+    left: -1.5rem;
+    margin-right: 1rem;
+    float:left;
+    padding-top:0;
+    top: .25rem;
+    background:none;
+    background-size: 1rem;
+    background-repeat: no-repeat; 
+    background-position: top; 
+    height: 1rem;
+    width: 1rem;
+    background-image:url('../../resources/img/icons/list-check.svg');
+    border-radius: 0; 
+  }
+  
+  &.large-list { 
+    li {
+      padding-left: 2rem;
+      text-indent: -3.5rem;
+    }
+    li:before {
+      height: 1.5rem;
+      width: 1.5rem;
+      background-size: 1.5rem;
+      margin-right: 2rem;
+      left: -2rem;
+    }
+  }
+}
+ul.icon-x li:before {
+    background-image:url('../../resources/img/icons/times.svg');
+}
+ul.icon-box li:before {
+  background-image:url('../../resources/img/icons/square-o.svg');
+}
+.large-list {
+  font-size: 1.5rem;
+  color:#000;
+  li, li p { color: inherit; } // Black text shown on large features
+}
+main ol.large-list li:before {
+  color: $primary;
+}
+
+ul.list-unstyled, ol.list-unstyled, %list-unstyled {
+  list-style-type:none;
+  li { 
+    padding-left: 0; margin:0;
+    text-indent: 0;
+    position: relative;
+  }
+  li:before {
+    display:none;
+    position: initial;
+    top: auto;
+    left: auto;
+    z-index:initial;
+    overflow: auto;
+  }
+}
+
+.nav-tabs {
+  display: flex;
+  align-items: stretch;
+  justify-content: left;
+  li {
+    flex: 1;
+    text-align: center;
+    border: 1px solid rgba(0, 0, 0, 0.1); 
+    border-bottom:0; border-radius: 0;     
+    display: flex;
+    align-items: stretch;
+    justify-content: space-around;
+    // background:#fafafa;
+  }
+} 
+.nav-tabs li + li  { border-left:0;}
+.nav-tabs li .nav-link { 
+  border: 0; 
+  align-self: center; 
+  flex: 1;
+} 
+.nav-tabs .nav-link[aria-selected=true] {
+  color: $primary; 
+  font-weight: 600;  
+  border-bottom: 1px solid #fff; 
+  margin-bottom: -1px;
+}
+@media (min-width: $screen-sm) {
+  .nav-tabs li { 
+    flex: initial; 
+  }
+} 
+@media (min-width: $screen-md) {
+  ul.features, ul.icon-check, ul.icon-x, ul.icon-box {
+    li:before {
+    top: .5rem;
+    }
+  }
+}
+.tab-content { 
+  font-size: 1.1875rem; line-height: 1.68; padding: 1.5rem 0;
+  color:$text-dark;
+}
+
+.list-bulleted {
+   margin-bottom: .75rem; margin-top: .75rem; 
+ 
+   dt:before {
+    content: "";
+    font-size: 2em;
+    height: .5rem;
+    width: .5rem;
+    background: #000;
+    border-radius: 50%;
+    float: left;
+    top: .75rem;
+    margin-right: 0;
+    position: relative;
+    left: -1.5rem;
+    margin-right: 1.5rem;
+    padding: 0;
+  }
+
+   dd, dt {
+    list-style: none;
+    position: relative;
+    padding-left: 1.75rem;
+  }
+  dt {
+    
+    text-indent: -2rem;
+  }
+  dd { margin-bottom: 1em; }
+} 
+.list-bulleted.list-ordered {
+  overflow: visible;
+  margin: 0;
+  margin-left: 2rem;
+  padding: 0;
+  list-style-type: none;
+  counter-reset: li-counter;
+  
+
+  dt, dd {
+    position: relative;
+    overflow: visible;
+    // color: initial;
+    list-style-type: none; 
+    text-indent: 0;
+    padding-left: .5rem;
+    font-size: inherit;
+  }
+  dt:before {
+    position: absolute;
+    top: 0;
+    left: -1.5rem;
+    z-index: -99;
+    overflow: hidden;
+    background-color: #fff;
+    color: #000;
+    content: counter(li-counter);
+    counter-increment: li-counter;
+    text-align: right;
+    font-weight: bold;
+    height: auto; 
+    width: auto;
+    font-size: inherit;
+  }
+} 
