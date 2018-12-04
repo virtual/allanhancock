@@ -315,7 +315,7 @@
             </span>
           </a>
 
-          <div class="dropdown-menu">
+          <div class="dropdown-menu bg-primary">
             <div class="subnav">
            @include ('_partials.searchform')
           </div>

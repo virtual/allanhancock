@@ -48,12 +48,22 @@
 
   </div> 
 </div>
+<div class="container-fluid subfeature">
+    <div class="d-flex align-items-stretch">
+      @yield('subfeature')
+    </div>
+</div>
 
+<div class="container-fluid campaign"> 
+  <div class="py-5">
+    @yield('campaign') 
+  </div>
+</div>
 
 <div class="featureicon-container py-5 bg-primary">
   <div class="container-fluid">
     @yield('icons1')
-  </div>
+    </div>
 </div>
   
 </main>

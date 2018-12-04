@@ -4,7 +4,7 @@
   </div>
   <div class="container-fluid">
     <div class="row">
-      <div class="col-lg-2 col-xl-2 header-logo d-none d-lg-block">
+      <div class="header-logo d-none d-lg-block">
 
         @if (trim($__env->yieldContent('homepage')))
         <!-- H1 on homepage only -->

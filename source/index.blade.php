@@ -29,6 +29,43 @@
 </section>
 @endsection
 
+@section ('subfeature') 
+@include('_partials.imagebutton', [
+'img' => './resources/img/stock/alexis-brown-85793-unsplash.jpg',     
+'color' => '#000',          
+'buttontext' => 'Apply Today',
+'link' => '#'
+])
+@include('_partials.imagebutton', [
+'img' => './resources/img/stock/alexis-brown-85793-unsplash.jpg',     
+'color' => '#003f7f',          
+'buttontext' => 'Apply Today',
+'link' => '#'
+])
+  @include('_partials.imagebutton', [
+  'img' => './resources/img/stock/alexis-brown-85793-unsplash.jpg',     
+  'color' => '#0f0',          
+  'buttontext' => 'Apply for Financial Aid',
+  'link' => '#'
+  ])
+  @include('_partials.imagebutton', [
+  'img' => './resources/img/stock/alexis-brown-85793-unsplash.jpg',     
+  'color' => '#f00',          
+  'buttontext' => 'View Programs & Majors',
+  'link' => '#'
+  ])
+
+@endsection
+
+@section('campaign') 
+
+<h2>See yourself here!</h2>
+<p><a href="#" class="more-arrow">Register for fall classes today!</a></p>
+
+<img src="./resources/img/homepage/ahc-mobile.jpg" />
+
+@endsection
+
 
 @section('hero2')
 <section class="hero left bg-primary">
