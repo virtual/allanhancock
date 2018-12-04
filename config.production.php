@@ -1,6 +1,6 @@
 <?php
 
 return [
-    'baseUrl' => 'https://virtual.github.io/Allan Hancock',
+    'baseUrl' => 'https://virtual.github.io/allanhancock',
     'production' => true
 ];
