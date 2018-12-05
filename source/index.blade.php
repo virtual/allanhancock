@@ -38,19 +38,19 @@
 ])
 @include('_partials.imagebutton', [
 'img' => './resources/img/stock/alexis-brown-85793-unsplash.jpg',     
-'color' => '#003f7f',          
+'color' => '#c51230',          
 'buttontext' => 'Apply Today',
 'link' => '#'
 ])
   @include('_partials.imagebutton', [
   'img' => './resources/img/stock/alexis-brown-85793-unsplash.jpg',     
-  'color' => '#0f0',          
+  'color' => '#006c4',          
   'buttontext' => 'Apply for Financial Aid',
   'link' => '#'
   ])
   @include('_partials.imagebutton', [
   'img' => './resources/img/stock/alexis-brown-85793-unsplash.jpg',     
-  'color' => '#f00',          
+  'color' => '#972085',          
   'buttontext' => 'View Programs & Majors',
   'link' => '#'
   ])

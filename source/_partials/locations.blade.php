@@ -4,7 +4,17 @@
       <div class="container-fluid">
         <h2>Campus Locations</h2>
         <div class="row">
-            <div class="col-12 col-sm-6 col-md-3">
+            <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+              @include('_partials.card', [
+              'img' => '/resources/img/stock/alexis-brown-85793-unsplash.jpg',
+              'heading' => 'Santa Maria Campus',
+              'iconalt' => 'Santa Maria Campus', 
+              'desc' => '800 South College Drive<br/>Santa Maria, CA 93454<br/><a href="+1-805-922-6966">1-805-922-6966</a>',
+              'buttontext' => 'Map',
+              'link' => '#'
+              ])
+            </div>
+            <div class="col-12 col-sm-6 col-md-6 col-lg-3">
               @include('_partials.card', [
               'img' => '/resources/img/stock/alexis-brown-85793-unsplash.jpg',
               'heading' => 'Santa Maria Campus',
@@ -14,7 +24,7 @@
               'link' => '#'
               ])
             </div>
-            <div class="col-12 col-sm-6 col-md-3">
+            <div class="col-12 col-sm-6 col-md-6 col-lg-3">
               @include('_partials.card', [
               'img' => '/resources/img/stock/alexis-brown-85793-unsplash.jpg',
               'heading' => 'Santa Maria Campus',
@@ -24,17 +34,7 @@
               'link' => '#'
               ])
             </div>
-            <div class="col-12 col-sm-6 col-md-3">
-              @include('_partials.card', [
-              'img' => '/resources/img/stock/alexis-brown-85793-unsplash.jpg',
-              'heading' => 'Santa Maria Campus',
-              'iconalt' => 'Santa Maria Campus', 
-              'desc' => '800 South College Drive<br/>Santa Maria, CA 93454<br/>1-805-922-6966',
-              'buttontext' => 'Map',
-              'link' => '#'
-              ])
-            </div>
-            <div class="col-12 col-sm-6 col-md-3">
+            <div class="col-12 col-sm-6 col-md-6 col-lg-3">
               @include('_partials.card', [
               'img' => '/resources/img/stock/alexis-brown-85793-unsplash.jpg',
               'heading' => 'Santa Maria Campus',

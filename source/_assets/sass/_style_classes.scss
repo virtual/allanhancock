@@ -21,20 +21,17 @@
   display:inline-block;
 } 
 a.more-arrow:after, ul.more-arrow > li a:after { 
-  content: "";
-  transform: rotate(0);
-  background-image: url(../../resources/img/icons/arrow@3x.png);
-  background-position: center;
-  margin: 0 auto;
-  background-repeat: no-repeat;
-  height: 1rem;
-  width: 1rem; 
-  background-size: contain;
-  border-right: 0;
-  border-left: 0;
-  border-top: 0;
-  border-bottom: 0; 
-  transform: rotate(0);
+  content: "\f138";
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  line-height: 1; 
+  font-weight: 900; 
+  font-family: Font Awesome\ 5 Free; 
+  color: $secondary;
   padding-left: 1rem;
   margin-left: .5rem;
   transition: margin-left .15s ease-in-out, margin-right .15s ease-in-out;
@@ -74,6 +71,11 @@ a.more-arrow:hover:after, ul.more-arrow > li a:hover:after {
   }
   @include headings(1, 6) {
     color: set-heading-color($primary);
+  }
+}
+.bg-secondary {
+  a.more-arrow:after {
+    color:#000;
   }
 }
 .content-header {

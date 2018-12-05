@@ -7,7 +7,7 @@
  
 
 p {
-  color: $text-dark;
+  color: #000;
 }
 html {scroll-behavior: smooth;}
 .padded { padding: 3rem 0 2.5rem 0;} 
@@ -105,15 +105,15 @@ kbd.ouc {
   z-index: 1000;
 }
 
-@media (min-width: $screen-md) {
-  p, ul, dl, ol, div {
-    font-size: 1.1875rem;
-    line-height: 1.68;
-    }
-  footer, header {
-    div { font-size: 1rem; line-height: 1.5; }
-  }  
-}
+// @media (min-width: $screen-md) {
+//   p, ul, dl, ol, div {
+//     font-size: 1.1875rem;
+//     line-height: 1.68;
+//     }
+//   footer, header {
+//     div { font-size: 1rem; line-height: 1.5; }
+//   }  
+// }
 
  
 
