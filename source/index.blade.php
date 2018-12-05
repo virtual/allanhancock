@@ -164,11 +164,11 @@
 
 @section ('icons1') 
 
-<div class="row">
+<div class="row featureicons">
     <div class="col-12 col-sm-4">
         @include('_partials.featureicon', [
-        'heading' => '#1',
-        'desc' => 'Some interesting fact about Hancock',
+        'heading' => '11,500',
+        'desc' => 'Students Enroll each Semester',
         'iconalt' => '',     
         'icon' => '',          
         'buttontext' => '',
@@ -178,8 +178,8 @@
     </div>
     <div class="col-12 col-sm-4">
         @include('_partials.featureicon', [
-        'heading' => '#1',
-        'desc' => 'Some interesting fact about Hancock',
+        'heading' => '100+',
+        'desc' => 'Degrees and Options',
         'iconalt' => '',     
         'icon' => '',          
         'buttontext' => '',
@@ -189,8 +189,8 @@
     </div>
     <div class="col-12 col-sm-4">
         @include('_partials.featureicon', [
-        'heading' => '#1',
-        'desc' => 'Some interesting fact about Hancock',
+        'heading' => '42+',
+        'desc' => 'Clubs and Organization',
         'iconalt' => '',     
         'icon' => '',          
         'buttontext' => '',
