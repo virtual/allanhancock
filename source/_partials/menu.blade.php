@@ -3,39 +3,47 @@
   <div class="container-fluid">
     <div class="d-flex d-block d-lg-none justify-content-between">
       <div  class="flex-button">
-      <button id="mobile-menu-button" class="navbar-toggler primary" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse"
-        aria-expanded="false" aria-label="Toggle navigation">
-        @include ('_svg.menu') 
-      <span class="menubartext">Menu</span>
-      </button>
+
     </div>
       <a class="navbar-brand" href="/">
         <img src="{{ $page->baseUrl }}/resources/img/logos/logo-full-mobile.png" srcset="{{ $page->baseUrl }}/resources/img/logos/logo-full-mobile2x.png 2x, {{ $page->baseUrl }}/resources/img/logos/logo-full-mobile3x.png 3x, {{ $page->baseUrl }}/resources/img/logos/logo-full-mobile4x.png 4x" alt="Allan Hancock College" />
       </a>
       <div class="flex-button flex-button-right">
-      <button id="mobile-search-button" class="navbar-toggler primary" type="button" data-toggle="collapse" data-target="#searchCollapse" aria-controls="searchCollapse"
-        aria-expanded="false" aria-label="Toggle search">
-        <span aria-hidden="true" class="fas fa-search"></span>
-        <span class="sr-only">Search</span>
-      </button>
-      </div>
-    </div>
-    <div class="collapse navbar-collapse" id="searchCollapse">
-      <div class="container">
-        <div class="searchform-mobile">
-          @include ('_partials.searchform')
-        </div>
+          <button id="mobile-menu-button" class="navbar-toggler primary" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse"
+          aria-expanded="false" aria-label="Toggle navigation">
+          @include ('_svg.menu') 
+        <span class="menubartext">Menu</span>
+        </button>
       </div>
     </div>
     <div class="collapse navbar-collapse" id="navbarCollapse">
 
       <ul>
+
+         
+          <li class="dropdown dropdown-search">
+              <a class="dropdown-toggle" href="#"><span class="d-lg-none">Search</span> <span class="d-none d-lg-block sr-only">Search</span><span class="fa fa-search"></span></a>
+  
+            <div class="dropdown-menu bg-primary">
+              <div class="subnav">
+             @include ('_partials.searchform')
+            </div>
+            </div>
+          </li>
+
+          <li class="dropdown dropdown-quicklinks">
+              <a class="dropdown-toggle" href="#"><span class="d-lg-none">Quick Links</span> <span class="d-none d-lg-block sr-only">Quick Links</span><span class="fas fa-link"></span>
+            </a>
+  
+            <div class="dropdown-menu bg-primary">
+              <div class="subnav">
+             @include ('_partials.quicklinks')
+            </div>
+            </div>
+          </li>
+
         <li class="dropdown">
-          <a href="#">About AHC
-            <span role="link" class="dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              <span class="sr-only">Toggle Dropdown</span>
-            </span>
-          </a>
+          <a class="dropdown-toggle" href="#">About AHC</a>
 
           <div class="dropdown-menu">
             <div class="subnav four-col">
@@ -101,11 +109,7 @@
 
 
         <li class="dropdown">
-            <a href="#">College Resources
-            <span role="link" class="dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              <span class="sr-only">Toggle Dropdown</span>
-            </span>
-          </a>
+            <a class="dropdown-toggle" href="#">College Resources</a>
 
           <div class="dropdown-menu"> 
 
@@ -163,11 +167,7 @@
           </div>
         </li>
         <li class="dropdown">
-            <a href="#">Students
-            <span role="link" class="dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              <span class="sr-only">Toggle Dropdown</span>
-            </span>
-          </a>
+            <a class="dropdown-toggle" href="#">Students</a>
 
           <div class="dropdown-menu">
 
@@ -222,11 +222,7 @@
 
 
         <li class="dropdown">
-            <a href="#">Admissions &amp; Registration
-            <span role="link" class="dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              <span class="sr-only">Toggle Dropdown</span>
-            </span>
-          </a>
+            <a class="dropdown-toggle" href="#">Admissions &amp; Registration</a>
 
           <div class="dropdown-menu">
             <div class="subnav four-col">
@@ -273,11 +269,7 @@
           </div>
         </li>
         <li class="dropdown">
-            <a href="#">Financial Aid
-            <span role="link" class="dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              <span class="sr-only">Toggle Dropdown</span>
-            </span>
-          </a>
+            <a class="dropdown-toggle" href="#">Financial Aid</a>
 
           <div class="dropdown-menu">
             <div class="subnav">
@@ -308,22 +300,10 @@
               </div>
           </div>
         </li> 
-        <li class="dropdown dropdown-search">
-            <a href="#"><span class="sr-only">Search</span><span class="fa fa-search"></span>
-            <span role="link" class="dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              <span class="sr-only">Toggle Dropdown</span>
-            </span>
-          </a>
-
-          <div class="dropdown-menu bg-primary">
-            <div class="subnav">
-           @include ('_partials.searchform')
-          </div>
-          </div>
-        </li>
+      
       </ul>
       <div class="d-block d-lg-none"> 
-        @include ('_partials.quicklinks') 
+        @include ('_partials.topbar') 
       </div>
     </div>
   </div>
