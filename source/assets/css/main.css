@@ -4148,6 +4148,10 @@ dl .btn-toggle {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
+  background-size: 100%;
+  background-position: center;
+  -webkit-transition: background-size .2s ease-in-out;
+  transition: background-size .2s ease-in-out;
 }
 
 .imagebutton .imagebutton-bgcolor {
@@ -4158,6 +4162,10 @@ dl .btn-toggle {
   height: 100%;
   -webkit-filter: contrast(200%);
           filter: contrast(200%);
+}
+
+.imagebutton:hover {
+  background-size: 108%;
 }
 
 .imagebutton:hover .imagebutton-bgcolor {

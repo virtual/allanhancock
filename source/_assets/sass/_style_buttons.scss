@@ -194,12 +194,18 @@ dl .btn-toggle { font-size: 1rem; }
   position: relative;
   background-color:#000;
   flex: 1;
+  background-size: 100%; 
+  background-position: center;
+  transition: background-size .2s ease-in-out;
   .imagebutton-bgcolor {
     background-color:$primary;
     opacity: .6;
     transition: all .2s ease-in-out;
     height: 100%;
     filter:contrast(200%);
+  }
+  &:hover {
+    background-size: 108%; 
   }
   &:hover .imagebutton-bgcolor {
     opacity: .8;
