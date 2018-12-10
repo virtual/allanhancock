@@ -273,7 +273,9 @@
  
 
   @section('sectionals')
-      @include('_partials/locations')  
+  <div class="locations">
+    @include('_partials/locations')  
+  </div>
   @endsection 
   
   

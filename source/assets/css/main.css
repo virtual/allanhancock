@@ -1898,11 +1898,6 @@ main .card-links.card-links-compact a, .content-container .card-links.card-links
   border-top: 5px solid #f0af13;
 }
 
-.card-image-container {
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
-}
-
 .card.image-card {
   border-top: 1px solid rgba(0, 0, 0, 0.05);
 }
