@@ -127,7 +127,7 @@
     
  
     p, .heading {
-    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+    // text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
     }
     .hero {
       padding-bottom: 0;
@@ -196,12 +196,84 @@
     background-color: $primary;
   }
 }
-
 .homepage .banner-search {
-  background-color:#000;
-  
+  background-color: #000;
+
+  .form-group {
+    display: inline-block;
+    border-bottom: 1px solid #fff;
+    margin: 3rem 0;
+  }
+
+  form {
+
+    input,
+    button {
+      background-color: transparent;
+      color: #fff;
+      box-shadow: 0;
+      border: 0;
+    }
+
+    input {
+      font-size: 1.35rem;
+      width: 60vw;
+      max-width: 600px;
+    }
+
+    button {
+      min-width: auto;
+    }
+  }
+
+  form input::placeholder {
+    color: #fff;
+    letter-spacing: .04em;
+  }
+
+  form label {
+    position: absolute;
+    left: -9999px;
+  }
+
+  .input-group {
+    justify-content: center;
+  }
+
+  .heading {
+    font-size: 1.75rem;
+    font-weight: 800;
+    max-width: 100%;
+  }
+
+  .more-arrow {
+    color: $secondary;
+    font-weight: 700;
+  }
+
+  .more-arrow:after {
+    color: #fff;
+  }
+
+  .homepage-banner {
+    opacity: .7;
+    text-align: center;
+  }
 }
-.homepage .banner-search .homepage-banner {
-  opacity: .8;
-  text-align: center;
+@media (min-width: $screen-md) {
+  .homepage .banner-search {
+    .form-group {
+      margin: 3rem 0;
+    }
+  }
+}
+@media (min-width: $screen-lg) {
+  .homepage .banner-search {
+    .heading {
+      font-size: 2.75rem;
+    }    
+    .form-group {
+      margin: 7rem 0 5rem 0;
+    }
+  }
 }

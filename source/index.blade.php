@@ -170,10 +170,21 @@
       } 						  */
      </style>
 <div class="hero-caption">
-       <h2>What are you interested in learning?</h2>
-       <form class="searchform" name="searchform" method="get" action="https://ousearch.omniupdate.com/texis/search/">
-        <div id="search"><input type="hidden" name="pr" value="ahc"><input type="hidden" name="sufs" value="2"><label for="search-box"><span class="screenreader">Enter search terms</span>Search</label><input name="query" class=" queryAutocomplete" id="search-box" type="text" placeholder="Search programs of study" value="Enter search terms"><input type="submit" value="Submit" class="submit"></div>
-     </form>
+       <h2 class="heading">What are you interested in learning?</h2>
+
+
+  <form class="searchform" name="searchform" method="get" action="https://ousearch.omniupdate.com/texis/search/">
+    <input type="hidden" name="pr" value="ahc" />
+    <input type="hidden" name="sufs" value="2" />
+    <div class="form-group">
+        <div class="input-group">
+        
+      <label for="search-box">Search programs</label>
+      <input name="query" class="queryAutocomplete" id="search-box" type="text" placeholder="Search programs of study"  /> 
+      <button type="submit" class="btn btn-primary"><span class="fa fa-search"></span></button>
+      </div>
+    </div>
+  </form>
 
      <p><a href="#" class="more-arrow">View all programs of study</a></p>
 

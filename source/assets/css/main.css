@@ -5605,9 +5605,6 @@ header#header {
     background-size: cover;
     background-position: center;
   }
-  .homepage-banner p, .homepage-banner .heading {
-    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
-  }
   .homepage-banner .hero {
     padding-bottom: 0;
     padding-top: 0;
@@ -5696,9 +5693,95 @@ header#header {
   background-color: #000;
 }
 
+.homepage .banner-search .form-group {
+  display: inline-block;
+  border-bottom: 1px solid #fff;
+  margin: 3rem 0;
+}
+
+.homepage .banner-search form input,
+.homepage .banner-search form button {
+  background-color: transparent;
+  color: #fff;
+  -webkit-box-shadow: 0;
+          box-shadow: 0;
+  border: 0;
+}
+
+.homepage .banner-search form input {
+  font-size: 1.35rem;
+  width: 60vw;
+  max-width: 600px;
+}
+
+.homepage .banner-search form button {
+  min-width: auto;
+}
+
+.homepage .banner-search form input::-webkit-input-placeholder {
+  color: #fff;
+  letter-spacing: .04em;
+}
+
+.homepage .banner-search form input:-ms-input-placeholder {
+  color: #fff;
+  letter-spacing: .04em;
+}
+
+.homepage .banner-search form input::-ms-input-placeholder {
+  color: #fff;
+  letter-spacing: .04em;
+}
+
+.homepage .banner-search form input::placeholder {
+  color: #fff;
+  letter-spacing: .04em;
+}
+
+.homepage .banner-search form label {
+  position: absolute;
+  left: -9999px;
+}
+
+.homepage .banner-search .input-group {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.homepage .banner-search .heading {
+  font-size: 1.75rem;
+  font-weight: 800;
+  max-width: 100%;
+}
+
+.homepage .banner-search .more-arrow {
+  color: #f0af13;
+  font-weight: 700;
+}
+
+.homepage .banner-search .more-arrow:after {
+  color: #fff;
+}
+
 .homepage .banner-search .homepage-banner {
-  opacity: .8;
+  opacity: .7;
   text-align: center;
+}
+
+@media (min-width: 768px) {
+  .homepage .banner-search .form-group {
+    margin: 3rem 0;
+  }
+}
+
+@media (min-width: 992px) {
+  .homepage .banner-search .heading {
+    font-size: 2.75rem;
+  }
+  .homepage .banner-search .form-group {
+    margin: 7rem 0 5rem 0;
+  }
 }
 
 .module {
