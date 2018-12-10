@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
 
-  <meta name="theme-color" content="#00685e">
+  <meta name="theme-color" content="#003d7b">
   <title>Allan Hancock College</title>
   <meta property="og:title" content="Allan Hancock College" />
   <meta property="og:type" content="website" />
@@ -57,6 +57,13 @@
 <div class="container-fluid campaign"> 
   <div class="py-5">
     @yield('campaign') 
+  </div>
+</div>
+<div class="bg-dark">
+  <div class="container-fluid news-events"> 
+    <div class="py-5">
+      @yield('news-events') 
+    </div>
   </div>
 </div>
 

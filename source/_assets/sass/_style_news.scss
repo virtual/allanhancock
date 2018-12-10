@@ -33,6 +33,11 @@
     div:last-child { padding-right: 0;}
     .datetime { padding-top:0;}
     .article-info-container { display:flex; width: 100%; flex-grow: 1; justify-content: center; flex-direction: column;}
-    .image-container, .image-container + .article-info-container { width: 50%; }
+    // .image-container, .image-container + .article-info-container { width: 50%; }
   }
 } 
+
+.article-listing.news-row .news-article {
+  .image-container { width: 48px; padding-right:0; }
+  .datetime { display:none;}
+}

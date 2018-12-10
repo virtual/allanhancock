@@ -28,6 +28,16 @@
 }
 .homepage-banner .hero-caption {
   padding: 1.5rem 1.5rem 2.5rem 1.5rem;
+  p {
+    margin:0;
+    line-height: 1;
+    font-size: 3rem; text-transform: uppercase; 
+    letter-spacing: 0; 
+    font-weight: 800;
+  }
+}
+.homepage-banner .hero-caption p:nth-child(2n+2) {
+  padding-left: 3rem;
 }
 @media screen and (max-width: 900px) {
   .homepage-banner .hero .hero-image-wrapper {
@@ -108,14 +118,13 @@
   transition: max-height 500ms ease-in-out;
 }
 @media (min-width: $screen-sm) {
-  .homepage-expand>.arrow-marker::before {
-    left: 6rem;
-    top: -1rem;
-  }
+
   .homepage-banner {
     background: #000;
     background-size: cover;
     background-position: center;
+
+    
  
     p, .heading {
     text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
@@ -140,11 +149,16 @@
   }
 }
 @media (min-width: $screen-lg) { 
-  .homepage-banner .hero {
-      min-height: 670px; 
-  }
-  .homepage-banner .heading {
-    font-size: 3.4375rem;  
+  .homepage-banner {
+    .hero {
+        min-height: 670px; 
+    }
+    .hero-caption p {
+      font-size: 4.5rem;
+    }
+    .hero-caption p:nth-child(2n+2) {
+      padding-left: 4.5rem;
+    }
   }
 }
 
@@ -174,4 +188,11 @@
 
 .homepage .campaign { 
   text-align: center;
+}
+
+.homepage .news-events {
+  h3 { margin-bottom: 1rem; font-size: 1.5rem; font-weight: 600; letter-spacing: .1em; }
+  .row > div:last-child h3.bar-bg:after {
+    background-color: $primary;
+  }
 }

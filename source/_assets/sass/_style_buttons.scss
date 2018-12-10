@@ -7,11 +7,12 @@ $btn-tertiary: transparent;
   min-width: 100px;
   cursor: pointer;
   font-weight: 700;
-  border: 0; 
-  border-radius: 999px;  
-  font-size: 1.1875rem; 
+  // border: 0; 
+  border-radius: 0;  
+  font-size: 1rem; 
   padding-left: 1.5em;
   padding-right: 1.5em;
+  text-transform: uppercase;
 }
 .btn-sm {   font-size: 0.8125rem;  }
 .btn-lg {   font-size: 1.4875rem;  }
@@ -24,93 +25,95 @@ a.btn { text-decoration: none; }
 .btn-block:first-child { margin-top: 1.1875rem; }
 .btn-block:last-child { margin-bottom: 1.1875rem; }
 
-.btn-important, a.btn-important {
-  background-color: $btn-important;
-  // border: solid 2px $btn-important;
-  color: set-text-color($btn-important);
-  &:hover {
-    background-color: darken($btn-important, 5);
-  }
-}
+.btn-outline-light:hover { background-color: $primary; }
 
-.btn-primary {
-  background-color: $btn-primary;
-  color: set-text-color($btn-primary); 
-}
+// .btn-important, a.btn-important {
+//   background-color: $btn-important;
+//   // border: solid 2px $btn-important;
+//   color: set-text-color($btn-important);
+//   &:hover {
+//     background-color: darken($btn-important, 5);
+//   }
+// }
 
-.btn-secondary {
-  background-color: $btn-secondary;
-  color: $primary;
-  // border: solid 2px rgba(0, 0, 0, 0.1);
-  box-shadow: inset 0 0 0 2px rgba(0, 0, 0, 0.10);
-  // border-radius: 1.6875rem; // 25px + 2px padding for secondary
-  margin-top: 0;
-  // line-height: 1.37;
-  &:hover, &:focus, &:active {
-    background-color: inherit;
-    // border: solid 2px $primary;
+// .btn-primary {
+//   background-color: $btn-primary;
+//   color: set-text-color($btn-primary); 
+// }
+
+// .btn-secondary {
+//   background-color: $btn-secondary;
+//   color: $primary;
+//   // border: solid 2px rgba(0, 0, 0, 0.1);
+//   box-shadow: inset 0 0 0 2px rgba(0, 0, 0, 0.10);
+//   // border-radius: 1.6875rem; // 25px + 2px padding for secondary
+//   margin-top: 0;
+//   // line-height: 1.37;
+//   &:hover, &:focus, &:active {
+//     background-color: inherit;
+//     // border: solid 2px $primary;
     
-  box-shadow: inset 0 0 0px 2px $primary;
-    color: $primary;
-  }
-}
+//   box-shadow: inset 0 0 0px 2px $primary;
+//     color: $primary;
+//   }
+// }
 
-.btn-tertiary {
-  background-color: $btn-tertiary;
-  color: $primary;
-  border: transparent; 
-  // line-height: 1.15;
-  &:hover {
-    background-color: $light;
-  }
-}
+// .btn-tertiary {
+//   background-color: $btn-tertiary;
+//   color: $primary;
+//   border: transparent; 
+//   // line-height: 1.15;
+//   &:hover {
+//     background-color: $light;
+//   }
+// }
 
 // All classes that have inverse colored backgrounds, including alerts
-.bg-primary, .alert {
-  $btn-primary: #fff;
-  $btn-secondary: $primary;
-  $btn-tertiary: $primary;
+// .bg-primary, .alert {
+//   $btn-primary: #fff;
+//   $btn-secondary: $primary;
+//   $btn-tertiary: $primary;
   
-  .btn-primary {
-    background-color: #fff;
-    color: $primary;
-    // border: transparent;
-    &:hover {
-      color: $primary;
-      background-color: #fff;     
-      opacity: 0.9;
-    }
-    &:focus {
-      box-shadow:0 0 0 0.2rem rgba(255, 255, 255, 0.5);
-    }
-  }
-  .btn-primary:hover:visited, .btn-primary:visited { color:$primary}
+//   .btn-primary {
+//     background-color: #fff;
+//     color: $primary;
+//     // border: transparent;
+//     &:hover {
+//       color: $primary;
+//       background-color: #fff;     
+//       opacity: 0.9;
+//     }
+//     &:focus {
+//       box-shadow:0 0 0 0.2rem rgba(255, 255, 255, 0.5);
+//     }
+//   }
+//   .btn-primary:hover:visited, .btn-primary:visited { color:$primary}
   
-  .btn-secondary,
-  .btn-tertiary {
-    background-color: $primary;
-    color: set-text-color($primary);
-    &:hover {
-      background-color: rgba(0, 0, 0, 0.1);
-      color: set-text-color($primary);
-    }
-    &:focus {
-      box-shadow:0 0 0 0.2rem rgba(255, 255, 255, 0.5);
-    }
-    &:not(:disabled):not(.disabled):active {
-      color: #ffffff;
-      background-color: rgba(218, 210, 210, 0.15);
-    }
-  }
-  .btn-secondary {
+//   .btn-secondary,
+//   .btn-tertiary {
+//     background-color: $primary;
+//     color: set-text-color($primary);
+//     &:hover {
+//       background-color: rgba(0, 0, 0, 0.1);
+//       color: set-text-color($primary);
+//     }
+//     &:focus {
+//       box-shadow:0 0 0 0.2rem rgba(255, 255, 255, 0.5);
+//     }
+//     &:not(:disabled):not(.disabled):active {
+//       color: #ffffff;
+//       background-color: rgba(218, 210, 210, 0.15);
+//     }
+//   }
+//   .btn-secondary {
     
-    box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.2);
-    // border: solid 2px rgba(255, 255, 255, 0.3);
-    &:hover {
-      // border: solid 2px rgba(255, 255, 255, 0.3);
-    }
-  }
-}
+//     box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.2);
+//     // border: solid 2px rgba(255, 255, 255, 0.3);
+//     &:hover {
+//       // border: solid 2px rgba(255, 255, 255, 0.3);
+//     }
+//   }
+// }
 dl .btn-toggle { font-size: 1rem; }
 @media (min-width: $screen-md) {
   dl .btn-toggle { font-size: 1.1875rem; }

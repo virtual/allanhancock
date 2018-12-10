@@ -2242,6 +2242,10 @@ a.more-arrow:hover:after, ul.more-arrow > li a:hover:after {
   color: #757575 !important;
 }
 
+.bg-dark h2, .bg-dark h3, .bg-dark h4, .bg-dark h5, .bg-dark h6, .bg-dark p, .bg-dark li, .bg-dark dt, .bg-dark dd, .bg-dark dl, .bg-dark a {
+  color: #ffffff;
+}
+
 .bg-primary {
   color: #ffffff;
 }
@@ -2473,12 +2477,28 @@ pre code {
   padding-bottom: 1rem;
 }
 
+.bar-bg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.bar-bg:after {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  content: "";
+  background-color: #f0af13;
+  width: 100%;
+  margin: 6px 0 6px 15px;
+}
+
 .topnav {
   background-color: #d4d4d4;
 }
 
 .topnav.navbar-dark {
-  background-color: #444;
+  background-color: #1c1c1c;
 }
 
 .topnav.navbar-dark a {
@@ -3702,9 +3722,15 @@ header .alert {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .news-row .news-article .image-container, .news-row .news-article .image-container + .article-info-container {
-    width: 50%;
-  }
+}
+
+.article-listing.news-row .news-article .image-container {
+  width: 48px;
+  padding-right: 0;
+}
+
+.article-listing.news-row .news-article .datetime {
+  display: none;
 }
 
 .sectional {
@@ -3995,11 +4021,11 @@ header .alert {
   min-width: 100px;
   cursor: pointer;
   font-weight: 700;
-  border: 0;
-  border-radius: 999px;
-  font-size: 1.1875rem;
+  border-radius: 0;
+  font-size: 1rem;
   padding-left: 1.5em;
   padding-right: 1.5em;
+  text-transform: uppercase;
 }
 
 .btn-sm {
@@ -4031,96 +4057,8 @@ a.btn {
   margin-bottom: 1.1875rem;
 }
 
-.btn-important, a.btn-important {
+.btn-outline-light:hover {
   background-color: #003d7b;
-  color: #ffffff;
-}
-
-.btn-important:hover, a.btn-important:hover {
-  background-color: #003062;
-}
-
-.btn-primary {
-  background-color: #003d7b;
-  color: #ffffff;
-}
-
-.btn-secondary {
-  background-color: transparent;
-  color: #003d7b;
-  -webkit-box-shadow: inset 0 0 0 2px rgba(0, 0, 0, 0.1);
-          box-shadow: inset 0 0 0 2px rgba(0, 0, 0, 0.1);
-  margin-top: 0;
-}
-
-.btn-secondary:hover, .btn-secondary:focus, .btn-secondary:active {
-  background-color: inherit;
-  -webkit-box-shadow: inset 0 0 0px 2px #003d7b;
-          box-shadow: inset 0 0 0px 2px #003d7b;
-  color: #003d7b;
-}
-
-.btn-tertiary {
-  background-color: transparent;
-  color: #003d7b;
-  border: transparent;
-}
-
-.btn-tertiary:hover {
-  background-color: #d4d4d4;
-}
-
-.bg-primary .btn-primary, .alert .btn-primary {
-  background-color: #fff;
-  color: #003d7b;
-}
-
-.bg-primary .btn-primary:hover, .alert .btn-primary:hover {
-  color: #003d7b;
-  background-color: #fff;
-  opacity: 0.9;
-}
-
-.bg-primary .btn-primary:focus, .alert .btn-primary:focus {
-  -webkit-box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.5);
-          box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.5);
-}
-
-.bg-primary .btn-primary:hover:visited, .bg-primary .btn-primary:visited, .alert .btn-primary:hover:visited, .alert .btn-primary:visited {
-  color: #003d7b;
-}
-
-.bg-primary .btn-secondary,
-.bg-primary .btn-tertiary, .alert .btn-secondary,
-.alert .btn-tertiary {
-  background-color: #003d7b;
-  color: #ffffff;
-}
-
-.bg-primary .btn-secondary:hover,
-.bg-primary .btn-tertiary:hover, .alert .btn-secondary:hover,
-.alert .btn-tertiary:hover {
-  background-color: rgba(0, 0, 0, 0.1);
-  color: #ffffff;
-}
-
-.bg-primary .btn-secondary:focus,
-.bg-primary .btn-tertiary:focus, .alert .btn-secondary:focus,
-.alert .btn-tertiary:focus {
-  -webkit-box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.5);
-          box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.5);
-}
-
-.bg-primary .btn-secondary:not(:disabled):not(.disabled):active,
-.bg-primary .btn-tertiary:not(:disabled):not(.disabled):active, .alert .btn-secondary:not(:disabled):not(.disabled):active,
-.alert .btn-tertiary:not(:disabled):not(.disabled):active {
-  color: #ffffff;
-  background-color: rgba(218, 210, 210, 0.15);
-}
-
-.bg-primary .btn-secondary, .alert .btn-secondary {
-  -webkit-box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.2);
-          box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.2);
 }
 
 dl .btn-toggle {
@@ -5541,6 +5479,19 @@ header#header {
   padding: 1.5rem 1.5rem 2.5rem 1.5rem;
 }
 
+.homepage-banner .hero-caption p {
+  margin: 0;
+  line-height: 1;
+  font-size: 3rem;
+  text-transform: uppercase;
+  letter-spacing: 0;
+  font-weight: 800;
+}
+
+.homepage-banner .hero-caption p:nth-child(2n+2) {
+  padding-left: 3rem;
+}
+
 @media screen and (max-width: 900px) {
   .homepage-banner .hero .hero-image-wrapper {
     position: relative;
@@ -5633,10 +5584,6 @@ header#header {
 }
 
 @media (min-width: 480px) {
-  .homepage-expand > .arrow-marker::before {
-    left: 6rem;
-    top: -1rem;
-  }
   .homepage-banner {
     background: #000;
     background-size: cover;
@@ -5665,8 +5612,11 @@ header#header {
   .homepage-banner .hero {
     min-height: 670px;
   }
-  .homepage-banner .heading {
-    font-size: 3.4375rem;
+  .homepage-banner .hero-caption p {
+    font-size: 4.5rem;
+  }
+  .homepage-banner .hero-caption p:nth-child(2n+2) {
+    padding-left: 4.5rem;
   }
 }
 
@@ -5713,6 +5663,17 @@ header#header {
 
 .homepage .campaign {
   text-align: center;
+}
+
+.homepage .news-events h3 {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  letter-spacing: .1em;
+}
+
+.homepage .news-events .row > div:last-child h3.bar-bg:after {
+  background-color: #003d7b;
 }
 
 .module {
@@ -5991,6 +5952,36 @@ header#header {
 .featureicons.runAnimation > div:nth-child(3n+3) .featureicon {
   -webkit-animation: move-in-steps3 2.8s;
           animation: move-in-steps3 2.8s;
+}
+
+.campaign .runAnimation {
+  position: relative;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+  -webkit-animation: slide-in 2s forwards;
+          animation: slide-in 2s forwards;
+}
+
+@-webkit-keyframes slide-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+    opacity: 1;
+  }
+}
+
+@keyframes slide-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+    opacity: 1;
+  }
 }
 
 @-webkit-keyframes move-in-steps {

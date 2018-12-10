@@ -23,8 +23,8 @@
   <div class="hero-image-wrapper"></div>
 
   <div class="hero-caption">
-    <h2>Start here.</h2>
-    <h2>Go anywhere.</h2>
+    <p>Start here.</p>
+    <p>Go anywhere.</p>
   </div>
 </section>
 @endsection
@@ -61,39 +61,92 @@
 
 <h2>See yourself here!</h2>
 <p><a href="#" class="more-arrow">Register for fall classes today!</a></p>
-
-<img class="lazy" src="./resources/img/homepage/ahc-mobile.jpg" />
+<div class="delayAnimation">
+  <img class="lazy" src="./resources/img/homepage/ahc-mobile.jpg" />
+</div>
 
 @endsection
 
 
-@section('hero2')
-<section class="hero left bg-primary">
-    <div class="hero-image-wrapper"></div>
-    <style type="text/css">
-      .homepage-banner.hero-2{
-        background-image: url(./resources/img/homepage/a2/large.jpg);
-      }
-      
-      @media screen and (max-width: 900px) { 						
-       .homepage-banner.hero-2 {
-        background-image: url(./resources/img/homepage/a2/medium.jpg);
-        }
-      } 
-      
-      @media screen and (max-width: 479px) {  
-       .homepage-banner.hero-2 {
-        background-image: url(./resources/img/homepage/a2/small.jpg);
-        }
-      } 						 
-     </style>
-<div class="hero-caption">
-       <h2 class="heading">Fully invest in 
-        your future</h2>
-       <p class="desc">We help you inside and outside the classroom</p>
-       <div class="expand-wrapper"><button aria-expanded="false" class="scrollable expand-button btn btn-primary">Expand</button></div>
-    </div>
- </section>
+@section('news-events')
+<h2>News and Events <small>What's going on around campus</small></h2>
+<div class="row">
+  <div class="col-6">
+    <h3 class="bar-bg">News</h3>
+    <div class="article-listing news-row">
+    @include('_partials.article', [
+    'heading' => 'News Article #1',
+    'desc' => 'Duis nec consequat dui. Praesent gravida diam at ex pharetra porta. Vivamus at nisi massa. Nam
+    porta…',
+    'alt' => 'students at a table',
+    'img' => './resources/img/stock/alexis-brown-85793-unsplash.jpg',
+    'link' => 'news.html',
+    'datetime' => '2018-09-13 11:31'
+    ])
+    
+    @include('_partials.article', [
+    'heading' => 'News Article #2',
+    'desc' => 'Duis nec consequat dui. Praesent gravida diam at ex pharetra porta. Vivamus at nisi massa. Nam
+    porta…',
+    'alt' => 'students at a table',
+    'img' => './resources/img/stock/alexis-brown-82988-unsplash.jpg',
+    'link' => 'news.html',
+    'datetime' => '2018-09-13 11:31'
+    ])
+    
+    @include('_partials.article', [
+    'heading' => 'News Article #3',
+    'desc' => 'Duis nec consequat dui. Praesent gravida diam at ex pharetra porta. Vivamus at nisi massa. Nam
+    porta…',
+    'alt' => 'students at a table',
+    'img' => './resources/img/stock/stefan-stefancik-257625-unsplash.jpg',
+    'link' => 'news.html',
+    'datetime' => '2018-09-13 11:31'
+    ])
+  </div>
+
+  </div>
+  <div class="col-6">
+    <h3 class="bar-bg">Events</h3>
+    <article class="post">
+      <div class="post-date">
+        <span class="day">10:30 AM</span>
+        <span class="month">DEC 29</span>
+      </div>
+      <div class="post-content">
+        <h4>
+          <a href="#">Class aptent taciti sociosqu ad litora torquent</a>
+        </h4>
+      </div>
+    </article>
+    <article class="post">
+      <div class="post-date">
+        <span class="day">10:30 AM</span>
+        <span class="month">DEC 29</span>
+      </div>
+      <div class="post-content">
+        <h4>
+          <a href="#">Class aptent taciti sociosqu ad litora torquent</a>
+        </h4>
+      </div>
+    </article>
+    <article class="post">
+      <div class="post-date">
+        <span class="day">10:30 AM</span>
+        <span class="month">DEC 29</span>
+      </div>
+      <div class="post-content">
+        <h4>
+          <a href="#">Class aptent taciti sociosqu ad litora torquent</a>
+        </h4>
+      </div>
+    </article>
+  </div>
+</div> 
+<p>
+  <a class="btn btn-outline-light">More News</a>
+  <a class="btn btn-outline-light">More Events</a>
+</p>
 @endsection
 
 @section('hero3')

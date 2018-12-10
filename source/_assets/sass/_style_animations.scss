@@ -13,6 +13,16 @@
     animation: move-in-steps3 2.8s;
   }
 }
+.campaign .runAnimation {
+  position: relative; 
+  transform: translateX(-100%);   
+  animation: slide-in 2s forwards;  
+}
+
+@keyframes slide-in {
+  0% { opacity:0;}
+  100% { transform: translateX(0%); opacity:1;}
+}
 
 @keyframes move-in-steps {
   0% {
