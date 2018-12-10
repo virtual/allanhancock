@@ -62,7 +62,7 @@
 <h2>See yourself here!</h2>
 <p><a href="#" class="more-arrow">Register for fall classes today!</a></p>
 
-<img src="./resources/img/homepage/ahc-mobile.jpg" />
+<img class="lazy" src="./resources/img/homepage/ahc-mobile.jpg" />
 
 @endsection
 
@@ -164,7 +164,7 @@
 
 @section ('icons1') 
 
-<div class="row featureicons lazy" id="results1">
+<div class="row featureicons delayAnimation" id="results1">
     <div class="col-12 col-sm-4">
         @include('_partials.featureicon', [
         'heading' => '11,500',

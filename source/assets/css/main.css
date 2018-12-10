@@ -5970,25 +5970,25 @@ header#header {
   }
 }
 
-.featureicons .featureicon {
+.featureicons.runAnimation .featureicon {
   position: relative;
 }
 
-.featureicons > div {
+.featureicons.runAnimation > div {
   position: relative;
 }
 
-.featureicons > div:nth-child(3n+1) .featureicon {
+.featureicons.runAnimation > div:nth-child(3n+1) .featureicon {
   -webkit-animation: move-in-steps 3s;
           animation: move-in-steps 3s;
 }
 
-.featureicons > div:nth-child(3n+2) .featureicon {
+.featureicons.runAnimation > div:nth-child(3n+2) .featureicon {
   -webkit-animation: move-in-steps2 3s;
           animation: move-in-steps2 3s;
 }
 
-.featureicons > div:nth-child(3n+3) .featureicon {
+.featureicons.runAnimation > div:nth-child(3n+3) .featureicon {
   -webkit-animation: move-in-steps3 2.8s;
           animation: move-in-steps3 2.8s;
 }

@@ -409,4 +409,7 @@ var ResponsiveBootstrapToolkit = require('responsive-toolkit');
 
 })(jQuery, ResponsiveBootstrapToolkit);
 
+// For images
 lazyLoadInit();
+
+require('./observables')

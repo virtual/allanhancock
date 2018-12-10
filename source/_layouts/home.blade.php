@@ -82,7 +82,7 @@
     <script src="{{ $page->baseUrl }}/assets/js/jquery-3.3.1.min.js"></script>
     <script src="{{ $page->baseUrl }}/assets/js/popper.min.js"></script>
     <script src="{{ $page->baseUrl }}/assets/js/bootstrap.min.js"></script>
-    <script src="{{ $page->baseUrl }}/assets/js/lazyload.js"></script>
+    <!-- <script src="{{ $page->baseUrl }}/assets/js/lazyload.js"></script> -->
     <script src="{{ $page->baseUrl }}/assets/js/main.js"></script>  
 </body>
 

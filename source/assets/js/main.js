@@ -2472,7 +2472,32 @@ var ResponsiveBootstrapToolkit = __webpack_require__("./node_modules/responsive-
   })).resize();
 })(jQuery, ResponsiveBootstrapToolkit);
 
+// For images
 Object(__WEBPACK_IMPORTED_MODULE_0__lazyload_init__["a" /* default */])();
+
+__webpack_require__("./source/_assets/js/observables.js");
+
+/***/ }),
+
+/***/ "./source/_assets/js/observables.js":
+/***/ (function(module, exports) {
+
+var delayAnObj = document.querySelectorAll('.delayAnimation');
+
+observer = new IntersectionObserver(function (entries) {
+  entries.forEach(function (entry) {
+    if (entry.intersectionRatio > 0) {
+      entry.target.classList.add('runAnimation');
+    }
+    // else {
+    //   entry.target.classList.remove('fancy');
+    // }
+  });
+});
+
+delayAnObj.forEach(function (obj) {
+  observer.observe(obj);
+});
 
 /***/ }),
 
