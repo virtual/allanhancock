@@ -1,12 +1,13 @@
+$featureiconborder: rgba(124, 189, 255, 0.50);
 .featureicon {
   text-align: center; 
-  margin-bottom: 2rem; 
+  margin-bottom: 1rem; 
+  padding-bottom: 1rem;
   p { margin:0; padding:0; line-height: 1.5;}
   p a.btn:hover { text-decoration: underline;}
   h3 { 
   color: $secondary;
   margin: 0;
-  margin-top: 1rem;
   line-height: 1.2;
   font-size: 3rem;
   font-weight: 700;
@@ -19,12 +20,32 @@
     img { height: 80px; width: auto;}
   }
 }
-.featureicon-container { position: relative; z-index: 2;}
+.featureicon-container { position: relative; z-index: 2;  }
+
+.featureicons > div .featureicon { border-bottom: 1px solid $featureiconborder; }
+.featureicons > div:last-child .featureicon { 
+  border-bottom: 0; margin-bottom:0; 
+  padding-bottom: 0;
+}
+@media (min-width: $screen-sm) {
+  .featureicons > div .featureicon, .featureicons > div:last-child .featureicon {
+    border-bottom:0;
+  }
+  .featureicons > div {
+    border-right: 1px solid $featureiconborder;
+  }
+  .featureicons > div:last-child { border-right: 0; }
+}
+
 @media (min-width: $screen-md) {
+  .featureicon-container { padding: 3.75rem 0 !important;}
   .featureicon { 
     margin-bottom:0;
+    padding-top: 2rem;
+    padding-bottom: 4rem;
     h3 { 
-    font-size: 4.5rem;  
+      margin-top:0;
+      font-size: 4.5rem;  
     }
     p { font-size: 1.25rem;}
   }

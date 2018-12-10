@@ -74,7 +74,7 @@
     </div> 
   </div>
 
-<div class="featureicon-container py-5 bg-primary">
+<div class="featureicon-container bg-primary">
   <div class="container-fluid">
     @yield('icons1')
     </div>

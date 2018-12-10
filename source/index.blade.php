@@ -236,7 +236,7 @@
     <div class="col-12 col-sm-4">
         @include('_partials.featureicon', [
         'heading' => '11,500',
-        'desc' => 'Students Enroll each Semester',
+        'desc' => 'Students Enrolled',
         'iconalt' => '',     
         'icon' => '',          
         'buttontext' => '',
