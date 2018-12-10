@@ -5495,7 +5495,7 @@ header#header {
   padding: 1.5rem 1.5rem 2.5rem 1.5rem;
 }
 
-.homepage-banner .hero-caption p {
+.homepage-banner .hero-caption.large-text p {
   margin: 0;
   line-height: 1;
   font-size: 3rem;
@@ -5628,10 +5628,10 @@ header#header {
   .homepage-banner .hero {
     min-height: 670px;
   }
-  .homepage-banner .hero-caption p {
+  .homepage-banner .hero-caption.large-text p {
     font-size: 4.5rem;
   }
-  .homepage-banner .hero-caption p:nth-child(2n+2) {
+  .homepage-banner .hero-caption.large-text p:nth-child(2n+2) {
     padding-left: 4.5rem;
   }
 }
@@ -5690,6 +5690,15 @@ header#header {
 
 .homepage .news-events .row > div:last-child h3.bar-bg:after {
   background-color: #003d7b;
+}
+
+.homepage .banner-search {
+  background-color: #000;
+}
+
+.homepage .banner-search .homepage-banner {
+  opacity: .8;
+  text-align: center;
 }
 
 .module {

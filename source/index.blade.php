@@ -22,7 +22,7 @@
 <section class="hero left bg-primary">
   <div class="hero-image-wrapper"></div>
 
-  <div class="hero-caption">
+  <div class="hero-caption large-text">
     <p>Start here.</p>
     <p>Go anywhere.</p>
   </div>
@@ -149,15 +149,15 @@
 </p>
 @endsection
 
-@section('hero3')
+@section('banner-search')
 <section class="hero left bg-primary">
     <div class="hero-image-wrapper"></div>
     <style type="text/css">
-      .homepage-banner.hero-3{
-        background-image: url(./resources/img/homepage/a3/large.jpg);
+      .banner-search .homepage-banner  {
+        background-image: url(./resources/img/stock/alexis-brown-85793-unsplash.jpg);
       }
       
-      @media screen and (max-width: 900px) { 						
+      /* @media screen and (max-width: 900px) { 						
        .homepage-banner.hero-3 {
         background-image: url(./resources/img/homepage/a3/medium.jpg);
         }
@@ -167,13 +167,17 @@
        .homepage-banner.hero-3 {
         background-image: url(./resources/img/homepage/a3/small.jpg);
         }
-      } 						 
+      } 						  */
      </style>
 <div class="hero-caption">
-       <h2 class="heading">Build a career and community</h2>
-       <p class="desc">Forming partnerships for a healthy human, economic, and natural environment</p>
-       <div class="expand-wrapper"><button aria-expanded="false" class="expand-button btn btn-primary">Expand</button></div>
-    </div>
+       <h2>What are you interested in learning?</h2>
+       <form class="searchform" name="searchform" method="get" action="https://ousearch.omniupdate.com/texis/search/">
+        <div id="search"><input type="hidden" name="pr" value="ahc"><input type="hidden" name="sufs" value="2"><label for="search-box"><span class="screenreader">Enter search terms</span>Search</label><input name="query" class=" queryAutocomplete" id="search-box" type="text" placeholder="Search programs of study" value="Enter search terms"><input type="submit" value="Submit" class="submit"></div>
+     </form>
+
+     <p><a href="#" class="more-arrow">View all programs of study</a></p>
+
+       </div>
  </section>
 @endsection
 
