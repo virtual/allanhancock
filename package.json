@@ -26,6 +26,7 @@
         "jquery-colorbox": "^1.6.4",
         "livereload": "^0.7.0",
         "responsive-toolkit": "^2.6.3",
-        "twitter-fetcher": "^18.0.2"
+        "twitter-fetcher": "^18.0.2",
+        "vanilla-lazyload": "^8.17.0"
     }
 }

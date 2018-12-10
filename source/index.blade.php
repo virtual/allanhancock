@@ -164,7 +164,7 @@
 
 @section ('icons1') 
 
-<div class="row featureicons">
+<div class="row featureicons lazy" id="results1">
     <div class="col-12 col-sm-4">
         @include('_partials.featureicon', [
         'heading' => '11,500',

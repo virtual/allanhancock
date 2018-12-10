@@ -13,6 +13,7 @@ mix.webpackConfig({
 
 mix.js('source/_assets/js/main.js', 'js')
   .js('source/_assets/js/slick-app.js', 'js')
+  // .js('source/_assets/js/lazyload.js', 'js')
   .sass('source/_assets/sass/main.scss', 'css/main.css')
   .sass('source/_assets/sass/slick.scss', 'css/slick.css')
   .sass('source/_assets/sass/slick-theme.scss', 'css/slick-theme.css')

@@ -1,3 +1,5 @@
+import lazyLoadInit from "./lazyload-init";
+
 jQuery(document).ready(function() {
   
   // Check testimonial picture if vertical for spacing
@@ -406,3 +408,5 @@ var ResponsiveBootstrapToolkit = require('responsive-toolkit');
   ).resize();
 
 })(jQuery, ResponsiveBootstrapToolkit);
+
+lazyLoadInit();
