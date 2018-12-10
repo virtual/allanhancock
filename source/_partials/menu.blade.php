@@ -308,8 +308,8 @@
               </div>
           </div>
         </li> 
-        <li class="dropdown">
-            <a href="#">Search
+        <li class="dropdown dropdown-search">
+            <a href="#"><span class="sr-only">Search</span><span class="fa fa-search"></span>
             <span role="link" class="dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               <span class="sr-only">Toggle Dropdown</span>
             </span>

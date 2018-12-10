@@ -4518,9 +4518,6 @@ header#header {
 }
 
 @media (min-width: 992px) {
-  header#header {
-    padding-bottom: 1.5rem;
-  }
   .searchbox input.form-control {
     display: none;
   }
@@ -4725,7 +4722,6 @@ header#header {
 
 .megamenu {
   position: fixed;
-  background-color: #f0af13;
   top: 0;
   right: 0;
   left: 0;
@@ -4746,6 +4742,7 @@ header#header {
   padding: 0;
   border: 0;
   text-transform: none;
+  margin: 0;
 }
 
 .megamenu .dropdown-menu a {
@@ -4798,6 +4795,10 @@ header#header {
   width: 100%;
   padding-top: 20px;
   padding-bottom: 20px;
+}
+
+.megamenu > .container-fluid {
+  background-color: #f0af13;
 }
 
 #searchCollapse {
@@ -4870,6 +4871,7 @@ header#header {
     position: relative;
     -webkit-box-shadow: none;
             box-shadow: none;
+    margin-bottom: -20px;
   }
   .megamenu ul {
     position: relative;
@@ -5039,6 +5041,12 @@ header#header {
   body {
     padding-top: 61px;
   }
+}
+
+.dropdown-search > a {
+  position: absolute !important;
+  right: 0;
+  top: 0;
 }
 
 .left-nav {

@@ -35,7 +35,6 @@
 }
 .megamenu {
   position: fixed;
-  background-color: $secondary;
   top: 0;
   right: 0;
   left: 0;
@@ -57,6 +56,8 @@
     padding: 0;
     border: 0;
     text-transform: none;
+    
+    margin:0;
     a {
       color: inherit;
       display: block;
@@ -74,6 +75,7 @@
       color:#000;
     }
   }
+
   .dropdown-toggle:after { // lg
     content: "";
     background-image: url(../../resources/img/icons/line@3x.png);
@@ -106,6 +108,9 @@
     // a {
     //   padding-left: 15px;
     // }
+  }
+  & > .container-fluid {
+    background-color: $secondary;
   }
 }
 #searchCollapse {
@@ -168,6 +173,7 @@
     font-size: 1rem;
     position: relative;
     box-shadow: none;
+    margin-bottom: -20px;
     // background-color: transparent;
     ul { position: relative; 
       padding:0;
@@ -322,4 +328,11 @@
     max-height: calc(100vh - 135px);
   }
   body { padding-top: 61px;}
+}
+
+
+.dropdown-search > a { 
+  position: absolute !important;
+  right: 0;
+  top: 0;
 }
