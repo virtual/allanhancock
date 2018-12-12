@@ -18,9 +18,9 @@ header#header {
 }
 
 .navbar-brand img {
-  max-width: 160px; // chged from 200px per convo w/ Adam
+  max-height: 50px; 
+  width: auto;
   height: auto;
-  width: 100%;
 }
 
 .navbar {
@@ -77,10 +77,7 @@ header#header {
   }
 }
 .navmenu .navbar-brand {
-  padding: 8px 0;
-  img {
-    width: 75px;
-  }
+  padding: 25px 0; 
 } 
 @media (min-width: $screen-lg) {
   .searchbox input.form-control {
@@ -145,6 +142,9 @@ header#header {
   }
   .searchicon .fa-search {
     display: none;
+  }  
+  .navbar-brand img {
+    max-height: initial;
   }
 }
 

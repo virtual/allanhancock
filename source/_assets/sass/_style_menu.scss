@@ -20,9 +20,10 @@
 
 .flex-button {
   text-align: left;
-  flex-grow: 1;
-  flex-shrink: 1;
+  // flex-grow: 1;
+  // flex-shrink: 1;
   flex-basis: 20%;
+  
   position: relative;
   .navbar-toggler {  
     height: 100%; // center it vertically

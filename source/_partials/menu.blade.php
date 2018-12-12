@@ -3,10 +3,10 @@
   <div class="container-fluid">
     <div class="d-flex d-block d-lg-none justify-content-between">
       <div  class="flex-button">
-
+        &nbsp;
     </div>
       <a class="navbar-brand" href="/">
-        <img src="{{ $page->baseUrl }}/resources/img/logos/logo-full-mobile.png" srcset="{{ $page->baseUrl }}/resources/img/logos/logo-full-mobile2x.png 2x, {{ $page->baseUrl }}/resources/img/logos/logo-full-mobile3x.png 3x, {{ $page->baseUrl }}/resources/img/logos/logo-full-mobile4x.png 4x" alt="Allan Hancock College" />
+        <img src="{{ $page->baseUrl }}/resources/img/logos/ahc-logo-mobile.png" srcset="{{ $page->baseUrl }}/resources/img/logos/ahc-logo-mobile2x.png 2x, {{ $page->baseUrl }}/resources/img/logos/ahc-logo-mobile3x.png 3x, {{ $page->baseUrl }}/resources/img/logos/ahc-logo-mobile4x.png 4x" alt="Allan Hancock College" />
       </a>
       <div class="flex-button flex-button-right">
           <button id="mobile-menu-button" class="navbar-toggler primary" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse"

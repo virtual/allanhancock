@@ -16,15 +16,6 @@
         @endif
 
       </div>
-      <div class="col-lg-10 col-xl-10">
-        <div class="header-actions d-none d-lg-flex">
-        <div class="navbar-container">
-
-          
-        </div> 
-      </div>
-
-      </div>
     </div>
 
   </div>
