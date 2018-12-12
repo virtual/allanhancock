@@ -11,7 +11,6 @@
   a { text-decoration: none; 
     color: #000;
     font-size: 0.8125rem; padding: 0 1.25rem; margin: .8125rem 0; 
-    border-right: 1px solid #000; 
     font-weight: 500; 
     line-height: 1; 
     display: inline-block;
@@ -25,8 +24,17 @@
     height: 100%; 
   }
 } 
+.megamenu .topnav li {
+  display:inline; 
+  a {
+    display: inline-block;
+    margin: 0;
+  }
+}
 @media (min-width: $screen-lg) {
   .topnav {
+    a { 
+      border-right: 1px solid #000; }
     li { float: left; }
     .secondary-menu { text-align: right; float:right; 
       li { float: left; height: 100%; overflow:hidden; } 

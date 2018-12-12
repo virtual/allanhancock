@@ -76,9 +76,10 @@ header#header {
     }
   }
 }
-.navmenu .navbar-brand {
-  padding: 25px 0; 
-} 
+.navbar-brand {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
 @media (min-width: $screen-lg) {
   .searchbox input.form-control {
     display: none;
@@ -137,9 +138,7 @@ header#header {
     position: relative;
     z-index: 5;
   }
-  .navbar-brand {
-    padding-top: 24px;
-  }
+
   .searchicon .fa-search {
     display: none;
   }  

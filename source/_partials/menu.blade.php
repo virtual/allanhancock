@@ -24,9 +24,18 @@
           <li class="dropdown dropdown-search">
               <a class="dropdown-toggle" href="#"><span class="d-lg-none">Search</span> <span class="d-none d-lg-block sr-only">Search</span><span class="fa fa-search"></span></a>
   
-            <div class="dropdown-menu bg-primary">
+            <div class="dropdown-menu">
               <div class="subnav">
              @include ('_partials.searchform')
+            </div>
+            <div class="dropdown-extra-text">
+              <p class="medium">What are other people searching for?</p>
+              <ul class="list-inline">
+                <li><a href="">Financial Aid</a></li>
+                <li><a href="">Admissions</a></li>
+                <li><a href="">myHancock</a></li>
+                <li><a href="">Faculty &amp; Staff Directory</a></li>
+              </ul>
             </div>
             </div>
           </li>
@@ -35,7 +44,7 @@
               <a class="dropdown-toggle" href="#"><span class="d-lg-none">Quick Links</span> <span class="d-none d-lg-block sr-only">Quick Links</span><span class="fas fa-link"></span>
             </a>
   
-            <div class="dropdown-menu bg-primary">
+            <div class="dropdown-menu">
               <div class="subnav">
              @include ('_partials.quicklinks')
             </div>
