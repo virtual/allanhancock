@@ -9,9 +9,36 @@
   }
   ul, li { list-style: none; display: inline-block; margin:0; padding:0;}
   a { text-decoration: none; 
-    font-size: .8rem; padding: .5rem; }
-  
+    color: #000;
+    font-size: 0.8125rem; padding: 0 1.25rem; margin: .8125rem 0; 
+    border-right: 1px solid #000; 
+    font-weight: 500; 
+    line-height: 1; 
+    display: inline-block;
+  }
+  li:last-child a { border-right:0;}
+  li.pull-right { float:right;}
+  li a.btn { padding: 0.625rem .625rem .625rem 1.25rem;     
+    letter-spacing: .12em; font-weight: 800; 
+    line-height: 1.3; 
+    border-right:0;
+    height: 100%; 
+  }
 } 
+@media (min-width: $screen-lg) {
+  .topnav {
+    li { float: left; }
+    .secondary-menu { text-align: right; float:right; 
+      li { float: left; height: 100%; overflow:hidden; } 
+    }
+    li a.btn { margin-top: 0; margin-bottom: 0; margin-left: 15px;}
+    li:first-child a.btn { margin-left: 0}
+    .d-flex {
+      justify-content: space-between;
+      ul { width: auto;}
+    }
+  }
+}
 #skiptocontent a {
   padding: 8px;
   position: absolute; 

@@ -32,7 +32,7 @@ a.more-arrow:after, ul.more-arrow > li a:after {
   font-weight: 900; 
   font-family: Font Awesome\ 5 Free; 
   color: $secondary;
-  padding-left: 1rem;
+  padding-left: .5em;
   margin-left: .5rem;
   transition: margin-left .15s ease-in-out, margin-right .15s ease-in-out;
   margin-right: .62rem; 
@@ -40,6 +40,9 @@ a.more-arrow:after, ul.more-arrow > li a:after {
 a.more-arrow:hover:after, ul.more-arrow > li a:hover:after {
   margin-left: .62rem;  
   margin-right:.5rem;
+}
+a.icon-white:after {
+  color: #fff;
 }
 .clear { clear:both; }
 .clearfix:after {
@@ -193,4 +196,27 @@ display:flex;
   background-color: $secondary; 
   width: 100%;
   margin: 6px 0 6px 15px
+}
+
+.purplegradient {
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#a3238f+0,a3238e+49,762068+80,762068+100 */
+background: rgb(163,35,143); /* Old browsers */
+background: -moz-linear-gradient(left, rgba(163,35,143,1) 0%, rgba(163,35,142,1) 49%, rgba(118,32,104,1) 80%, rgba(118,32,104,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left, rgba(163,35,143,1) 0%,rgba(163,35,142,1) 49%,rgba(118,32,104,1) 80%,rgba(118,32,104,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right, rgba(163,35,143,1) 0%,rgba(163,35,142,1) 49%,rgba(118,32,104,1) 80%,rgba(118,32,104,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a3238f', endColorstr='#762068',GradientType=1 ); /* IE6-9 */
+}
+.bluegradient {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#005aaa+0,005aaa+51,003d7b+78,003d7b+100 */
+background: rgb(0,90,170); /* Old browsers */
+background: -moz-linear-gradient(left, rgba(0,90,170,1) 0%, rgba(0,90,170,1) 51%, rgba(0,61,123,1) 78%, rgba(0,61,123,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left, rgba(0,90,170,1) 0%,rgba(0,90,170,1) 51%,rgba(0,61,123,1) 78%,rgba(0,61,123,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right, rgba(0,90,170,1) 0%,rgba(0,90,170,1) 51%,rgba(0,61,123,1) 78%,rgba(0,61,123,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#005aaa', endColorstr='#003d7b',GradientType=1 ); /* IE6-9 */
+}
+.btn {
+ &.purplegradient, &.bluegradient {
+   min-width: auto;
+   color: #fff; 
+ }
 }
