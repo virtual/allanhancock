@@ -277,3 +277,13 @@
     }
   }
 }
+
+.locations {
+  h2 { text-align: center; font-size: 1.5rem; font-weight: 700;  }
+  h3 { font-size: 1.125rem; }
+}
+.bg-secondary {
+  a { color: #000; font-weight: 600; }
+  a:hover { text-decoration: underline; }
+  a.more-arrow:hover { text-decoration: none;}
+}

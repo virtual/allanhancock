@@ -20,7 +20,7 @@ $featureiconborder: rgba(124, 189, 255, 0.50);
     img { height: 80px; width: auto;}
   }
 }
-.featureicon-container { position: relative; z-index: 2;  }
+.featureicon-container { position: relative; z-index: 2; padding: 2rem 0;  }
 
 .featureicons > div .featureicon { border-bottom: 1px solid $featureiconborder; }
 .featureicons > div:last-child .featureicon { 
@@ -38,7 +38,7 @@ $featureiconborder: rgba(124, 189, 255, 0.50);
 }
 
 @media (min-width: $screen-md) {
-  .featureicon-container { padding: 3.75rem 0 !important;}
+  .featureicon-container { padding: 3.75rem 0;}
   .featureicon { 
     margin-bottom:0;
     padding-top: 2rem;

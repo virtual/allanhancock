@@ -2,7 +2,7 @@
   <div class="container-fluid">
     <section class="sectional sectional-padded">
       <div class="container-fluid">
-        <h2>Campus Locations</h2>
+        <h2 class="h3">Campus Locations</h2>
         <div class="row">
             <div class="col-12 col-sm-6 col-md-6 col-lg-3">
               @include('_partials.card', [

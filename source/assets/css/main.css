@@ -33,7 +33,7 @@ h2 {
   font-weight: 600;
 }
 
-h2.smaller {
+h2.small {
   font-size: 1.5rem;
 }
 
@@ -127,7 +127,7 @@ kbd.ouc {
   transition: all ease-out .3s;
   padding: .5rem;
   color: #003d7b;
-  border: 3px solid rgba(6, 134, 74, 0.7);
+  border: 3px solid rgba(0, 61, 123, 0.7);
   background: #fff;
   position: absolute;
   top: -5px;
@@ -1753,26 +1753,21 @@ h1, .h1 {
   letter-spacing: 0.08em;
 }
 
+h2, .h2, h3, .h3, h4, .h4 {
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
 h2, .h2 {
   font-size: 1.9375rem;
   font-weight: 700;
 }
 
 h3, .h3 {
+  color: #000;
   font-size: 1.25rem;
   text-transform: uppercase;
-}
-
-h4, .h4 {
-  line-height: 1.26;
-}
-
-h5, .h5 {
-  line-height: 1.5;
-}
-
-h6, .h6 {
-  line-height: 1.85;
+  font-weight: 800;
 }
 
 h2, h3, h4, h5, h6 {
@@ -5544,6 +5539,7 @@ header#header {
 .featureicon-container {
   position: relative;
   z-index: 2;
+  padding: 2rem 0;
 }
 
 .featureicons > div .featureicon {
@@ -5570,7 +5566,7 @@ header#header {
 
 @media (min-width: 768px) {
   .featureicon-container {
-    padding: 3.75rem 0 !important;
+    padding: 3.75rem 0;
   }
   .featureicon {
     margin-bottom: 0;
@@ -5930,6 +5926,29 @@ header#header {
   .homepage .banner-search .form-group {
     margin: 7rem 0 5rem 0;
   }
+}
+
+.locations h2 {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.locations h3 {
+  font-size: 1.125rem;
+}
+
+.bg-secondary a {
+  color: #000;
+  font-weight: 600;
+}
+
+.bg-secondary a:hover {
+  text-decoration: underline;
+}
+
+.bg-secondary a.more-arrow:hover {
+  text-decoration: none;
 }
 
 .module {

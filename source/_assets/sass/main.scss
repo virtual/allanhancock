@@ -16,7 +16,7 @@ img {
   height: auto;  
 }
 h2 { font-weight: 600; }
-h2.smaller { font-size: 1.5rem;}
+h2.small { font-size: 1.5rem;}
 section { min-height:1px;}
 
 .container-fluid { max-width: $screen-xl; }  
@@ -86,7 +86,7 @@ kbd.ouc {
   transition: all ease-out .3s;
   padding: .5rem;
   color:$primary;
-  border: 3px solid rgba(6, 134, 74, 0.7);
+  border: 3px solid rgba(0, 61, 123, 0.7); 
   background:#fff; 
   position: absolute;
   top: -5px;
