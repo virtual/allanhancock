@@ -71,79 +71,60 @@
 @section('news-events')
 <h2>News and Events <small>What's going on around campus</small></h2>
 <div class="row">
-  <div class="col-6">
+  <div class="col-12 col-md-6">
     <h3 class="bar-bg">News</h3>
     <div class="article-listing news-row">
     @include('_partials.article', [
-    'heading' => 'News Article #1',
-    'desc' => 'Duis nec consequat dui. Praesent gravida diam at ex pharetra porta. Vivamus at nisi massa. Nam
-    porta…',
+    'heading' => 'Watch Historic Mars Landing Live at Allan Hancock College',
+    'desc' => 'The event is free and open to the public',
     'alt' => 'students at a table',
-    'img' => './resources/img/stock/alexis-brown-85793-unsplash.jpg',
+    'img' => './resources/img/news/MarsRoverLanding.jpg',
     'link' => 'news.html',
     'datetime' => '2018-09-13 11:31'
     ])
+
     
     @include('_partials.article', [
-    'heading' => 'News Article #2',
-    'desc' => 'Duis nec consequat dui. Praesent gravida diam at ex pharetra porta. Vivamus at nisi massa. Nam
-    porta…',
+    'heading' => 'Allan Hancock College Renames Health, Science & Mathematics Building in Honor of Marian Regional Medical Center',
+    'desc' => 'More than 150 guests were in attendance',
     'alt' => 'students at a table',
-    'img' => './resources/img/stock/alexis-brown-82988-unsplash.jpg',
+    'img' => './resources/img/news/MarianDedication1.jpg',
     'link' => 'news.html',
     'datetime' => '2018-09-13 11:31'
     ])
-    
+
+        
     @include('_partials.article', [
-    'heading' => 'News Article #3',
-    'desc' => 'Duis nec consequat dui. Praesent gravida diam at ex pharetra porta. Vivamus at nisi massa. Nam
-    porta…',
-    'alt' => 'students at a table',
-    'img' => './resources/img/stock/stefan-stefancik-257625-unsplash.jpg',
+    'heading' => 'Hancock\'s Winter and Spring Class Schedules Now Available Online; Registration for Both Semesters Starts November 13',
+    'desc' => 'Classes include accounting, drama, history, and much more!',
+    'alt' => '',
+    'img' => '',
     'link' => 'news.html',
-    'datetime' => '2018-09-13 11:31'
+    'datetime' => '2018-11-09 11:31'
     ])
+
   </div>
 
   </div>
-  <div class="col-6">
+  <div class="col-12 col-md-6">
     <h3 class="bar-bg">Events</h3>
-    <article class="post">
-      <div class="post-date">
-        <span class="day">10:30 AM</span>
-        <span class="month">DEC 29</span>
-      </div>
-      <div class="post-content">
-        <h4>
-          <a href="#">Class aptent taciti sociosqu ad litora torquent</a>
-        </h4>
-      </div>
-    </article>
-    <article class="post">
-      <div class="post-date">
-        <span class="day">10:30 AM</span>
-        <span class="month">DEC 29</span>
-      </div>
-      <div class="post-content">
-        <h4>
-          <a href="#">Class aptent taciti sociosqu ad litora torquent</a>
-        </h4>
-      </div>
-    </article>
-    <article class="post">
-      <div class="post-date">
-        <span class="day">10:30 AM</span>
-        <span class="month">DEC 29</span>
-      </div>
-      <div class="post-content">
-        <h4>
-          <a href="#">Class aptent taciti sociosqu ad litora torquent</a>
-        </h4>
-      </div>
-    </article>
+   <div class="event-feed">
+      <article class="post">
+        <div class="post-date"><span class="month">Nov</span><span class="day">26</span></div>
+        <div class="post-content"><h4><a href="#">Mars Lander Viewing</a></h4></div>
+      </article>
+      <article class="post">
+          <div class="post-date"><span class="month">Nov</span><span class="day">29</span></div>
+          <div class="post-content"><h4><a href="#">Cash for College Workshop</a></h4></div>
+      </article>
+      <article class="post">
+          <div class="post-date"><span class="month">Nov</span><span class="day">29</span></div>
+          <div class="post-content"><h4><a href="#">Women's Basketball — Cuesta Tournament</a></h4></div>
+      </article>
+    </div>
   </div>
 </div> 
-<p>
+<p class="pt-5 pb-2">
   <a class="btn btn-outline-light">More News</a>
   <a class="btn btn-outline-light">More Events</a>
 </p>

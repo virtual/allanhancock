@@ -1,8 +1,8 @@
 <article class="news-article"> 
-  @if(!empty($img)) <div class="image-container"><a href="{{ $link }}"><img src="{{ $page->baseUrl }}{{$img}}" alt="{{$alt}}"></a></div>  @endif
+  <div class="image-container">@if(!empty($img)) <a href="{{ $link }}"><img src="{{ $page->baseUrl }}{{$img}}" alt="{{$alt}}"></a>@endif</div>  
   <div class="article-info-container">
       @if(!empty($datetime))<p class="datetime"><time datetime="{{$datetime}}"><?php echo date("F j, Y", strtotime($datetime)) ?> </time></p>@endif
-      <h3><a href="{{ $link }}">{{ $heading }}</a></h3>
+      <h4><a href="{{ $link }}">{{ $heading }}</a></h4>
       <p class="description">{{ $desc }} </p>
     </div>
 </article>

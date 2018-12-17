@@ -5,6 +5,16 @@
   @include headings(1,6) { color: #000; }
 }
 
+.bg-secondary {
+  a { color: #000; font-weight: 600; }
+  a:hover { text-decoration: underline; }
+  a.more-arrow:hover { text-decoration: none;}
+}
+.bg-dark {
+  h1, h2, h3, h4, a { color: #fff; }
+  .border-between, .border-around { border-color: #fff; }
+}
+
 .icon-watch:before { 
   content: " ";
   background-image: url(../../resources/img/icons/play-icon.svg);
@@ -219,4 +229,45 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#005aaa', end
    min-width: auto;
    color: #fff; 
  }
+}
+
+
+
+.event-feed {
+  
+  .post {
+    display: flex; 
+    flex-direction: row; 
+    max-width: 100%; 
+    padding-bottom: 1rem; 
+    margin-bottom: .5rem; 
+    border-bottom: 1px solid #000; 
+    .post-content {
+      flex-grow: 1; 
+      flex-shrink: 1;
+      // background: rgba(219, 215, 161, 0.233);
+      width: 100%; 
+      padding-left: 1rem; 
+      h4 { margin-top: 0; margin-bottom: 0; }
+    }
+    .post-date {
+      margin-top: .5rem;
+      flex-grow: 0; 
+      flex-shrink: 0;
+      align-self: flex-start;
+      padding: .25rem .5rem .25rem .5rem;
+      border: 1px solid #000;
+      // background: rgba(161, 215, 161, 0.233);
+      .month, .day { width: 100%; display:block; text-align: center; line-height: 1;}
+      .month { font-size: .8125rem; text-transform: uppercase; }
+      .day { font-size: 1.5rem; }
+    }
+
+  } 
+}
+
+.bg-dark {
+  .event-feed .post, .event-feed .post .post-date { 
+    border-color: #fff; color: #fff;
+  }
 }
