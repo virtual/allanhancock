@@ -239,8 +239,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#005aaa', end
     display: flex; 
     flex-direction: row; 
     max-width: 100%; 
-    padding-bottom: 1rem; 
-    margin-bottom: .5rem; 
+    // padding-bottom: 1rem; 
+    margin-bottom: 1rem; 
     border-bottom: 1px solid #000; 
     .post-content {
       flex-grow: 1; 
@@ -248,15 +248,18 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#005aaa', end
       // background: rgba(219, 215, 161, 0.233);
       width: 100%; 
       padding-left: 1rem; 
-      h4 { margin-top: 0; margin-bottom: 0; }
+      h4 { margin-top: 0; 
+        // margin-bottom: 0; 
+      }
     }
     .post-date {
       margin-top: .5rem;
       flex-grow: 0; 
       flex-shrink: 0;
       align-self: flex-start;
-      padding: .25rem .5rem .25rem .5rem;
       border: 1px solid #000;
+      a { text-decoration: none; display: block;
+        padding: .25rem .5rem .25rem .5rem;}
       // background: rgba(161, 215, 161, 0.233);
       .month, .day { width: 100%; display:block; text-align: center; line-height: 1;}
       .month { font-size: .8125rem; text-transform: uppercase; }
@@ -270,4 +273,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#005aaa', end
   .event-feed .post, .event-feed .post .post-date { 
     border-color: #fff; color: #fff;
   }
+  .post-date a:hover { background: $primary;}
+
 }
