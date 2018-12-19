@@ -415,7 +415,7 @@ var ResponsiveBootstrapToolkit = require('responsive-toolkit');
 
 })(jQuery, ResponsiveBootstrapToolkit);
 
-// For images
-lazyLoadInit();
+// TODO: For images uses arrow notation :\
+// lazyLoadInit();
 
 require('./observables')

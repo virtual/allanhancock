@@ -68,7 +68,7 @@
 </div>
 
 <div class="homepage-banner-container banner-search">
-    <div class="jarallax homepage-banner">
+    <div class="homepage-banner">
       @yield('banner-search')
   
     </div> 

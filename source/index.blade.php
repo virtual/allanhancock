@@ -131,10 +131,10 @@
 @endsection
 
 @section('banner-search')
-<section class="hero left bg-primary">
-    <div class="hero-image-wrapper"></div>
+<section class="hero left">
+    <div class="hero-image-wrapper jarallax"></div>
     <style type="text/css">
-      .banner-search .homepage-banner  {
+      .banner-search .homepage-banner .hero-image-wrapper  {
         background-image: url(./resources/img/stock/alexis-brown-85793-unsplash.jpg);
       }
       

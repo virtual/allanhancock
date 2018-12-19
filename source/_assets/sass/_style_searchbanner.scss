@@ -1,0 +1,102 @@
+.banner-search {
+  background-color: #000;
+
+  .form-group {
+    display: inline-block;
+    border-bottom: 1px solid #fff;
+    margin: 3rem 0;
+    width: 80%;
+  }
+
+  form {
+
+    input,
+    button {
+      background-color: transparent;
+      color: #fff;
+      box-shadow: 0;
+      border: 0;
+    }
+
+
+    button {
+      min-width: auto;
+    }
+  }
+
+  form input::placeholder {
+    color: #fff;
+    letter-spacing: .04em;
+  }
+
+  form label {
+    position: absolute;
+    left: -9999px;
+  }
+
+  .input-group {
+    justify-content: space-between;
+    flex-wrap: nowrap;
+
+    &>input {
+      flex-grow: 1;
+      flex-shrink: 1;
+      min-width: 50px;
+    } 
+  }
+
+  .heading {
+    font-size: 1.75rem;
+    font-weight: 800;
+    // max-width: 100%;
+  }
+
+  .more-arrow {
+    color: $secondary;
+    font-weight: 700;
+  }
+
+  .more-arrow:after {
+    color: #fff;
+  }
+
+  .homepage-banner {
+    text-align: center;
+  }
+}
+
+@media (min-width: $screen-sm) {
+  .banner-search {
+    form input {
+      font-size: 1.35rem;
+    }
+  }
+}
+
+@media (min-width: $screen-md) {
+  .banner-search {
+    .form-group {
+      margin: 3rem 0;
+    }
+  }
+}
+
+@media (min-width: $screen-lg) {
+  .banner-search {
+    .heading {
+      font-size: 2.4rem;
+    }
+
+    .form-group {
+      margin: 7rem 0 5rem 0;
+    }
+  }
+}
+
+@media (min-width: $screen-xl) {
+  .banner-search {
+    .heading {
+      font-size: 2.75rem;
+    }
+  }
+}

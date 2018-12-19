@@ -2060,7 +2060,7 @@ var createLazyLoadInstance = function createLazyLoadInstance() {
 	return new __WEBPACK_IMPORTED_MODULE_0_vanilla_lazyload__["a" /* default */](lazyLoadOptions);
 };
 
-/* harmony default export */ __webpack_exports__["a"] = (function () {
+/* unused harmony default export */ var _unused_webpack_default_export = (function () {
 	document.addEventListener("DOMContentLoaded", createLazyLoadInstance);
 });
 
@@ -2478,8 +2478,8 @@ var ResponsiveBootstrapToolkit = __webpack_require__("./node_modules/responsive-
   })).resize();
 })(jQuery, ResponsiveBootstrapToolkit);
 
-// For images
-Object(__WEBPACK_IMPORTED_MODULE_0__lazyload_init__["a" /* default */])();
+// TODO: For images uses arrow notation :\
+// lazyLoadInit();
 
 __webpack_require__("./source/_assets/js/observables.js");
 
