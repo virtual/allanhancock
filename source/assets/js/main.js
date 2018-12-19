@@ -2426,6 +2426,11 @@ var ahapp = {
     $('.breadcrumb li').each(function (index) {
       $(this).append('<meta property="position" content="' + (index + 1) + '" />');
     });
+  },
+  runParallax: function runParallax() {
+    $('.jarallax').jarallax({
+      speed: 0.2
+    });
   }
 };
 
@@ -2441,6 +2446,7 @@ ahapp.unWrapDuplicateULs();
 ahapp.tableHTML();
 ahapp.twoColNav();
 ahapp.addBreadcrumbPosition();
+ahapp.runParallax();
 
 // Detect breakpoint ResponsiveBootstrapToolkit
 var ResponsiveBootstrapToolkit = __webpack_require__("./node_modules/responsive-toolkit/src/bootstrap-toolkit.js");

@@ -68,7 +68,7 @@
 </div>
 
 <div class="homepage-banner-container banner-search">
-    <div class="homepage-banner">
+    <div class="jarallax homepage-banner">
       @yield('banner-search')
   
     </div> 
@@ -96,8 +96,14 @@
     <script src="{{ $page->baseUrl }}/assets/js/jquery-3.3.1.min.js"></script>
     <script src="{{ $page->baseUrl }}/assets/js/popper.min.js"></script>
     <script src="{{ $page->baseUrl }}/assets/js/bootstrap.min.js"></script>
+    
+    <!-- homepage only -->
+    <script src='{{ $page->baseUrl }}/assets/js/jarallax.js'></script>
+    
     <!-- <script src="{{ $page->baseUrl }}/assets/js/lazyload.js"></script> -->
-    <script src="{{ $page->baseUrl }}/assets/js/main.js"></script>  
+    <script src="{{ $page->baseUrl }}/assets/js/main.js"></script> 
+    
+</script>
 </body>
 
 </html>
