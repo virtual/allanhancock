@@ -167,41 +167,58 @@
   a:hover { color: $secondary; }
 }
 .dropdown-quicklinks a { text-decoration: none; }
+
 .megamenu .dropdown-search {
-  .dropdown-menu { 
-    padding: 2rem 100px 3rem 100px; 
+  &> a {
+    display: none;
+  } 
+  .dropdown-menu .dropdown-extra-text {
+    display: none;
+  }
+  .dropdown-menu .subnav input {
+    background: #fff;
+    padding: .5rem;
+    font-size: 1rem;
+    color: #000;
+    /* border: 0; */
+  }
+  .dropdown-menu {    
+    display: block;
+    background: transparent;
     .form-group {
       display: inline-block;
       width: 100%; 
       border-bottom: 1px solid rgba(124, 189, 255, 0.70);
-      margin: 1rem 0;
+      
     }
 
     form {
       width: 100%; 
-      input,
-      button {
-        background-color: transparent;
-        color: #fff;
-        box-shadow: 0;
-        border: 0;
-      }
+      // input,
+      // button {
+      //   background-color: transparent;
+      //   color: #fff;
+      //   box-shadow: 0;
+      //   border: 0;
+      // }
 
-      input {
-        font-size: 1.35rem;
-        width: 60vw;
-        max-width: 600px;
-      }
+      // input {
+      //   font-size: 1.35rem;
+      //   width: 60vw;
+      //   max-width: 600px;
+      // }
 
       button {
         min-width: auto;
       }
+      input {
+        flex-grow: 1;
+        min-width: 50px;
+      }
     }
 
-    form input::placeholder {
-      color: rgba(124, 189, 255, 0.70);
-      letter-spacing: .04em;
-    }
+
+ 
 
     form label {
       position: absolute;
@@ -210,6 +227,7 @@
 
     .input-group {
       justify-content: flex-start;
+      flex-direction: row-reverse
     }
   }
 }
@@ -221,16 +239,16 @@
 //   display: inline-block; 
 //   transition: transform .1s ease-in-out;
 // } 
-@media (min-width: 280px) {
-  .searchform-mobile label {
-      width: 80%;
-    }
-}
-@media (min-width: $screen-sm) {
-  .searchform-mobile label {
-      width: 90%;
-    }
-}
+// @media (min-width: 280px) {
+//   .searchform-mobile label {
+//       width: 80%;
+//     }
+// }
+// @media (min-width: $screen-sm) {
+//   .searchform-mobile label {
+//       width: 90%;
+//     }
+// }
 
 @media (min-width: $screen-lg) {
   .dropdown-menu {
@@ -264,6 +282,46 @@
     }
   } 
 
+  .megamenu .dropdown-search {
+    &> a {
+      display: block;
+    } 
+    .dropdown-menu .dropdown-extra-text {
+      display: block;
+    }
+    .dropdown-menu .subnav input {
+      background: transparent;
+      padding: .5rem;
+      font-size: 1rem; 
+    }
+    .dropdown-menu { 
+      padding: 2rem 100px 3rem 100px;     
+      display: block;
+      background: transparent;
+
+      .form-group { margin: 1rem 0; }
+      .input-group { flex-direction: row;}
+      form {
+        width: 100%; 
+        input,
+        button {
+          background-color: transparent;
+          color: #fff;
+          box-shadow: 0;
+          border: 0;
+        }
+        input {
+          font-size: 1.35rem;
+          
+        }
+        input::placeholder {
+          color: rgba(124, 189, 255, 0.70);
+          letter-spacing: .04em;
+        }
+  
+      }
+    }
+  }
 
   .dropdown {
     position: unset;

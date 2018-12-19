@@ -18,6 +18,10 @@
     </div>
     <div class="collapse navbar-collapse" id="navbarCollapse">
 
+      
+        <div class="d-flex d-lg-none"> 
+        @include ('_partials.topnav2') 
+        </div>
       <ul>
 
          
@@ -47,6 +51,7 @@
             <div class="dropdown-menu">
               <div class="subnav">
              @include ('_partials.quicklinks')
+
             </div>
             </div>
           </li>
@@ -312,7 +317,7 @@
       
       </ul>
       <div class="d-block d-lg-none"> 
-        @include ('_partials.topbar') 
+        @include ('_partials.topnav') 
       </div>
     </div>
   </div>

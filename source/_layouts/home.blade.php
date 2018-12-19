@@ -40,6 +40,19 @@
 
 <body class="homepage">
   @include('_partials.topbar') 
+
+
+  <nav class="topnav nav nav-underline navbar-light d-none d-lg-block">
+    <div class="container-fluid d-flex">
+      <ul>
+        <!-- com.omniupdate.div label="top-nav" group="TOP_Nav" button="792" path="/includes/top-nav.inc" break="break" -->
+        @include('_partials.topnav') 
+        <!-- /com.omniupdate.div -->
+      </ul>
+      @include('_partials.topnav2') 
+    </div>
+  </nav>
+
   @include('_partials.header')
   <main id="maincontent">
 <div class="homepage-banner-container">
