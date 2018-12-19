@@ -19,7 +19,7 @@
     <div class="collapse navbar-collapse" id="navbarCollapse">
 
       
-        <div class="d-flex d-lg-none"> 
+        <div class="d-block d-lg-none"> 
         @include ('_partials.topnav2') 
         </div>
       <ul>
