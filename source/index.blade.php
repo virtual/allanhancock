@@ -31,26 +31,23 @@
 
 @section ('subfeature') 
 @include('_partials.imagebutton', [
-'img' => './resources/img/stock/alexis-brown-85793-unsplash.jpg',     
+'img' => './resources/img/ctas/cta-01.jpg',
 'color' => '#000',          
-'buttontext' => 'Apply Today',
+'buttontext' => 'View Programs',
 'link' => '#'
 ])
 @include('_partials.imagebutton', [
-'img' => './resources/img/stock/alexis-brown-85793-unsplash.jpg',     
-'color' => '#c51230',          
-'buttontext' => 'Apply Today',
+'img' => './resources/img/ctas/cta-02.jpg', 
+'buttontext' => 'Apply to Hancock',
 'link' => '#'
 ])
   @include('_partials.imagebutton', [
-  'img' => './resources/img/stock/alexis-brown-85793-unsplash.jpg',     
-  'color' => '#006c4',          
+  'img' => './resources/img/ctas/cta-03.jpg', 
   'buttontext' => 'Apply for Financial Aid',
   'link' => '#'
   ])
   @include('_partials.imagebutton', [
-  'img' => './resources/img/stock/alexis-brown-85793-unsplash.jpg',     
-  'color' => '#972085',          
+  'img' => './resources/img/ctas/cta-04.jpg', 
   'buttontext' => 'View Programs & Majors',
   'link' => '#'
   ])
@@ -141,7 +138,7 @@
     <div class="hero-image-wrapper jarallax"></div>
     <style type="text/css">
       .banner-search .homepage-banner .hero-image-wrapper  {
-        background-image: url(./resources/img/stock/alexis-brown-85793-unsplash.jpg);
+        background-image: url(./resources/img/ctas/cta-01.jp.jpg
       }
       
       /* @media screen and (max-width: 900px) { 						

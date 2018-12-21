@@ -1,7 +1,7 @@
-<div class="imagebutton" style="background-image: url('{{ $img }}');"><a href="{{ $link }}">{{ $buttontext }}</a>
-  @if(!empty($color))
-  <div class="imagebutton-bgcolor" style="background-color: {{ $color }}">@else <div class="imagebutton-bgcolor" > @endif
-    <p class="imagebutton-title">
+<div class="imagebutton"><a href="{{ $link }}">{{ $buttontext }}</a>
+  
+  <div class="imagebutton-bgcolor" style="background-image: url('{{ $img }}');">
+    @if(!empty($color))<p class="imagebutton-title" style="color: {{ $color }};"> @else <p class="imagebutton-title">  @endif   
       {{ $buttontext }}
     </p>
   </div>

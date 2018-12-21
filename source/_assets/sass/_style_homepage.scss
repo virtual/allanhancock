@@ -177,10 +177,33 @@
 }
 
 
-.homepage .subfeature { margin-top: -50px; padding-bottom: 30px;
+.homepage .subfeature {  
+  padding-top: 30px;
   position: relative;
   z-index: 100;
+  .d-flex {
+    flex-direction: column;
+  }
 }
+@media (min-width: $screen-sm) {
+  .homepage .subfeature { padding-top: 0; margin-top: -50px; padding-bottom: 30px; }
+
+  .homepage .subfeature .d-flex {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .homepage .subfeature .d-flex .imagebutton {
+    width: 50%;    
+  }
+}
+@media (min-width: $screen-md) { 
+  .homepage .subfeature .d-flex { 
+    flex-wrap: nowrap;
+  } 
+  .homepage .imagebutton { flex-grow: 0;}
+}
+
+
 
 .homepage .campaign { 
   text-align: center;
