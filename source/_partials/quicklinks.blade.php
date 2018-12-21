@@ -52,7 +52,7 @@
   <li><a href="/campus_police/emergency-prep.php">Emergency Preparedness</a></li>
   <li><a href="/placement/index.php">English and Math Placement</a></li>
   <li><a href="/eops/index.php">EOPS</a></li>
-  <li><a href="/academic_departments/languages/esl/index.php">ESL-Credit</a>/li>
+  <li><a href="/academic_departments/languages/esl/index.php">ESL-Credit</a></li>
   <li><a href="/community_education/noncredit-esl.php">ESL-Noncredit</a></li>
   <li><a href="https://outreach.hancockcollege.edu/Ellucian.ERecruiting.Web.External/Pages/events.aspx">Event Registration</a></li>
   <li><a href="/facilities/index.php">Facilities</a></li>

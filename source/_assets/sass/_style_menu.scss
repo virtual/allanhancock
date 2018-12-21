@@ -6,9 +6,8 @@
     text-align: center;
     display: block;
   }
-  .dropdown-menu a {
-    text-align: left;
-  }
+
+
   .nav-link {
     color: darken($primary, 10)
   }
@@ -27,11 +26,7 @@
 } 
 
 .flex-button {
-  text-align: left;
-  // flex-grow: 1;
-  // flex-shrink: 1;
-  // flex-basis: 20%;
-  
+  text-align: left; 
   position: relative;
   .navbar-toggler {  
     height: 100%; // center it vertically
@@ -50,13 +45,14 @@
 .dropdown-menu {
   position: relative;
   color: inherit;
-  padding: 0;
+  padding: 0 $mobilepadding;
   border: 0;
   text-transform: none;
-  
   margin:0;
-  a:hover {
-    color:$primary;
+  
+ 
+  ul {
+    padding: 0;
   }
   li {
     font-size: 13px;
@@ -64,9 +60,14 @@
     color: $text-midgray;
   }
   a {
+    font-size: .9rem;
+    text-align: left;
     color: #000;
     display: block;
     padding: 8px 0;
+  }  
+  a:hover {
+    color:$primary;
   }
   h2 { 
     border-bottom: 2px solid $secondary; 
@@ -161,11 +162,7 @@
     margin-bottom: 0;
   }
 } 
-.dropdown-search, .dropdown-quicklinks {
-  p, ul, ol, li, a {  color: #fff;  } 
-  a { text-decoration: underline; padding: .25rem .5rem .25rem 0; font-weight: 400;  }
-  a:hover { color: $secondary; }
-}
+
 .dropdown-quicklinks a { text-decoration: none; }
 
 .megamenu .dropdown-search {
@@ -188,27 +185,17 @@
     background: transparent;
     padding-top: 0; 
     padding-bottom:0;
-    .form-group {
-     
-    padding-left: $mobilepadding;
-    padding-right: $mobilepadding;
+    // .form-group {
+    // padding-left: $mobilepadding;
+    // padding-right: $mobilepadding;
+    // }
+
+    .input-group {
+      justify-content: flex-start;
+      flex-direction: row-reverse
     }
-
     form {
-      width: 100%; 
-      // input,
-      // button {
-      //   background-color: transparent;
-      //   color: #fff;
-      //   box-shadow: 0;
-      //   border: 0;
-      // }
-
-      // input {
-      //   font-size: 1.35rem;
-      //   width: 60vw;
-      //   max-width: 600px;
-      // }
+      width: 100%;  
       button, input {
         box-shadow: 0;
           border: 0;
@@ -225,20 +212,12 @@
         flex-shrink: 1;
         min-width: 50px;
       }
-    }
+      label {
+        position: absolute;
+        left: -9999px;
+      }
+    } 
 
-
- 
-
-    form label {
-      position: absolute;
-      left: -9999px;
-    }
-
-    .input-group {
-      justify-content: flex-start;
-      flex-direction: row-reverse
-    }
   }
 }
 // .dropdown-toggle-split {
@@ -280,6 +259,11 @@
     position: absolute !important;
     right: 0;
     top: 0;
+  }
+  .dropdown-search, .dropdown-quicklinks {
+    p, ul, ol, li, a {  color: #fff;  } 
+    a { text-decoration: underline; padding: .25rem .5rem .25rem 0; font-weight: 400;  }
+    a:hover { color: $secondary; }
   }
   .navbar-collapse > ul > li > a { padding: 10px 15px; font-size: 15px; }
   .dropdown-quicklinks > a {
@@ -469,10 +453,7 @@
   }
   li.dropdown.dropdown-quicklinks {
     border-top:0;
-  }
-  .megamenu .dropdown .dropdown-menu a {
-    padding-left: 25px;
-  }
+  } 
   .navmenu ul li a {
     text-align: left;
   }
