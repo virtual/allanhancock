@@ -2701,6 +2701,14 @@ pre code {
   min-width: 50px;
 }
 
+.megamenu .navbar-collapse ul.secondary-menu {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-bottom: .5rem;
+}
+
 @media (min-width: 992px) {
   .topnav a {
     border-right: 1px solid #000;
@@ -4989,6 +4997,34 @@ header#header {
   color: #000;
 }
 
+.megamenu .navbar-collapse ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.megamenu li {
+  -webkit-box-ordinal-group: 4;
+      -ms-flex-order: 3;
+          order: 3;
+}
+
+.megamenu .dropdown-search {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+}
+
+.megamenu .dropdown-quicklinks {
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+}
+
 .megamenu {
   z-index: 1030;
   font-size: 1.1rem;
@@ -5128,24 +5164,36 @@ header#header {
   .dropdown-toggle:after {
     display: none;
   }
-  .megamenu li {
+  .megamenu .navbar-collapse > ul {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .megamenu .navbar-collapse > ul > li:first-child {
+    margin-left: auto;
+  }
+  .megamenu .navbar-collapse > ul > li {
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1;
   }
-  .megamenu .dropdown-search, .megamenu .dropdown-quicklinks {
+  .megamenu .navbar-collapse > ul > .dropdown-search {
     -webkit-box-ordinal-group: 4;
         -ms-flex-order: 3;
             order: 3;
+  }
+  .megamenu .navbar-collapse > ul > .dropdown-quicklinks {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    margin-left: auto;
+  }
+  .megamenu .dropdown-search, .megamenu .dropdown-quicklinks {
     padding-top: 0;
     -webkit-box-flex: 0;
         -ms-flex-positive: 0;
             flex-grow: 0;
-  }
-  .megamenu .dropdown-quicklinks {
-    -webkit-box-ordinal-group: 3;
-        -ms-flex-order: 2;
-            order: 2;
   }
   .dropdown-search p, .dropdown-search ul, .dropdown-search ol, .dropdown-search li, .dropdown-search a, .dropdown-quicklinks p, .dropdown-quicklinks ul, .dropdown-quicklinks ol, .dropdown-quicklinks li, .dropdown-quicklinks a {
     color: #fff;

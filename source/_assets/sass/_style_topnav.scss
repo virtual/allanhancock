@@ -36,6 +36,10 @@
   li a { display:inline-block;}
   a.btn { min-width: 50px; }
 }
+.megamenu .navbar-collapse ul.secondary-menu {
+  flex-direction: row; 
+  margin-bottom: .5rem; 
+}
 @media (min-width: $screen-lg) {
   .topnav {
     a { 
