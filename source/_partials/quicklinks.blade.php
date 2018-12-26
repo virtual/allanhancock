@@ -29,7 +29,7 @@
   <li><a href="/cte/index.php">Career Technical Education (CTE)</a></li>
   <li><a href="/cjpc/index.php">Career/Job Placement Center (CJPC)</a></li>
   <li><a href="/public_affairs/Catalog.php">Catalog</a></li>
-  <li><a href="http://dfl.hancockcollege.edu/Presidents_Office/docs/CCPD Councils and Committees Manual.pdf">CCPD Councils and Committees Manual (PDF)</a></li>
+  <li><a href="https://dfl.hancockcollege.edu/Presidents_Office/docs/CCPD%20Councils%20and%20Committees%20Manual.pdf">CCPD Councils and Committees Manual <span class="far fa-file-pdf"><span class="sr-only">PDF</span></span></a></li>
   <li><a href="/childrens_center/index.php">Children's Center</a></li>
   <li><a href="http://bannerweb.hancockcollege.edu/prod/pw_sigsched.p_search">Class Search</a></li>
   <li><a href="/admissions_records/college-now.php">College Now!</a></li>

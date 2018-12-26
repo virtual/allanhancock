@@ -1,6 +1,6 @@
 @extends('_layouts.home')
 
-@section('hero1')
+@section('headcode')
 <style type="text/css">
   .homepage-banner.hero-1{
     background-image: url(./resources/img/homepage/banner-1920.jpg);
@@ -18,6 +18,29 @@
     }
   } 						 
  </style>
+
+ <!-- search -->
+ <style type="text/css">
+  .banner-search .homepage-banner .hero-image-wrapper  {
+    background-image: url('./resources/img/stock/alexis-brown-85793-unsplash.jpg')
+  }
+  
+  /* @media screen and (max-width: 900px) { 						
+   .banner-search .homepage-banner .hero-image-wrapper  {
+      background-image: url('./resources/img/ctas/cta-01.jpg')
+    }
+  } 
+  
+  @media screen and (max-width: 479px) {  
+    .banner-search .homepage-banner .hero-image-wrapper  {
+      background-image: url('./resources/img/ctas/cta-01.jpg')
+    }
+  } 						  */
+ </style>
+@endsection
+
+@section('hero1')
+
 
 <section class="hero left bg-primary">
   <div class="hero-image-wrapper"></div>
@@ -59,7 +82,7 @@
 <h2>See yourself here!</h2>
 <p><a href="#" class="more-arrow">Register for fall classes today!</a></p>
 <div class="delayAnimation">
-  <img class="lazy" src="./resources/img/homepage/ahc-mobile.jpg" />
+  <img class="lazy" src="./resources/img/homepage/ahc-mobile.jpg" alt="Students holding up phones displaying their future selves working in their fields" />
 </div>
 
 @endsection
@@ -136,23 +159,7 @@
 @section('banner-search')
 <section class="hero left">
     <div class="hero-image-wrapper jarallax"></div>
-    <style type="text/css">
-      .banner-search .homepage-banner .hero-image-wrapper  {
-        background-image: url('./resources/img/stock/alexis-brown-85793-unsplash.jpg')
-      }
-      
-      /* @media screen and (max-width: 900px) { 						
-       .banner-search .homepage-banner .hero-image-wrapper  {
-          background-image: url('./resources/img/ctas/cta-01.jpg')
-        }
-      } 
-      
-      @media screen and (max-width: 479px) {  
-        .banner-search .homepage-banner .hero-image-wrapper  {
-          background-image: url('./resources/img/ctas/cta-01.jpg')
-        }
-      } 						  */
-     </style>
+
 <div class="hero-caption">
        <h2 class="heading">What are you interested in learning?</h2>
 
@@ -163,8 +170,8 @@
     <div class="form-group">
         <div class="input-group">
         
-      <label for="search-box">Search programs</label>
-      <input name="query" class="queryAutocomplete" id="search-box" type="text" placeholder="Search programs of study"  /> 
+      <label for="program-search-box">Search programs</label>
+      <input name="query" class="queryAutocomplete" id="program-search-box" type="text" placeholder="Search programs of study"  /> 
       <button type="submit" class="btn btn-primary"><span class="fa fa-search"></span></button>
       </div>
     </div>

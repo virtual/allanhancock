@@ -299,7 +299,7 @@
         </div>
         </div>
       </li>
-      
+
 
         <li class="dropdown dropdown-search">
           <a class="dropdown-toggle" href="#"><span class="d-lg-none">Search</span> <span class="d-none d-lg-block sr-only">Search</span><span class="fa fa-search"></span></a>
@@ -326,7 +326,9 @@
       
       </ul>
       <div class="d-block d-lg-none"> 
-        @include ('_partials.topnav') 
+        <ul class="topnav-links">
+          @include ('_partials.topnav') 
+        </ul>
       </div>
     </div>
   </div>

@@ -34,6 +34,7 @@
       }
     </style>
   </noscript>
+  @yield('headcode')
 
   <!-- Analytics -->
 </head>
@@ -115,8 +116,7 @@
     
     <!-- <script src="{{ $page->baseUrl }}/assets/js/lazyload.js"></script> -->
     <script src="{{ $page->baseUrl }}/assets/js/main.js"></script> 
-    
-</script>
+     
 </body>
 
 </html>

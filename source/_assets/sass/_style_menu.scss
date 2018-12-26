@@ -259,6 +259,9 @@
     height: 50vh; overflow-y: auto;
     .subnav > ul {
       flex-basis: unset;
+      padding: 0;
+      a { text-decoration: none; } 
+      a:hover { text-decoration: underline; }
     }
   }
   .dropdown-toggle:after {
