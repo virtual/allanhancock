@@ -2699,6 +2699,7 @@ pre code {
 
 .megamenu .secondary-menu a.btn {
   min-width: 50px;
+  font-size: 0.8125rem;
 }
 
 .megamenu .navbar-collapse ul.secondary-menu {
@@ -2709,26 +2710,34 @@ pre code {
   margin-bottom: .5rem;
 }
 
+@media (min-width: 768px) and (max-width: 1080px) {
+  .topnav:last-of-type ul:first-child li:last-child {
+    display: none;
+  }
+  .topnav:last-of-type ul:first-child li:nth-last-child(2) a {
+    border-right: 0;
+  }
+}
+
 @media (min-width: 992px) {
   .topnav a {
     border-right: 1px solid #000;
+    font-size: 0.8125rem;
+    padding: 0 .75rem;
   }
   .topnav li {
     float: left;
   }
   .topnav .secondary-menu {
-    text-align: right;
-    float: right;
-  }
-  .topnav .secondary-menu li {
-    float: left;
-    height: 100%;
-    overflow: hidden;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
   }
   .topnav li a.btn {
     margin-top: 0;
     margin-bottom: 0;
+    height: 100%;
     margin-left: 15px;
+    border-color: transparent;
   }
   .topnav li:first-child a.btn {
     margin-left: 0;
@@ -2740,6 +2749,12 @@ pre code {
   }
   .topnav .d-flex ul {
     width: auto;
+  }
+}
+
+@media (min-width: 1200px) {
+  .topnav a {
+    padding: 0 1.25rem;
   }
 }
 

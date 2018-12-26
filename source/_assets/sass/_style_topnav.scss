@@ -31,30 +31,45 @@
     margin: 0;
   }
 }
-.megamenu .secondary-menu { margin-bottom: 0; padding: 1.5rem $mobilepadding 0; display: flex; justify-content: flex-start; align-items: flex-start; 
+.megamenu .secondary-menu { 
+  margin-bottom: 0; padding: 1.5rem $mobilepadding 0; display: flex; 
+  justify-content: flex-start; align-items: flex-start; 
   li { margin-right: 10px; width: auto; }
   li a { display:inline-block;}
-  a.btn { min-width: 50px; }
+  a.btn { min-width: 50px; font-size: 0.8125rem; }
 }
 .megamenu .navbar-collapse ul.secondary-menu {
   flex-direction: row; 
   margin-bottom: .5rem; 
 }
+@media (min-width: $screen-md) and (max-width: 1080px) {
+  .topnav:last-of-type ul:first-child li:last-child { display: none;}
+  .topnav:last-of-type ul:first-child li:nth-last-child(2) a {
+    border-right:0;
+  }
+}
 @media (min-width: $screen-lg) {
   .topnav {
+    // background: #f00; 
     a { 
-      border-right: 1px solid #000; }
-    li { float: left; }
-    .secondary-menu { text-align: right; float:right; 
-      li { float: left; height: 100%; overflow:hidden; } 
+      border-right: 1px solid #000; 
+      font-size: 0.8125rem; padding: 0 .75rem;
     }
-    li a.btn { margin-top: 0; margin-bottom: 0; margin-left: 15px;}
+    li { float: left; }
+    .secondary-menu { flex-shrink: 0;  }
+    // .secondary-menu { text-align: right; float:right; 
+    //   li { float: left; height: 100%; overflow:hidden; } 
+    // }
+    li a.btn { margin-top: 0; margin-bottom: 0; height: 100%; margin-left: 15px; border-color: transparent;}
     li:first-child a.btn { margin-left: 0}
     .d-flex {
       justify-content: space-between;
       ul { width: auto;}
     }
   }
+}
+@media (min-width: $screen-xl) {
+  .topnav a { padding: 0 1.25rem; }
 }
 #skiptocontent a {
   padding: 8px;
