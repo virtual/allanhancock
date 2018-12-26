@@ -138,18 +138,18 @@
     <div class="hero-image-wrapper jarallax"></div>
     <style type="text/css">
       .banner-search .homepage-banner .hero-image-wrapper  {
-        background-image: url(./resources/img/ctas/cta-01.jp.jpg
+        background-image: url('./resources/img/stock/alexis-brown-85793-unsplash.jpg')
       }
       
       /* @media screen and (max-width: 900px) { 						
-       .homepage-banner.hero-3 {
-        background-image: url(./resources/img/homepage/a3/medium.jpg);
+       .banner-search .homepage-banner .hero-image-wrapper  {
+          background-image: url('./resources/img/ctas/cta-01.jpg')
         }
       } 
       
       @media screen and (max-width: 479px) {  
-       .homepage-banner.hero-3 {
-        background-image: url(./resources/img/homepage/a3/small.jpg);
+        .banner-search .homepage-banner .hero-image-wrapper  {
+          background-image: url('./resources/img/ctas/cta-01.jpg')
         }
       } 						  */
      </style>
