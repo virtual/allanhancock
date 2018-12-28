@@ -2,9 +2,6 @@
   <h2 class="sr-only">Navigation</h2>
   <div class="container-fluid">
     <div class="d-flex d-block d-lg-none justify-content-between">
-      <div  class="flex-button">
-        &nbsp;
-    </div>
       <a class="navbar-brand" href="/">
         <img src="{{ $page->baseUrl }}/resources/img/logos/ahc-logo-mobile.png" srcset="{{ $page->baseUrl }}/resources/img/logos/ahc-logo-mobile2x.png 2x, {{ $page->baseUrl }}/resources/img/logos/ahc-logo-mobile3x.png 3x, {{ $page->baseUrl }}/resources/img/logos/ahc-logo-mobile4x.png 4x" alt="Allan Hancock College" />
       </a>

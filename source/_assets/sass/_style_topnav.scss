@@ -47,6 +47,14 @@
   flex-direction: row; 
   margin-bottom: .5rem; 
 }
+#mobile-menu-button {
+  margin-right: $mobilepadding - 40px;
+}
+@media (min-width: 400px) {
+  #mobile-menu-button {
+    margin-right: $mobilepadding - 12px;
+  }
+}
 @media (min-width: $screen-md) and (max-width: 1080px) {
   .topnav:last-of-type ul:first-child li:last-child { display: none;}
   .topnav:last-of-type ul:first-child li:nth-last-child(2) a {
@@ -96,7 +104,6 @@
   display:flex;
   border-radius: 0;
   flex-direction: row;
-  margin-right: $mobilepadding - 12px;
   .menubaricon { width: 2rem; height: 2rem; } 
   .menubartext {
     display: inline-block;
@@ -113,6 +120,7 @@
   .menubaricon, .menubartext { flex-grow:1;}
   .menubaricon path {fill:#000;transition: all .15s ease-out; border-radius: 99px; }
 }
+
 #mobile-search-button {
   text-align:right;
   font-size: 1.3rem;

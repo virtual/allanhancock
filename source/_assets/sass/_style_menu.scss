@@ -36,10 +36,17 @@
 }
 .flex-button-right {
   text-align: right;
+  flex-grow: 1;
 }
 .megamenu .navbar-brand {
-  flex-grow: 1;
-  margin-right:0; 
+  flex-grow: 0;
+  width: 100%;
+  margin-left: 46px;
+}
+@media (min-width: 400px) {
+  .megamenu .navbar-brand {
+    margin-left: 86px;
+  }
 }
 
 .dropdown-menu {
