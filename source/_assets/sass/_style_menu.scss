@@ -317,7 +317,7 @@
   }
 
   .dropdown {
-    position: unset;
+    position: static;
     .dropdown-menu {
       width: 100%;
       right:0; 
@@ -376,8 +376,12 @@
     .megamenu .navbar-collapse>ul li {
       margin: 0 !important; 
     }
+    .megamenu .dropdown.dropdown-quicklinks .dropdown-menu {
+      position: absolute; 
+      left:0;
+      right: 0;
+    }    
   }
-    
   .dropdown-menu .subnav {
     display: flex;
     align-items: flex-start;

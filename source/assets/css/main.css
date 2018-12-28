@@ -5381,7 +5381,7 @@ header#header {
     letter-spacing: .04em;
   }
   .dropdown {
-    position: unset;
+    position: static;
   }
   .dropdown .dropdown-menu {
     width: 100%;
@@ -5447,6 +5447,11 @@ header#header {
 @media all and (min-width: 992px) and (-ms-high-contrast: none), (min-width: 992px) and (-ms-high-contrast: active) {
   .megamenu .navbar-collapse > ul li {
     margin: 0 !important;
+  }
+  .megamenu .dropdown.dropdown-quicklinks .dropdown-menu {
+    position: absolute;
+    left: 0;
+    right: 0;
   }
 }
 

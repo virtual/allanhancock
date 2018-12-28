@@ -1499,9 +1499,8 @@ Object.defineProperty(item,'prepend',{configurable:true,enumerable:true,writable
 /***/ }),
 
 /***/ "./source/_assets/js/main.js":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
-"use strict";
 //import lazyLoadInit from "./lazyload-init";
 
 jQuery(document).ready(function () {
