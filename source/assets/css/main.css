@@ -2676,25 +2676,25 @@ pre code {
 
 .megamenu .secondary-menu {
   margin-bottom: 0;
-  padding: 1.5rem 40px 0;
+  padding: 1.5rem 20px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  margin-bottom: .5rem;
 }
 
 .megamenu .secondary-menu li {
-  margin-right: 10px;
-  width: auto;
+  margin-right: 0px;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.megamenu .secondary-menu li:last-child {
+  margin-bottom: 0;
 }
 
 .megamenu .secondary-menu li a {
-  display: inline-block;
+  display: block;
 }
 
 .megamenu .secondary-menu a.btn {
@@ -2703,6 +2703,8 @@ pre code {
 }
 
 .megamenu .navbar-collapse .topnav-links {
+  padding-left: 20px;
+  padding-right: 20px;
   margin-bottom: 0;
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -2715,18 +2717,46 @@ pre code {
 }
 
 .megamenu .navbar-collapse ul.secondary-menu {
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  margin-bottom: .5rem;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 #mobile-menu-button {
-  margin-right: 0px;
+  margin-right: 0;
 }
 
 @media (min-width: 400px) {
+  .megamenu .secondary-menu {
+    padding: 1.5rem 40px 0;
+  }
+  .megamenu .navbar-collapse .topnav-links {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .megamenu .navbar-collapse ul.secondary-menu {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .megamenu .secondary-menu {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .megamenu .secondary-menu li {
+    margin-right: 10px;
+    width: auto;
+    margin-bottom: 0;
+  }
+  .megamenu .secondary-menu li a {
+    display: inline-block;
+  }
   #mobile-menu-button {
     margin-right: 28px;
   }
@@ -4959,7 +4989,7 @@ header#header {
   font-weight: 800;
   color: #000;
   display: block;
-  padding: 25px 40px;
+  padding: 1rem 20px;
   font-size: 19px;
   text-transform: uppercase;
 }
@@ -4990,16 +5020,25 @@ header#header {
   margin-left: 46px;
 }
 
+.dropdown-menu {
+  padding: 0 20px;
+}
+
 @media (min-width: 400px) {
   .megamenu .navbar-brand {
     margin-left: 86px;
+  }
+  .dropdown-menu {
+    padding: 0 40px;
+  }
+  .navbar-collapse > ul > li > a {
+    padding: 25px 40px;
   }
 }
 
 .dropdown-menu {
   position: relative;
   color: inherit;
-  padding: 0 40px;
   border: 0;
   text-transform: none;
   margin: 0;

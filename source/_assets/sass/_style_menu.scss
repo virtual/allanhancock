@@ -18,7 +18,7 @@
       font-weight: 800;
       color: #000;
       display: block;
-      padding: 25px $mobilepadding; // 10px 15px
+      padding: 1rem $mobilepadding/2; // 10px 15px
       font-size: 19px;
       text-transform: uppercase;
     }
@@ -43,20 +43,27 @@
   width: 100%;
   margin-left: 46px;
 }
-@media (min-width: 400px) {
+.dropdown-menu { 
+  padding: 0 $mobilepadding/2;
+}
+@media (min-width: $mobile-xs) {
   .megamenu .navbar-brand {
     margin-left: 86px;
+  }
+  .dropdown-menu {
+    padding: 0 $mobilepadding;
+  }
+  .navbar-collapse > ul > li > a {
+    padding: 25px $mobilepadding;  
   }
 }
 
 .dropdown-menu {
   position: relative;
   color: inherit;
-  padding: 0 $mobilepadding;
   border: 0;
   text-transform: none;
-  margin:0;
-  
+  margin:0; 
  
   ul {
     padding: 0;
