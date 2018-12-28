@@ -49,6 +49,10 @@
   margin-bottom: 0; padding-top: 1rem; padding-bottom: 1rem;
   background-color: $light; 
   a { padding-left:0; padding-right: 0;}
+
+  flex-wrap: wrap;
+  flex-direction: row;
+  li { width: 50%;   } 
 }
 .megamenu .navbar-collapse ul.secondary-menu {
   flex-direction: column; 
@@ -84,11 +88,12 @@
 }
 @media (min-width: $screen-lg) {
   .topnav {
+    flex-wrap: nowrap; 
     a { 
       border-right: 1px solid #000; 
       font-size: 0.8125rem; padding: 0 .75rem;
     }
-    li { float: left; }
+    li { float: left; width: auto; }
     .secondary-menu { flex-shrink: 0;  }
     li a.btn { margin-top: 0; margin-bottom: 0; height: 100%; margin-left: 15px; border-color: transparent;}
     li:first-child a.btn { margin-left: 0}

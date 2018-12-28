@@ -4,11 +4,13 @@
   background-color: transparent;
   border: 0;
   a.more-arrow { 
-    text-transform: uppercase; font-size: 15px; font-weight: 700; 
+    text-transform: uppercase; 
+    // font-size: 15px; 
+    font-weight: 700; 
     display: block;
   }
   a.more-arrow:after {
-    font-size: 1.5rem;
+    // font-size: 1.5rem;
     position: relative;
     top: .2rem;
     // margin-left: .1rem;

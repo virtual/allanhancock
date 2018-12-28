@@ -17,6 +17,9 @@
   }
   p { font-size: 1.5rem;  }
 }
+.banner-search .homepage-banner { 
+  p { font-size: 1.25rem;  }
+}
 .homepage #maincontent { margin-bottom: 0; }
 .homepage-banner .hero {
   min-height: auto;
@@ -28,10 +31,12 @@
 }
 .homepage-banner .hero-caption {
   padding: 1.5rem 1.5rem 2.5rem 1.5rem;
+  p { transition: font-size .1s ease-in-out; }
   &.large-text p {
     margin:0;
     line-height: 1;
-    font-size: 3rem; text-transform: uppercase; 
+    font-size: 2rem; 
+    text-transform: uppercase; 
     letter-spacing: 0; 
     font-weight: 800;
   }
@@ -137,11 +142,16 @@
       padding-top:0;
       min-height: 400px;
     }
-  
+    .hero-caption.large-text p { font-size: 2.5rem; }
     .hero-caption { 
       position: absolute;
       padding: 2.5rem;
     }
+  }
+}
+@media (min-width: $screen-md) {
+  .homepage-banner {
+    .hero-caption.large-text p { font-size: 3.5rem; }
   }
 }
 @media (min-width: $screen-lg) { 
@@ -203,10 +213,13 @@
   .homepage .imagebutton { flex-grow: 0;}
 }
 
-
-
 .homepage .campaign { 
+  padding-top: 1rem; 
+  padding-bottom: 3rem;
   text-align: center;
+  h2 { font-weight: 800; text-transform: uppercase; font-size: 1.875rem; letter-spacing: .06em; padding-bottom: 0; margin: 0; }
+  p { font-size: 1.25rem;}
+  a { font-weight: 700; display: block; margin-bottom: 2rem; }
 }
 
 .homepage .news-events {

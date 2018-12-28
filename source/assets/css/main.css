@@ -1812,13 +1812,11 @@ h2, h3, h4, h5, h6 {
 
 .card a.more-arrow {
   text-transform: uppercase;
-  font-size: 15px;
   font-weight: 700;
   display: block;
 }
 
 .card a.more-arrow:after {
-  font-size: 1.5rem;
   position: relative;
   top: .2rem;
   padding-left: 0;
@@ -2709,11 +2707,21 @@ pre code {
   padding-top: 1rem;
   padding-bottom: 1rem;
   background-color: #d4d4d4;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
 .megamenu .navbar-collapse .topnav-links a {
   padding-left: 0;
   padding-right: 0;
+}
+
+.megamenu .navbar-collapse .topnav-links li {
+  width: 50%;
 }
 
 .megamenu .navbar-collapse ul.secondary-menu {
@@ -2772,6 +2780,10 @@ pre code {
 }
 
 @media (min-width: 992px) {
+  .topnav {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
   .topnav a {
     border-right: 1px solid #000;
     font-size: 0.8125rem;
@@ -2779,6 +2791,7 @@ pre code {
   }
   .topnav li {
     float: left;
+    width: auto;
   }
   .topnav .secondary-menu {
     -ms-flex-negative: 0;
@@ -5835,6 +5848,10 @@ header#header {
   font-size: 1.5rem;
 }
 
+.banner-search .homepage-banner p {
+  font-size: 1.25rem;
+}
+
 .homepage #maincontent {
   margin-bottom: 0;
 }
@@ -5853,10 +5870,15 @@ header#header {
   padding: 1.5rem 1.5rem 2.5rem 1.5rem;
 }
 
+.homepage-banner .hero-caption p {
+  -webkit-transition: font-size .1s ease-in-out;
+  transition: font-size .1s ease-in-out;
+}
+
 .homepage-banner .hero-caption.large-text p {
   margin: 0;
   line-height: 1;
-  font-size: 3rem;
+  font-size: 2rem;
   text-transform: uppercase;
   letter-spacing: 0;
   font-weight: 800;
@@ -5975,9 +5997,18 @@ header#header {
     padding-top: 0;
     min-height: 400px;
   }
+  .homepage-banner .hero-caption.large-text p {
+    font-size: 2.5rem;
+  }
   .homepage-banner .hero-caption {
     position: absolute;
     padding: 2.5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .homepage-banner .hero-caption.large-text p {
+    font-size: 3.5rem;
   }
 }
 
@@ -6072,7 +6103,28 @@ header#header {
 }
 
 .homepage .campaign {
+  padding-top: 1rem;
+  padding-bottom: 3rem;
   text-align: center;
+}
+
+.homepage .campaign h2 {
+  font-weight: 800;
+  text-transform: uppercase;
+  font-size: 1.875rem;
+  letter-spacing: .06em;
+  padding-bottom: 0;
+  margin: 0;
+}
+
+.homepage .campaign p {
+  font-size: 1.25rem;
+}
+
+.homepage .campaign a {
+  font-weight: 700;
+  display: block;
+  margin-bottom: 2rem;
 }
 
 .homepage .news-events h2 {
@@ -6547,6 +6599,10 @@ header#header {
 
 .locations h3 {
   font-size: 1.125rem;
+}
+
+.locations p a.more-arrow:after {
+  font-size: 1.25rem;
 }
 
 .banner-search {

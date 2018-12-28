@@ -69,9 +69,7 @@
 </div>
 
 <div class="container-fluid campaign"> 
-  <div class="py-5">
-    @yield('campaign') 
-  </div>
+  @yield('campaign') 
 </div>
 <div class="bg-dark">
   <div class="container-fluid news-events"> 
