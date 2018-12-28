@@ -96,7 +96,8 @@
   display:flex;
   border-radius: 0;
   flex-direction: row;
-  .menubaricon { width: 1.3rem; height: 1.3rem; } 
+  margin-right: $mobilepadding - 12px;
+  .menubaricon { width: 2rem; height: 2rem; } 
   .menubartext {
     display: inline-block;
     position: relative;
@@ -110,10 +111,7 @@
     letter-spacing: normal; 
   }
   .menubaricon, .menubartext { flex-grow:1;}
-  .menubaricon rect {fill:#000;transition: all .15s ease-out;}
-  &:hover, &:focus, &:active {
-    .menubar3 { width: 80px;}
-  }
+  .menubaricon path {fill:#000;transition: all .15s ease-out; border-radius: 99px; }
 }
 #mobile-search-button {
   text-align:right;
@@ -121,25 +119,25 @@
   border-radius: 0;
 } 
 /* close */
-#mobile-menu-button[aria-expanded=true], #mobile-search-button[aria-expanded=true] {
-  background: $light-yellow;
-}
+// #mobile-menu-button[aria-expanded=true], #mobile-search-button[aria-expanded=true] {
+//   background: $light-yellow;
+// }
 
-#mobile-menu-button[aria-expanded=true]  .menubaricon rect {
+#mobile-menu-button[aria-expanded=true] .menubaricon path {
   fill: #000;
 }
 
-#mobile-menu-button[aria-expanded=true]  .menubaricon rect.menubar1 {
+#mobile-menu-button[aria-expanded=true] .menubaricon path.menubar1 {
   
-  transform-origin: 20px 20px;
+  transform-origin: 32px 24px;
   transform: translateY(10px) rotate(45deg);
   fill: #000;
 
 }
-#mobile-menu-button[aria-expanded=true]  .menubaricon rect.menubar2 {
+#mobile-menu-button[aria-expanded=true]  .menubaricon path.menubar2 {
    transform: translateY(10px) rotate(-45deg); 
-  transform-origin: 30px 20px;
+  transform-origin: 48px 42px;
 }
-#mobile-menu-button[aria-expanded=true]  .menubaricon rect.menubar3 {
-  transform: translateX(-100px); // push out of svg box
+#mobile-menu-button[aria-expanded=true]  .menubaricon path.menubar3 {
+  transform: translateX(-250px); // push out of svg box
 }

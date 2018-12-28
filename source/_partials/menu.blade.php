@@ -12,7 +12,7 @@
           <button id="mobile-menu-button" class="navbar-toggler primary" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse"
           aria-expanded="false" aria-label="Toggle navigation">
           @include ('_svg.menu') 
-        <span class="menubartext">Menu</span>
+        <span class="sr-only">Menu</span>
         </button>
       </div>
     </div>
