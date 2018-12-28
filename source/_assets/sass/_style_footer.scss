@@ -168,12 +168,13 @@
   }
   a:hover { color: $secondary; }
 }
+#footer .row > div { order: 1; }
 .direct-edit-container { padding-top: 1rem; }
 @media (min-width: $screen-sm) {
-.footer-column-quicklinks { order: 2}
+  #footer .row > div.footer-column-quicklinks { order: 2}
 }
 @media (min-width: $screen-lg) {
-  .footer-column-quicklinks { order: unset;} 
+  #footer .row > div.footer-column-quicklinks { order: 1;} 
   .direct-edit-container { margin-top: -3rem; }
 }
 

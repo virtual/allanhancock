@@ -1,4 +1,4 @@
-import lazyLoadInit from "./lazyload-init";
+//import lazyLoadInit from "./lazyload-init";
 
 jQuery(document).ready(function() {
   

@@ -1,4 +1,5 @@
 .navbar-collapse {
+  max-width: 1200px;
   a {
     padding: 5px 10px;
     color: #000;
@@ -216,7 +217,7 @@
 
   }
 }
-@media (min-width: $screen-lg) {
+@media (min-width: $screen-lg) { 
   .dropdown-menu {
     position: absolute;
   }
@@ -350,7 +351,6 @@
       background-color: $secondary;
     }  
     .dropdown-menu { 
-
       li {
         display: block;
         width: auto;
@@ -367,11 +367,17 @@
     .navbar-collapse > ul { 
       display: flex;
       align-items: center;
-      width: 100%;
+      width: 100%; 
       justify-content: center;
     }
   }
-  
+  // IE Overrides for positioning of search and quicklinks megamenu items
+  @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    .megamenu .navbar-collapse>ul li {
+      margin: 0 !important; 
+    }
+  }
+    
   .dropdown-menu .subnav {
     display: flex;
     align-items: flex-start;
@@ -388,6 +394,7 @@
   .dropdown-menu .subnav.four-col > ul { 
     flex-basis: 25%; 
   }
+  
 }
  
 @media (max-width: $screen-lg - 1px) {
