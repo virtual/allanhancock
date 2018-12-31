@@ -3,7 +3,7 @@
     <div class="form-group">
         <div class="input-group">    
           <label for="search-box">Search</label>
-            <button type="submit" class="btn btn-primary"><span class="fa fa-search"></span></button>
+            <button type="submit" class="btn btn-primary"><span class="fa fa-search"></span><span class="sr-only">Submit</span></button>
       <input name="query" class="queryAutocomplete" id="search-box" type="text" placeholder="What would you like to know?"> 
       
       </div>

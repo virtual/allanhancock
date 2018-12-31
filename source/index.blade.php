@@ -172,7 +172,7 @@
         
       <label for="program-search-box">Search programs</label>
       <input name="query" class="queryAutocomplete" id="program-search-box" type="text" placeholder="Search programs of study"  /> 
-      <button type="submit" class="btn btn-primary"><span class="fa fa-search"></span></button>
+      <button type="submit" class="btn btn-primary"><span class="fa fa-search"></span><span class="sr-only">Submit</span></button>
       </div>
     </div>
   </form>
