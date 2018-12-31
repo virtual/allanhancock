@@ -28,7 +28,7 @@
           <a class="dropdown-toggle" href="#">About AHC</a>
 
           <div class="dropdown-menu">
-            <div class="subnav four-col">
+            <div class="subnav">
               <ul>
               <li>
               <h2>Directories</h2>
@@ -154,7 +154,7 @@
           <div class="dropdown-menu">
 
 
-            <div class="subnav four-col">
+            <div class="subnav">
               <ul>
               <li>
               <h2>Programs and Degrees</h2>
@@ -207,7 +207,7 @@
             <a class="dropdown-toggle" href="#">Admissions &amp; Registration</a>
 
           <div class="dropdown-menu">
-            <div class="subnav four-col">
+            <div class="subnav">
               <ul>
               <li>
               <h2>Applying for Admission</h2>

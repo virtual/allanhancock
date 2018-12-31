@@ -173,21 +173,22 @@
   &> a {
     display: none;
   } 
-  .dropdown-menu { top: auto; }
-  .dropdown-menu .dropdown-extra-text {
-    display: none;
-  }
-  .dropdown-menu .subnav input {
-    background: #fff;
-    padding: .5rem;
-    font-size: 1rem;
-    color: #000;
-  }
+ 
   .dropdown-menu {    
+    top: auto; 
     display: block;
     background: transparent;
     padding-top: 0; 
     padding-bottom:0;
+    .dropdown-extra-text {
+      display: none;
+    }
+    .subnav input {
+      background: #fff;
+      padding: .5rem;
+      font-size: 1rem;
+      color: #000;
+    }
     .input-group {
       justify-content: flex-start;
       flex-direction: row-reverse
@@ -220,10 +221,13 @@
 }
 @media (min-width: $screen-lg) { 
   .dropdown-menu {
-    position: absolute;
+    position: absolute; 
+    padding: 0;
   }
   .dropdown.dropdown-quicklinks .dropdown-menu {
     height: 50vh; overflow-y: auto;
+    
+    padding-left: 20px; padding-right: 20px;
     .subnav > ul {
       flex-basis: unset;
       padding: 0;
@@ -372,34 +376,37 @@
       justify-content: center;
     }
   }
-  // IE Overrides for positioning of search and quicklinks megamenu items
-  @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-    .megamenu .navbar-collapse>ul li {
-      margin: 0 !important; 
-    }
-    .megamenu .dropdown.dropdown-quicklinks .dropdown-menu {
-      position: absolute; 
-      left:0;
-      right: 0;
-    }    
-  }
+  
   .dropdown-menu .subnav {
     display: flex;
     align-items: flex-start;
     text-align: left;
     justify-content: left;
     & > ul {
-      flex-grow: 0;
-      flex-basis: 33.333%;
+      flex-grow: 1;
+      flex-basis: 0;
+      // flex-basis: 33.333%;
       flex-direction: column;
-      padding-left:20px; 
-      padding-right:20px;
+      padding-left:35px; 
+      padding-right:35px;
     }
   }
-  .dropdown-menu .subnav.four-col > ul { 
-    flex-basis: 25%; 
-  }
+  // .dropdown-menu .subnav.four-col > ul { 
+  //   flex-basis: 25%; 
+  // }
   
+}
+
+// IE Overrides for positioning of search and quicklinks megamenu items
+@media (min-width: $screen-lg)  and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .megamenu .navbar-collapse>ul li {
+    margin: 0 !important; 
+  }
+  .megamenu .dropdown.dropdown-quicklinks .dropdown-menu {
+    position: absolute; 
+    left:0;
+    right: 0;
+  }    
 }
  
 @media (max-width: $screen-lg - 1px) {
