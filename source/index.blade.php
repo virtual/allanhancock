@@ -1,7 +1,7 @@
 @extends('_layouts.home')
 
 @section('headcode')
-<style type="text/css">
+<style>
   .homepage-banner.hero-1{
     background-image: url(./resources/img/homepage/banner-1920.jpg);
   }
@@ -20,7 +20,7 @@
  </style>
 
  <!-- search -->
- <style type="text/css">
+ <style>
   .banner-search .homepage-banner .hero-image-wrapper  {
     background-image: url('./resources/img/stock/alexis-brown-85793-unsplash.jpg')
   }
@@ -158,6 +158,7 @@
 
 @section('banner-search')
 <section class="hero left">
+  <h2 class="sr-only">Programs</h2>
     <div class="hero-image-wrapper jarallax"></div>
 
 <div class="hero-caption">
