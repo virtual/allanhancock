@@ -6173,7 +6173,7 @@ header#header {
 
 @media (min-width: 480px) {
   .homepage .news-events .btn {
-    width: initial;
+    width: auto;
     margin-right: 28px;
   }
 }

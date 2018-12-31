@@ -1860,6 +1860,10 @@ var ahapp = {
     $('.jarallax').jarallax({
       speed: 0.2
     });
+  },
+  isMobile: function isMobile() {
+    return (/iPad|iPhone|iPod|Android/.test(navigator.userAgent)
+    );
   }
 };
 
@@ -1875,7 +1879,9 @@ ahapp.unWrapDuplicateULs();
 ahapp.tableHTML();
 ahapp.twoColNav();
 ahapp.addBreadcrumbPosition();
-ahapp.runParallax();
+if (!ahapp.isMobile()) {
+  ahapp.runParallax();
+}
 
 // Detect breakpoint ResponsiveBootstrapToolkit
 var ResponsiveBootstrapToolkit = __webpack_require__("./node_modules/responsive-toolkit/src/bootstrap-toolkit.js");
@@ -1910,6 +1916,7 @@ var ResponsiveBootstrapToolkit = __webpack_require__("./node_modules/responsive-
 // TODO: For images uses arrow notation :\
 // lazyLoadInit();
 
+// For animations
 __webpack_require__("./source/_assets/js/observables.js");
 
 /***/ }),

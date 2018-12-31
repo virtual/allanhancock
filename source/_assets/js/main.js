@@ -364,6 +364,9 @@ var ahapp = {
     $('.jarallax').jarallax({
       speed: 0.2
     });
+  },
+  isMobile: function () {
+    return /iPad|iPhone|iPod|Android/.test(navigator.userAgent);
   }
 };
 
@@ -379,7 +382,9 @@ ahapp.unWrapDuplicateULs();
 ahapp.tableHTML();
 ahapp.twoColNav();
 ahapp.addBreadcrumbPosition();
-ahapp.runParallax();
+if (!(ahapp.isMobile())) { 
+  ahapp.runParallax(); 
+}
 
 // Detect breakpoint ResponsiveBootstrapToolkit
 var ResponsiveBootstrapToolkit = require('responsive-toolkit');
@@ -418,4 +423,5 @@ var ResponsiveBootstrapToolkit = require('responsive-toolkit');
 // TODO: For images uses arrow notation :\
 // lazyLoadInit();
 
+// For animations
 require('./observables')

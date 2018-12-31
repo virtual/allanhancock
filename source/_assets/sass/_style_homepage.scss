@@ -233,7 +233,7 @@
 }
 @media (min-width: $screen-sm) {
   .homepage .news-events {
-    .btn { width: initial; margin-right: 28px; }
+    .btn { width: auto; margin-right: 28px; }
   }
 }
 @media (min-width: $screen-md) {
