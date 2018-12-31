@@ -158,7 +158,6 @@
 
 @section('banner-search')
 <section class="hero left">
-  <h2 class="sr-only">Programs</h2>
     <div class="hero-image-wrapper jarallax"></div>
 
 <div class="hero-caption">
