@@ -5056,6 +5056,7 @@ header#header {
 }
 
 .dropdown-menu {
+  top: 0;
   position: relative;
   color: inherit;
   border: 0;
@@ -5268,6 +5269,7 @@ header#header {
   .dropdown-menu {
     position: absolute;
     padding: 0;
+    top: auto;
   }
   .dropdown.dropdown-quicklinks .dropdown-menu {
     height: 50vh;
