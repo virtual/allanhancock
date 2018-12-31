@@ -5,7 +5,7 @@
         <h2 class="h3">Campus Locations</h2>
         <div class="row">
             <div class="col-12 col-sm-6 col-md-6 col-lg-3">
-              @include('_partials.card', [
+              @include('_partials.location', [
               'img' => './resources/img/locations/santa-maria.jpg',
               'heading' => 'Santa Maria Campus',
               'iconalt' => 'Santa Maria Campus', 
@@ -15,7 +15,7 @@
               ])
             </div>
             <div class="col-12 col-sm-6 col-md-6 col-lg-3">
-              @include('_partials.card', [
+              @include('_partials.location', [
               'img' => './resources/img/locations/lompoc.jpg',
               'heading' => 'Lompoc Valley Center',
               'iconalt' => 'Lompoc Valley Center', 
@@ -25,7 +25,7 @@
               ])
             </div>
      <div class="col-12 col-sm-6 col-md-6 col-lg-3">
-              @include('_partials.card', [
+              @include('_partials.location', [
               'img' => './resources/img/locations/vanderberg.jpg',
               'heading' => 'Vandenberg Air Force Base Center',
               'iconalt' => 'Vandenberg Air Force Base Center', 
@@ -35,7 +35,7 @@
               ])
             </div>
             <div class="col-12 col-sm-6 col-md-6 col-lg-3">
-              @include('_partials.card', [
+              @include('_partials.location', [
               'img' => './resources/img/locations/santa-ynez.jpg',
               'heading' => 'Santa Ynez Valley Center',
               'iconalt' => 'Santa Ynez Valley Center', 

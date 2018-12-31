@@ -151,9 +151,13 @@
   .dropdown.show .dropdown-menu {
     display: block !important;
   }
+  .dropdown > a:focus {
+    background: rgba(255, 255, 255, 0.35);
+  }
   .dropdown.show > a {    
     background-color: $light-yellow;
   }
+  
   .dropdown .dropdown-menu {
     border-radius: 0;
     width: 100%;

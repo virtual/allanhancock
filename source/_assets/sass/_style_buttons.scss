@@ -208,16 +208,15 @@ dl .btn-toggle { font-size: 1rem; }
   // transition: background-size .2s ease-in-out;
     transition: all .2s ease-in-out;
     height: 100%;
-    // filter:contrast(200%);
   }
-  &:hover .imagebutton-bgcolor {
-    // background-size: 108%; 
-  }
-  &:hover .imagebutton-bgcolor {
+  &:hover .imagebutton-bgcolor, a:focus + .imagebutton-bgcolor {
     // opacity: .8;
     transform: scale(1.08,1.08);    
-  }
-  &:hover .imagebutton-bgcolor p.imagebutton-title {
+  }  
+  a:focus + .imagebutton-bgcolor {  
+    filter:contrast(115%);
+   }
+  &:hover .imagebutton-bgcolor p.imagebutton-title, a:focus + .imagebutton-bgcolor p.imagebutton-title, {
     transform: scale(.925925992592593,.925925992592593);        
   }
   

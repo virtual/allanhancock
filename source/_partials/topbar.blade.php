@@ -1,3 +1,6 @@
+<div id="skiptocontent">
+  <a href="#maincontent" title="Skip Main Navigation">Skip Main Navigation</a>
+</div>
 <nav class="topnav nav nav-underline navbar-dark text-white">
   <div class="container-fluid d-flex justify-content-between align-items-center w-100">
     <ul class="">

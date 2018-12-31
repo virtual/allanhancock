@@ -166,7 +166,7 @@
   color: $secondary;
   border-bottom: 2px solid $secondary;
   }
-  a:hover { color: $secondary; }
+  a:hover, a:focus { color: $secondary; }
 }
 #footer .row > div { order: 1; }
 .direct-edit-container { padding-top: 1rem; }
