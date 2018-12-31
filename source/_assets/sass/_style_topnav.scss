@@ -59,6 +59,8 @@
 }
 #mobile-menu-button {
   margin-right: 0;
+  display: flex; 
+  .menubaricon { align-self: center;}
 }
 @media (min-width: $mobile-xs) {
   .megamenu .secondary-menu { 
@@ -123,7 +125,7 @@
 }
 
 #mobile-menu-button {
-  display:flex;
+  // display:flex;
   border-radius: 0;
   flex-direction: row;
   .menubaricon { width: 2rem; height: 2rem; } 
