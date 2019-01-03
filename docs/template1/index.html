@@ -36,7 +36,7 @@
   </noscript>
   
   <style>
-    .content-has-header-img .content-header { background-image: url(/resources/img/stock/alexis-brown-85793-unsplash.jpg
+    .content-header { background-image: url(https://virtual.github.io/allanhancock/resources/img/stock/alexis-brown-85793-unsplash.jpg
 ); }
   </style>
 
@@ -48,10 +48,13 @@
   <a href="#maincontent" title="Skip Main Navigation">Skip Main Navigation</a>
 </div>
 <nav class="topnav nav nav-underline navbar-dark text-white">
-  <div class="container-fluid d-flex justify-content-between align-items-center w-100">
+  <div class="container d-flex justify-content-between align-items-center w-100">
     <ul class="">
-      <li><a class="nav-link" href="https://virtual.github.io/allanhancock/index.html">Homepage</a></li>
+      <li><a class="nav-link" href="https://virtual.github.io/allanhancock/index.html">Home</a></li>
+      <li><a class="nav-link" href="https://virtual.github.io/allanhancock/enroll2/index.html">E2</a></li>
       <li><a class="nav-link" href="https://virtual.github.io/allanhancock/template1/index.html">T1</a></li>
+      <li><a class="nav-link" href="https://virtual.github.io/allanhancock/template2/index.html">T2</a></li>
+      <li><a class="nav-link" href="https://virtual.github.io/allanhancock/template3/index.html">T3</a></li>
       <!-- <li class="float-right"><a class="nav-link" href="https://virtual.github.io/allanhancock/timeline/index.html">Timeline</a></li> -->
     </ul>
   </div>
@@ -59,7 +62,7 @@
 
 
   <nav class="topnav nav nav-underline navbar-light d-none d-lg-block">
-    <div class="container-fluid d-flex">
+    <div class="container d-flex">
       <ul>
         <!-- com.omniupdate.div label="top-nav" group="TOP_Nav" button="792" path="/includes/top-nav.inc" break="break" -->
         <!-- com.omniupdate.div label="top-nav" group="TOP_Nav" button="792" path="/includes/top-nav.inc" break="break" -->
@@ -96,7 +99,7 @@
   </div>
   <nav class="nav nav-underline megamenu navbar-expand-lg navmenu" aria-label="Main Navigation">
   <h2 class="sr-only">Navigation</h2>
-  <div class="container-fluid">
+  <div class="menu-container">
     <div class="d-flex d-block d-lg-none justify-content-between">
       <a class="navbar-brand" href="/">
         <img src="https://virtual.github.io/allanhancock/resources/img/logos/ahc-logo-mobile.png" width="170" height="50" srcset="https://virtual.github.io/allanhancock/resources/img/logos/ahc-logo-mobile2x.png 2x, https://virtual.github.io/allanhancock/resources/img/logos/ahc-logo-mobile3x.png 3x, https://virtual.github.io/allanhancock/resources/img/logos/ahc-logo-mobile4x.png 4x" alt="Allan Hancock College" />
@@ -588,32 +591,29 @@
   <!-- INTERIOR -->
 
 
-<!-- INTERIOR TEMPLATE - Not program option template -->
-<div class="layout-master page-interior" id="maincontent">
-     <div class="content-has-header-img">      
+<!-- INTERIOR TEMPLATE -->
+ <div class="layout-has-left-nav layout-master page-interior" id="maincontent">
+ 
+      
     <!-- CONTENT HEADER ON -->
-    <!-- has content header -->
+        <!-- has content header -->
     <div class="content-header ">
-     <div class="container-fluid"> 
-          <div class="header-info"> 
+      <div class="header-image-overlay">
+        <div class="container">
+          <div class="header-info">
             <div class="header-content">
               <h1>Template 1
 </h1>
             </div>
-          </div><!-- end header info -->
-        </div><!-- end container-fluid -->
-      </div><!-- end content-header --> 
-
-    <div class="container-fluid">
+          </div>
+        </div><!-- end header info -->
+      </div><!-- end container-fluid -->
+    </div><!-- end content-header -->
+    
+    <div class="container">
       <div class="flex-layout-body">
 
-        <!-- determining opening classes  -->
-                <!-- has content leftnav -->
-                    <div class="layout-has-left-nav">
-           <!-- end check main sidebar-->
-            
-         <!-- END determining opening classes -->
-                
+ 
         <!-- if left nav -->
                 <nav class="left-nav">
           <a class="sr-only show-on-focus" href="#interior">Skip Navigation</a>
@@ -657,19 +657,18 @@
 
         <main class="content-container">
           <div class="content-section ">
-              <div class="breadcrumb" aria-label="breadcrumb">
-                  <ol>
+            <div class="breadcrumb" aria-label="breadcrumb">
+              <ol>
     <li><a href="#">Home</a></li>
     <li><a href="#">Templates</a></li>
-    <li><a aria-current="page" href="#">Template1</a></li>
+    <li><a aria-current="page" href="#">Template 1</a></li>
   </ol>
-                </div>
-                  
-
+            </div>
+                   
              
-  
-            <div id="interior">
-               
+            <div class="content-interior-wrapper">
+              <div id="interior">
+                 
 <!-- <h1>Lorem ipsum dolor sit amet </h1> -->
 <h2>Aenean commodo <a href="#">link</a> ligula eget </h2>
 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing  
@@ -684,8 +683,7 @@ ultricies nec, pellentesque eu, pretium quis, sem.</p>
 <h6>Associate of Typography</h6> 
 <p>Lorem ipsum dolor sit amet.</p> 
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut feugiat ultricies mauris ac efficitur. Donec.</p>
-
-
+ 
  
       <h3><em>College Now!</em> Requirements:
       </h3>
@@ -719,18 +717,19 @@ ultricies nec, pellentesque eu, pretium quis, sem.</p>
          
       </ul>
        
+              </div>
+
+              <!-- sidebar on -->
+                              <!-- end sidebar on -->
             </div>
           </div>
         </main>
 
-        <!-- sidebar on -->
-                <!-- end sidebar on -->
-
-            </div> <!-- closing div for determining opening classes -->
+       
+ 
             <!-- end layout has class-->
           </div> <!-- END .flex-layout-body -->
-        </div><!-- END .container-fluid -->
-      </div><!-- end content-has-header-img / content-no-header-img -->
+        </div><!-- END .container-fluid --> 
     </div><!-- END .layout-master page-interior -->
     <!-- end INTERIOR TEMPLATE -->
   <!-- end interior -->
@@ -740,9 +739,8 @@ ultricies nec, pellentesque eu, pretium quis, sem.</p>
    
   <div class="locations">
     <div class="py-5 bg-secondary">
-  <div class="container-fluid">
+  <div class="container">
     <section class="sectional sectional-padded">
-      <div class="container-fluid">
         <h2 class="h3">Campus Locations</h2>
         <div class="row">
             <div class="col-12 col-sm-6 col-md-6 col-lg-3">
@@ -778,7 +776,6 @@ ultricies nec, pellentesque eu, pretium quis, sem.</p>
     <p><a class="more-arrow" href="#"><span class="sr-only">Santa Ynez Valley Center </span>Map</a></p>  </div>
 </div>            </div>
         </div>
-      </div>
     </section>
   </div>
 </div>  
@@ -787,7 +784,7 @@ ultricies nec, pellentesque eu, pretium quis, sem.</p>
     <!-- FOOTER -->
   <div class="bg-primary" id="footer">
     <footer>
-  <div class="large-footer container-fluid">
+  <div class="large-footer container">
     <div class="inner">
         <div class="row">
      
