@@ -71,18 +71,20 @@
 @else<div class="layout-master page-interior" id="maincontent"> @endif 
       
     <!-- CONTENT HEADER ON -->
+    @if (trim($__env->yieldContent('content-header')))
     <!-- has content header -->
     <div class="content-header ">
       <div class="header-image-overlay">
-     <div class="container"> 
-          <div class="header-info"> 
+        <div class="container">
+          <div class="header-info">
             <div class="header-content">
               <h1>@yield('pagetitle')</h1>
             </div>
           </div>
-          </div><!-- end header info -->
-        </div><!-- end container-fluid -->
-      </div><!-- end content-header --> 
+        </div><!-- end header info -->
+      </div><!-- end container-fluid -->
+    </div><!-- end content-header -->
+    @endif
 
     <div class="container">
       <div class="flex-layout-body">

@@ -126,6 +126,9 @@ background-color: $light-yellow;
 @media (min-width: $screen-lg ) {
   .left-nav {    
     background-color: transparent;
+    
+  margin-left:0;
+  margin-right:0;
     h3 { margin:0;}
     .navbar-collapse ul > li { padding:0;
       a {

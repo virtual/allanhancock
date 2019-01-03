@@ -71,3 +71,8 @@ mew
 @section('locations')  
 true
 @endsection
+
+@section('content-heade2r')  
+true
+@endsection
+

@@ -45,13 +45,6 @@ section {
   max-width: 1200px;
 }
 
-@media (min-width: 992px) {
-  .container {
-    padding-left: 40px;
-    padding-right: 40px;
-  }
-}
-
 @media (min-width: 1280px) {
   .container {
     padding-left: 0;
@@ -1484,6 +1477,10 @@ body {
 
 /* FEATURE CONTENT HEADER IMAGES */
 @media (min-width: 992px) {
+  #header + .layout-master {
+    padding-top: 1rem;
+    margin-top: 20px;
+  }
   .content-header {
     height: 300px;
   }
@@ -5450,6 +5447,8 @@ header#header {
 @media (min-width: 992px) {
   .left-nav {
     background-color: transparent;
+    margin-left: 0;
+    margin-right: 0;
   }
   .left-nav h3 {
     margin: 0;
