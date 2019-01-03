@@ -13,7 +13,7 @@ Template 1
 <ol>
     <li><a href="#">Home</a></li>
     <li><a href="#">Templates</a></li>
-    <li><a class="active" aria-current="page" href="#">Template1</a></li>
+    <li><a aria-current="page" href="#">Template1</a></li>
   </ol>
 @endsection
    

@@ -5336,7 +5336,14 @@ header#header {
   margin-right: -15px;
 }
 
-.left-nav ul.nav {
+.left-nav h3 {
+  border-bottom: 3px solid #f0af13;
+  margin: 0px 23px;
+  padding: 20px;
+  font-size: 1rem;
+}
+
+.left-nav .navbar-collapse ul {
   padding: 0;
   padding-bottom: 1.5rem;
   background: #FFFFFF;
@@ -5351,56 +5358,53 @@ header#header {
           flex-direction: column;
 }
 
-.left-nav ul.nav > li {
+.left-nav .navbar-collapse ul > li {
   display: block;
   width: 100%;
   padding: 0px 23px;
+  font-weight: 700;
 }
 
-.left-nav ul.nav > li > div {
+.left-nav .navbar-collapse ul > li > div {
   position: relative;
 }
 
-.left-nav ul.nav > li ul {
+.left-nav .navbar-collapse ul > li ul {
   padding-left: 0px;
 }
 
-.left-nav ul.nav > li > a {
-  padding: 14px 1px;
+.left-nav .navbar-collapse ul > li > a {
+  color: #000;
+  padding: 12px 20px;
   display: block;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
   position: relative;
   z-index: 1;
   -webkit-transition: background-color 0.2s;
   transition: background-color 0.2s;
 }
 
-.left-nav ul.nav > li > a:hover {
+.left-nav .navbar-collapse ul > li > a:hover {
   text-decoration: underline;
   color: #003d7b;
 }
 
-.left-nav ul.nav > li:last-child > a {
+.left-nav .navbar-collapse ul > li:last-child > a {
   border-bottom: 0;
 }
 
-.left-nav ul.nav > li.menu-heading {
+.left-nav .navbar-collapse ul > li.menu-heading {
   padding: 14px 23px;
   font-weight: bold;
 }
 
-.left-nav ul.nav > li > ul {
-  font-weight: normal;
+.left-nav .navbar-collapse ul > li > ul {
+  padding-bottom: 0;
 }
 
-.left-nav ul.nav > li > ul a {
-  padding: 12px 0 12px 16px;
+.left-nav .navbar-collapse ul > li > ul a {
   display: block;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-}
-
-.left-nav ul.nav ul#subnav_child {
-  padding-bottom: 14px;
+  font-weight: 400;
 }
 
 .left-nav ul.nav > li.current {
@@ -5479,8 +5483,16 @@ header#header {
           transform: rotate(90deg);
 }
 
-.left-nav h3 {
-  border-bottom: 6px solid #f0af13;
+@media (min-width: 992px) {
+  .left-nav h3 {
+    margin: 0;
+  }
+  .left-nav .navbar-collapse ul > li {
+    padding: 0;
+  }
+  .left-nav .navbar-collapse ul > li > ul {
+    margin-left: 20px;
+  }
 }
 
 #footer footer {
