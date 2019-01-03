@@ -1,5 +1,5 @@
 @if(!empty($img)) <div class="card image-card"> @elseif(!empty($callout)) <div class="card callout"> @else <div class="card">  @endif
-  @if(!empty($img))<div class="card-image-container" style="background-image: url('{{ $img }}');"><a href="{{ $link }}"><img class="card-img-top" src="{{ $img }}" alt="{{ $iconalt }}" /></a></div>@endif
+  @if(!empty($img))<div class="card-image-container" style="background-image: url('{{ $img }}');"><a href="{{ $link }}"><img class="card-img-top" src="{{ $page->baseUrl }}{{ $img }}" alt="{{ $iconalt }}" /></a></div>@endif
   <div class="card-body">
     @if(!empty($icon))<span class="{{ $icon }}" aria-hidden="true"></span>@endif
     <h3 class="card-title">

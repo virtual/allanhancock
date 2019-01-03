@@ -5,6 +5,7 @@
   <div class="container-fluid d-flex justify-content-between align-items-center w-100">
     <ul class="">
       <li><a class="nav-link" href="{{ $page->baseUrl }}/index.html">Homepage</a></li>
+      <li><a class="nav-link" href="{{ $page->baseUrl }}/template1/index.html">T1</a></li>
       <!-- <li class="float-right"><a class="nav-link" href="{{ $page->baseUrl }}/timeline/index.html">Timeline</a></li> -->
     </ul>
   </div>

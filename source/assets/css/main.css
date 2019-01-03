@@ -3679,7 +3679,7 @@ dl:after {
 .breadcrumb {
   background: none;
   padding: 0;
-  font-size: 1rem;
+  font-size: .8rem;
   color: #444;
   line-height: 1.5;
 }
@@ -3717,28 +3717,18 @@ dl:after {
   cursor: default;
 }
 
-.breadcrumb ol.condensed li:nth-of-type(10n+2),
-.breadcrumb ol.condensed li:nth-of-type(10n+3),
-.breadcrumb ol.condensed li:nth-of-type(10n+4),
-.breadcrumb ol.condensed li:nth-of-type(10n+5),
-.breadcrumb ol.condensed li:nth-of-type(10n+6),
-.breadcrumb ol.condensed li:nth-of-type(10n+7),
-.breadcrumb ol.condensed li:nth-of-type(10n+8),
-.breadcrumb ol.condensed li:nth-of-type(10n+9),
-.breadcrumb ol.condensed li:nth-of-type(10n) {
-  display: none;
-}
-
-.breadcrumb ol.condensed li:last-child {
-  display: inline !important;
-}
-
-.breadcrumb ol.condensed li:after {
-  content: "...";
-}
-
-.breadcrumb ol.condensed li:last-child:after {
-  content: '';
+.breadcrumb ol li + li:before {
+  content: "/";
+  background-color: transparent;
+  display: inline-block;
+  text-align: center;
+  padding: .05em .55em 0 .35em;
+  font-weight: 400;
+  font-size: 1em;
+  line-height: 1;
+  opacity: .8;
+  bottom: 0;
+  position: relative;
 }
 
 .breadcrumb ol a {
@@ -3748,46 +3738,6 @@ dl:after {
 
 .breadcrumb ol li {
   margin: auto;
-}
-
-.breadcrumb ol li + li:before {
-  content: '\F054';
-  background-color: transparent;
-  font-family: "Font Awesome 5 Free";
-  display: inline-block;
-  text-align: center;
-  padding: 4px .45rem 0 .35rem;
-  font-weight: 900;
-  font-size: .7rem;
-  opacity: .7;
-  bottom: 0;
-  position: relative;
-}
-
-.bg-primary,
-.bg-primary .breadcrumb {
-  color: #fff;
-}
-
-.bg-primary li a,
-.bg-primary .breadcrumb li a {
-  text-shadow: none;
-  background-image: none;
-}
-
-.bg-primary li a.active,
-.bg-primary .breadcrumb li a.active {
-  color: inherit;
-  font-weight: bold;
-}
-
-.content-header .breadcrumb {
-  margin-bottom: 1.5rem;
-  margin-top: .5rem;
-}
-
-main .breadcrumb ol, .sectional .breadcrumb ol, .content-container .breadcrumb ol {
-  margin-left: 0;
 }
 
 .alert {
@@ -4552,18 +4502,18 @@ ul.list-inline.inline-list-padded li:after {
   clear: both;
 }
 
-ul.list-unstyled, ol.list-unstyled, main .card-links, .content-container .card-links, .sectional .card-links, * .card-links, .breadcrumb ol, .breadcrumb li, .left-nav ul, .left-nav li, .popup-gallery ul.thumbnails {
+ul.list-unstyled, ol.list-unstyled, main .card-links, .content-container .card-links, .sectional .card-links, * .card-links, .left-nav ul, .left-nav li, .popup-gallery ul.thumbnails {
   list-style-type: none;
 }
 
-ul.list-unstyled li, ol.list-unstyled li, main .card-links li, .content-container .card-links li, .sectional .card-links li, * .card-links li, .breadcrumb ol li, .breadcrumb li li, .left-nav ul li, .left-nav li li, .popup-gallery ul.thumbnails li {
+ul.list-unstyled li, ol.list-unstyled li, main .card-links li, .content-container .card-links li, .sectional .card-links li, * .card-links li, .left-nav ul li, .left-nav li li, .popup-gallery ul.thumbnails li {
   padding-left: 0;
   margin: 0;
   text-indent: 0;
   position: relative;
 }
 
-ul.list-unstyled li:before, ol.list-unstyled li:before, main .card-links li:before, .content-container .card-links li:before, .sectional .card-links li:before, * .card-links li:before, .breadcrumb ol li:before, .breadcrumb li li:before, .left-nav ul li:before, .left-nav li li:before, .popup-gallery ul.thumbnails li:before {
+ul.list-unstyled li:before, ol.list-unstyled li:before, main .card-links li:before, .content-container .card-links li:before, .sectional .card-links li:before, * .card-links li:before, .left-nav ul li:before, .left-nav li li:before, .popup-gallery ul.thumbnails li:before {
   display: none;
   position: initial;
   top: auto;

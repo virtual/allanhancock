@@ -259,16 +259,9 @@
 </div>
 @endsection
 
-
- 
- 
-
-  @section('sectionals')
-  <div class="locations">
-    @include('_partials/locations')  
-  </div>
-  @endsection 
-  
+@section('locations')  
+true
+@endsection  
   
 @section('homepage')  
 true

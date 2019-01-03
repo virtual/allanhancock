@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
 
-  <meta name="theme-color" content="#00685e">
+  <meta name="theme-color" content="#003d7b">
   <title>Allan Hancock College</title>
   <meta property="og:title" content="Allan Hancock College" />
   <meta property="og:type" content="website" />
@@ -19,8 +19,7 @@
 
   <link rel="stylesheet" href="{{ $page->baseUrl }}/assets/css/bootstrap.css">
   <link rel="stylesheet" href="{{ $page->baseUrl }}/assets/css/main.css?v=2">
-  <link rel="stylesheet" href="{{ $page->baseUrl }}/assets/css/slick.css">
-  <link rel="stylesheet" href="{{ $page->baseUrl }}/assets/css/slick-theme.css">
+
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
   <noscript>
     <style>
@@ -35,52 +34,33 @@
       }
     </style>
   </noscript>
+  @yield('headcode')
 
   <!-- Analytics -->
 </head>
 
 <body>
   @include('_partials.topbar') 
+
+
+  <nav class="topnav nav nav-underline navbar-light d-none d-lg-block">
+    <div class="container-fluid d-flex">
+      <ul>
+        <!-- com.omniupdate.div label="top-nav" group="TOP_Nav" button="792" path="/includes/top-nav.inc" break="break" -->
+        @include('_partials.topnav') 
+        <!-- /com.omniupdate.div -->
+      </ul>
+      @include('_partials.topnav2') 
+    </div>
+  </nav>
+
   @include('_partials.header')
 
-  <!-- PROGRAM OPTION TEMPLATE -->
-  @if (trim($__env->yieldContent('layout-option')))
-  <div class="layout-master program-option" id="maincontent">
-    <div class="bg-primary content-header">
-      <div class="container-fluid">
-          <div class="breadcrumb" aria-label="breadcrumb">
-            @yield('breadcrumb')
-          </div> 
-          @yield('content-header')
-      </div>
-    </div>
- 
-    <!-- main content -->
-    <div class="container-fluid">
-      <div class="flex-layout-body">
-        <div class="layout-has-sidebar">
-          <main class="content-container">
-            <div class="content-section ">
-              @yield('content')
-            </div>
-         </main>
+  <!-- INTERIOR -->
 
-          <div id="sidebar-nav" class="sidebar-container overview">
-            <nav>
-              <a class="sr-only show-on-focus" href="#sectionals">Skip Navigation</a>
-              @yield('overview-nav')
-            </nav>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- END main content -->
-  </div>
-  <!-- end PROGRAM OPTION TEMPLATE -->
 
-  @else
-  <!-- INTERIOR TEMPLATE - Not program option template -->
-  <div class="layout-master page-interior" id="maincontent">
+<!-- INTERIOR TEMPLATE - Not program option template -->
+<div class="layout-master page-interior" id="maincontent">
     @if (trim($__env->yieldContent('content-header-img'))) <div class="content-has-header-img">@else  <div class="content-no-header-img"> @endif
     <!-- CONTENT HEADER ON -->
     @if (trim($__env->yieldContent('content-header'))) <!-- has content header -->
@@ -176,26 +156,25 @@
         </div><!-- END .container-fluid -->
       </div><!-- end content-has-header-img / content-no-header-img -->
     </div><!-- END .layout-master page-interior -->
-    @endif
     <!-- end INTERIOR TEMPLATE -->
+  <!-- end interior -->
 
-    <!-- all pages can have sectionals after main content -->
-    
-    @if (trim($__env->yieldContent('sectionals')))
-      <div id="sectionals"> @yield('sectionals') 
-    </div>
-    @endif
+
+
+  @if (trim($__env->yieldContent('locations'))) 
+  <div class="locations">
+    @include('_partials/locations')  
+  </div>
+  @endif
 
     <!-- FOOTER -->
-    <div id="footer">
-      @include('_partials/footer')
-    </div>
-    <script src="{{ $page->baseUrl }}/assets/js/jquery-3.3.1.min.js"></script>
-    <script src="{{ $page->baseUrl }}/assets/js/popper.min.js"></script>
-    <script src="{{ $page->baseUrl }}/assets/js/bootstrap.min.js"></script>
-    <script src="{{ $page->baseUrl }}/assets/js/main.js"></script>
-    <script src="{{ $page->baseUrl }}/assets/js/slick.min.js"></script>
-    <script src="{{ $page->baseUrl }}/assets/js/slick-app.js?v=4"></script>
+  <div class="bg-primary" id="footer">
+    @include('_partials/footer')
+  </div>
+  <script src="{{ $page->baseUrl }}/assets/js/jquery-3.3.1.min.js"></script>
+  <script src="{{ $page->baseUrl }}/assets/js/popper.min.js"></script>
+  <script src="{{ $page->baseUrl }}/assets/js/bootstrap.min.js"></script>
+  <script src="{{ $page->baseUrl }}/assets/js/main.js"></script> 
+    
 </body>
-
 </html>

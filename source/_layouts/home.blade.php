@@ -95,25 +95,25 @@
 </main>
 
 
-
-  <!-- all pages can have sectionals after main content -->
-  @if (trim($__env->yieldContent('sectionals'))) @yield('sectionals') @endif
-
-
-
-    <!-- FOOTER -->
-    <div class="bg-primary" id="footer">
-      @include('_partials/footer')
-    </div>
-    <script src="{{ $page->baseUrl }}/assets/js/jquery-3.3.1.min.js"></script>
-    <script src="{{ $page->baseUrl }}/assets/js/popper.min.js"></script>
-    <script src="{{ $page->baseUrl }}/assets/js/bootstrap.min.js"></script>
-    
-    <!-- homepage only -->
-    <script src='{{ $page->baseUrl }}/assets/js/jarallax.js'></script>
-    
-    <!-- <script src="{{ $page->baseUrl }}/assets/js/lazyload.js"></script> -->
-    <script src="{{ $page->baseUrl }}/assets/js/main.js"></script> 
+  @if (trim($__env->yieldContent('locations'))) 
+  <div class="locations">
+    @include('_partials/locations')  
+  </div>
+  @endif
+ 
+  <!-- FOOTER -->
+  <div class="bg-primary" id="footer">
+    @include('_partials/footer')
+  </div>
+  <script src="{{ $page->baseUrl }}/assets/js/jquery-3.3.1.min.js"></script>
+  <script src="{{ $page->baseUrl }}/assets/js/popper.min.js"></script>
+  <script src="{{ $page->baseUrl }}/assets/js/bootstrap.min.js"></script>
+  
+  <!-- homepage only -->
+  <script src='{{ $page->baseUrl }}/assets/js/jarallax.js'></script>
+  
+  <!-- <script src="{{ $page->baseUrl }}/assets/js/lazyload.js"></script> -->
+  <script src="{{ $page->baseUrl }}/assets/js/main.js"></script> 
      
 </body>
 
