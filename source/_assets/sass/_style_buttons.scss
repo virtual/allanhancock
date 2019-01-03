@@ -118,12 +118,7 @@ dl .btn-toggle { font-size: 1rem; }
 @media (min-width: $screen-md) {
   dl .btn-toggle { font-size: 1.1875rem; }
 }
-@media (max-width: $screen-sm - 1px) {
-.header-content {
-  .btn { width: 100%; margin-bottom: 1rem; }
-  .btn + .btn { margin-left: 0; }
-  }
-}
+ 
 @media (min-width: $screen-sm) {
   .btn {
     min-width: 150px; 

@@ -95,12 +95,7 @@ a.icon-white:after {
     color:#000;
   }
 }
-.content-header {
-  padding-top: 24px; // distance from stripe to img
-  padding-bottom: 38px;
-}
-.content-header.program:after { content: ''; display: table; clear:both;}
-.content-header.program .header-image img { width: 100%; max-width: auto;}
+ 
 .gray {
   color: $text-lightgray;
   p, ul, dl, ol { color: $text-lightgray;
@@ -128,7 +123,9 @@ p, ul, dl, ol, div {
   strong { color:#000; }
   // default to full width
 }
-
+.content-header { background-color: $primary; 
+  h1 {color: #fff;}
+} 
 @media (min-width: $screen-md) {
   .contact-us-box {
     &> h2 { width: 100%; clear:both; text-align: center; margin-top:0; }

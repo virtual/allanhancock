@@ -42,15 +42,7 @@ body {
 } 
 .layout-master {     
   position: relative;
-  &.program-option .layout-has-sidebar {
-    order: 3;
-    .sidebar-container{  
-      order: 2;
-    }
-    .content-container {
-      order: 1;
-    }
-  }
+ 
 }
   .layout-has-sidebar {  
     display: flex;
@@ -77,16 +69,9 @@ body {
     }
     .content-container {   flex-grow: 1;flex-shrink: 1; flex-direction: column; order: 1;}
   } 
-
+.content-header .header-info { padding-top: 3rem;}
 @media (min-width: $onecol) {
-  .subnav .toggle { display:none;}
-  .program-option .content-header {
-    .breadcrumb, .header-info { padding-right: 30%; padding-right: calc(25% + 20px); } // to wrap around sidenav
-  }
-  .program-option .content-header .header-info{
-    display: block;
-    .header-content, .header-image { width: auto; flex: initial;}
-  } 
+ 
 
   .layout-has-sidebar { 
     flex-direction: row;   
@@ -115,114 +100,40 @@ body {
 } 
  
 /* FEATURE CONTENT HEADER IMAGES */
-@media (max-width: $screen-md - 1px) {
-  .content-has-header-img {
-    .content-header {
-      padding-bottom: 0;
-      margin-bottom: 3rem;
-    }
-    .header-image {bottom: -1.5rem; position: relative;}
-  }
-}
 @media (min-width: $screen-lg) {
-  .content-has-header-img .content-header .header-info {
-    display:flex; 
-    .header-content, .header-image { width: 50%; flex: 1; }
-  } 
+ 
   .content-has-header-img .content-header {
-    .breadcrumb { width:50%; }
-  } 
+    height: 300px;
+    display:flex; 
+    justify-content: flex-end; align-items: flex-end;
+  }
+  .content-has-header-img .content-header .header-info {
+
+    .header-content { flex: 1;  }
+  }  
   .header-info {
     justify-content: center;
     align-items: center;
-  }
-  .content-header.page-interior .content-has-header-img .breadcrumb {   width: 50%; } 
-  .header-image {
-    position: static;
-    top: 0;
-    right: 0; 
-    height: 400px;
-    overflow-y: hidden;
-  } 
-  .header-image-clip {
-    position: absolute;
-    top: 0;
-    clip: rect(0px, 1000px, 500px, 20px);
-    right: 0;
-    left: 50%;
-    right: 0;
-    top: 24px; 
-  } 
-  .header-image img {
-    top: 24px;
-    right: 0;
-    right: 0;
-    width: 50%;
-    max-height: 100%;
-    z-index: 300;
-    height: 400px;
-    width: auto;
-    -o-object-position: center;
-    text-align: center; 
-  }
-  .center-cropped img {
-    min-height: 100%;
-    min-width: 100%;
-    /* IE 8 */
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
-    /* IE 5-7 */
-    filter: alpha(opacity=0);
-    /* modern browsers */
-    opacity: 0;
-  }
-  .center-cropped {
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  .center-cropped {
-    height: 450px;
-  }
-}
-
-@media (min-width: $screen-xl) {
-  .header-image, .header-image img { height: 450px; }
-  .center-cropped {
-    height: 500px;
-  }
+  }  
+ 
 }
 
 // PADDING AND MARGIN
-.content-header{ padding-bottom: 1rem; }
-.content-has-header-img .content-header .header-info .header-content {   margin-bottom: 2rem; } 
+.content-header{ padding-bottom: 1rem; } 
 #maincontent {
-  margin-bottom: 1.5rem;
-  &.program-option {
-    margin-bottom: 0;
-  }
-}
-#maincontent + #footer   { margin-top: 1.5rem;}
-#maincontent + #sectionals { margin-top: -1.5rem; } 
-.homepage #maincontent+#sectionals { margin-top:0;}
-.program-option p.lead { margin-top: 1rem;}
+  margin-bottom: 1.5rem; 
+} 
 
 @media (min-width: $screen-md) {
-  .layout-has-sidebar .content-container { padding-right: 40px; }  
-  .content-has-header-img .content-header { margin-bottom: 2.5rem; }
-  .content-no-header-img .flex-layout-body .sidebar-container { padding-top: 146px; } 
-  .content-no-header-img .content-header + .container-fluid .flex-layout-body .sidebar-container {
-    padding-top: 2rem;
-  } 
+  .layout-has-sidebar .content-container { padding-right: 40px; }    
   .page-interior .header-image {
       margin-bottom: -90px; // breadcrumb affects this distance
   }
 }
 @media (min-width: $screen-lg){
-  .page-interior {border-top: 1rem solid $light; padding-top: 0rem;}
+  .page-interior {  padding-top: 0rem;}
   .interior-hero + .page-interior, .program-option .content-header { border-top:0;  }
-  .content-header {   margin-top: 0rem;   border-top: 1rem solid $light; }
-  .content-header.bg-primary {  border-top: 1rem solid #01685e;}
-  .page-interior .content-header {   margin-top: -1rem;   }
+  .content-header {   margin-top: 0rem;  }  
 }
 
 @media (min-width: $onecol) {

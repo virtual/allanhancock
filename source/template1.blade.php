@@ -1,5 +1,14 @@
 @extends('_layouts.master')
 
+@section('pagetitle')
+Template 1
+@endsection
+
+@section('content-header-img')
+/resources/img/stock/alexis-brown-85793-unsplash.jpg
+@endsection
+
+
 @section('breadcrumb')
 <ol>
     <li><a href="#">Home</a></li>
@@ -10,8 +19,7 @@
    
 
  
-@section('content')
-      <h1>Not much here</h1>
+@section('content') 
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut feugiat ultricies mauris ac efficitur. Donec.</p>
 @endsection
   

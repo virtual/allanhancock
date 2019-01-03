@@ -36,6 +36,10 @@
   </noscript>
   @yield('headcode')
 
+  <style>
+    .content-has-header-img .content-header { background-image: url(@yield('content-header-img')); }
+  </style>
+
   <!-- Analytics -->
 </head>
 
@@ -62,35 +66,18 @@
 <!-- INTERIOR TEMPLATE - Not program option template -->
 <div class="layout-master page-interior" id="maincontent">
     @if (trim($__env->yieldContent('content-header-img'))) <div class="content-has-header-img">@else  <div class="content-no-header-img"> @endif
+      
     <!-- CONTENT HEADER ON -->
-    @if (trim($__env->yieldContent('content-header'))) <!-- has content header -->
-    @if (trim($__env->yieldContent('content-header-inverse'))) 
-    <div class="content-header bg-primary"> @else  <div class="content-header "> @endif
-     <div class="container-fluid">
-
-        <div class="breadcrumb" aria-label="breadcrumb">
-          @yield('breadcrumb')
-        </div>
-          
-          <div class="header-info">
-            
+    <!-- has content header -->
+    <div class="content-header ">
+     <div class="container-fluid"> 
+          <div class="header-info"> 
             <div class="header-content">
-              @yield('content-header')
+              <h1>@yield('pagetitle')</h1>
             </div>
-
-            @if (trim($__env->yieldContent('content-header-img')))  
-            <div class="header-image">
-              <div class="header-image-clip">
-                @yield('content-header-img')
-              </div>
-            </div>
-            @endif
-            
           </div><!-- end header info -->
-
         </div><!-- end container-fluid -->
-      </div><!-- end content-header -->
-    @endif <!-- end content-header IF -->
+      </div><!-- end content-header --> 
 
     <div class="container-fluid">
       <div class="flex-layout-body">
@@ -124,18 +111,15 @@
 
         <main class="content-container">
           <div class="content-section ">
+              <div class="breadcrumb" aria-label="breadcrumb">
+                  @yield('breadcrumb')
+                </div>
+                  
 
             @if (trim($__env->yieldContent('lead'))) 
               @yield('lead') 
             @endif 
-
-            @if (!trim($__env->yieldContent('content-header'))) 
-            <!-- if breadcrumb not in a content-header -->
-            <div class="breadcrumb" aria-label="breadcrumb">
-              @yield('breadcrumb')
-            </div>
-            @endif
-
+  
             <div id="interior">
               @yield('content')
             </div>
