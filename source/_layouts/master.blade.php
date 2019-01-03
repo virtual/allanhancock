@@ -37,7 +37,7 @@
   @yield('headcode')
 
   <style>
-    .content-has-header-img .content-header { background-image: url(@yield('content-header-img')); }
+    .content-header { background-image: url(@yield('content-header-img')); }
   </style>
 
   <!-- Analytics -->
@@ -63,18 +63,23 @@
   <!-- INTERIOR -->
 
 
-<!-- INTERIOR TEMPLATE - Not program option template -->
-<div class="layout-master page-interior" id="maincontent">
-    @if (trim($__env->yieldContent('content-header-img'))) <div class="content-has-header-img">@else  <div class="content-no-header-img"> @endif
+<!-- INTERIOR TEMPLATE -->
+@if ((trim($__env->yieldContent('left-nav'))) && (trim($__env->yieldContent('main-sidebar-content'))))
+<div class="layout-has-left-nav layout-has-sidebar layout-master page-interior" id="maincontent">
+@elseif (trim($__env->yieldContent('left-nav'))) <div class="layout-has-left-nav layout-master page-interior" id="maincontent">
+@elseif (trim($__env->yieldContent('main-sidebar-content'))) <div class="layout-has-sidebar layout-master page-interior" id="maincontent">
+@else<div class="layout-master page-interior" id="maincontent"> @endif 
       
     <!-- CONTENT HEADER ON -->
     <!-- has content header -->
     <div class="content-header ">
+      <div class="header-image-overlay">
      <div class="container-fluid"> 
           <div class="header-info"> 
             <div class="header-content">
               <h1>@yield('pagetitle')</h1>
             </div>
+          </div>
           </div><!-- end header info -->
         </div><!-- end container-fluid -->
       </div><!-- end content-header --> 
@@ -82,24 +87,7 @@
     <div class="container-fluid">
       <div class="flex-layout-body">
 
-        <!-- determining opening classes  -->
-        @if (trim($__env->yieldContent('left-nav')))
-        <!-- has content leftnav -->
-          @if (trim($__env->yieldContent('main-sidebar-content')))
-           <!-- has content sidebar --> 
-          <div class="layout-has-left-nav layout-has-sidebar">
-          @else
-          <div class="layout-has-left-nav">
-          @endif <!-- end check main sidebar-->
-            
-        @else <!-- OFF left -->
-            @if (trim($__env->yieldContent('main-sidebar-content'))) <!-- check sidebar -->
-            <div class="layout-has-sidebar">
-            @else
-            <div class="layout-no-sidebar"><!-- no sidebar, no left nav-->
-            @endif 
-        @endif <!-- END determining opening classes -->
-                
+ 
         <!-- if left nav -->
         @if (trim($__env->yieldContent('left-nav')))
         <nav class="left-nav">
@@ -133,12 +121,10 @@
         </div>                
         @endif
         <!-- end sidebar on -->
-
-            </div> <!-- closing div for determining opening classes -->
+ 
             <!-- end layout has class-->
           </div> <!-- END .flex-layout-body -->
-        </div><!-- END .container-fluid -->
-      </div><!-- end content-has-header-img / content-no-header-img -->
+        </div><!-- END .container-fluid --> 
     </div><!-- END .layout-master page-interior -->
     <!-- end INTERIOR TEMPLATE -->
   <!-- end interior -->

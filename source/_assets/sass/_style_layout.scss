@@ -45,14 +45,20 @@ body {
  
 }
   .layout-has-sidebar {  
-    display: flex;
-    flex-direction: column; 
+    // display: flex;
+    // flex-direction: column; 
     .sidebar-container, .content-container {
       min-height: 1px; // IE 11
       flex-direction: column;
       justify-content: center;
     }
   } 
+  .content-header { 
+    background-position: 40% 50%;
+    background-size: cover;
+  }
+  .header-image-overlay { background: rgba(0, 0, 0, 0.3); height: 100%; overflow: hidden; } 
+  .header-image-overlay > div, .content-header .header-info { height: 100%; }
 #maincontent {
   // TODO: Need to test this more, causing too much extra space
   // .layout-has-sidebar {  min-height: 100vh;  }
@@ -76,7 +82,7 @@ body {
  
 
   .layout-has-sidebar { 
-    flex-direction: row;   
+    // flex-direction: row;   
     max-width: $screen-xl;
     .sidebar-container { width: 25%; position: relative;}
     .content-container { width:75%;}
@@ -84,7 +90,7 @@ body {
       position: static;
     }
   }
-  .layout-has-left-nav { 
+  .layout-has-left-nav .flex-layout-body { 
     display: flex;
     flex-direction: row;  
     min-height: 1px;
@@ -104,13 +110,13 @@ body {
 /* FEATURE CONTENT HEADER IMAGES */
 @media (min-width: $screen-lg) {
  
-  .content-has-header-img .content-header {
+  .content-header {
     height: 300px;
-    display:flex; 
-    justify-content: flex-end; align-items: flex-end;
   }
-  .content-has-header-img .content-header .header-info {
+  .content-header .header-info {
 
+    display:flex; 
+    justify-content: flex-end; align-items: flex-end; 
     .header-content { flex: 1;  }
   }  
   .header-info {
@@ -121,7 +127,7 @@ body {
 }
 
 // PADDING AND MARGIN
-.content-header{ padding-bottom: 1rem; } 
+// .content-header{ padding-bottom: 1rem; } 
 #maincontent {
   margin-bottom: 1.5rem; 
 } 
@@ -131,17 +137,4 @@ body {
 }
 @media (min-width: $screen-lg){
   .content-header {   margin-bottom: 1rem;  }  
-}
-
-// @media (min-width: $onecol) {
-//   .layout-has-sidebar #sidebar-nav nav {
-//     position: absolute;
-//     top: 50px;
-//     padding: 0;
-//   }
-// }
-// @media (min-width: $screen-xl) {
-//   .layout-has-sidebar #sidebar-nav nav {
-//     width: 320px; // can't be dynamic due to static positioning
-//   }
-// }
+} 

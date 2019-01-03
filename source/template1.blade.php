@@ -17,7 +17,9 @@ Template 1
   </ol>
 @endsection
    
-
+@section('main-sidebar-content')
+mew
+@endsection
  
 @section('content') 
 @include('_partials/headers')
