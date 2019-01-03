@@ -45,6 +45,11 @@
   padding: 0 $mobilepadding/2;
 }
 .megamenu .navbar-collapse > ul > li > a { padding-right: 24px + $mobilepadding/2;  }
+.megamenu > div.menu-container {
+  max-width: $screen-xl;
+  width: 100%; 
+  margin: 0 auto;
+}  
 
 @media (min-width: $mobile-xs) {
   .megamenu .navbar-brand {
@@ -255,6 +260,12 @@
       margin-left: auto;
       }
     }
+    & > div.menu-container {
+      background-color: $secondary;
+      max-width: $screen-xl;
+      width: 100%; 
+      margin: 0 auto;
+    }  
   }
   .megamenu .dropdown-search, .megamenu .dropdown-quicklinks {   
     padding-top: 0;
@@ -351,9 +362,7 @@
     }
     li { width: auto;} 
     
-    & > .container-fluid {
-      background-color: $secondary;
-    }  
+
     .dropdown-menu { 
       li {
         display: block;

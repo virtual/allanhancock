@@ -19,12 +19,18 @@ h2 { font-weight: 600; }
 h2.small { font-size: 1.5rem;}
 section { min-height:1px;}
 
-.container-fluid { max-width: $screen-xl; }  
+.container { max-width: $screen-xl; 
+  
+}  
 @media (min-width: $screen-lg) {
-  .container-fluid { padding-left: 40px; padding-right: 40px; }  
+  .container { 
+    padding-left: 40px; padding-right: 40px; 
+    // margin-left: 40px; margin-right: 40px;
+    // padding-left: 0; padding-right: 0; 
+  }  
 }
 @media (min-width: $screen-xl + 80px) {
-  .container-fluid { padding-left: 0; padding-right: 0;   }
+  .container { padding-left: 0; padding-right: 0;   }
 }
 
 body {

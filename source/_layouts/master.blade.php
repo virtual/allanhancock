@@ -48,7 +48,7 @@
 
 
   <nav class="topnav nav nav-underline navbar-light d-none d-lg-block">
-    <div class="container-fluid d-flex">
+    <div class="container d-flex">
       <ul>
         <!-- com.omniupdate.div label="top-nav" group="TOP_Nav" button="792" path="/includes/top-nav.inc" break="break" -->
         @include('_partials.topnav') 
@@ -74,7 +74,7 @@
     <!-- has content header -->
     <div class="content-header ">
       <div class="header-image-overlay">
-     <div class="container-fluid"> 
+     <div class="container"> 
           <div class="header-info"> 
             <div class="header-content">
               <h1>@yield('pagetitle')</h1>
@@ -84,7 +84,7 @@
         </div><!-- end container-fluid -->
       </div><!-- end content-header --> 
 
-    <div class="container-fluid">
+    <div class="container">
       <div class="flex-layout-body">
 
  

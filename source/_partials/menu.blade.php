@@ -1,6 +1,6 @@
 <nav class="nav nav-underline megamenu navbar-expand-lg navmenu" aria-label="Main Navigation">
   <h2 class="sr-only">Navigation</h2>
-  <div class="container-fluid">
+  <div class="menu-container">
     <div class="d-flex d-block d-lg-none justify-content-between">
       <a class="navbar-brand" href="/">
         <img src="{{ $page->baseUrl }}/resources/img/logos/ahc-logo-mobile.png" width="170" height="50" srcset="{{ $page->baseUrl }}/resources/img/logos/ahc-logo-mobile2x.png 2x, {{ $page->baseUrl }}/resources/img/logos/ahc-logo-mobile3x.png 3x, {{ $page->baseUrl }}/resources/img/logos/ahc-logo-mobile4x.png 4x" alt="Allan Hancock College" />

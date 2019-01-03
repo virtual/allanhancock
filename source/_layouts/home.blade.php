@@ -44,7 +44,7 @@
 
 
   <nav class="topnav nav nav-underline navbar-light d-none d-lg-block">
-    <div class="container-fluid d-flex">
+    <div class="container d-flex">
       <ul>
         <!-- com.omniupdate.div label="top-nav" group="TOP_Nav" button="792" path="/includes/top-nav.inc" break="break" -->
         @include('_partials.topnav') 
@@ -62,17 +62,17 @@
 
   </div> 
 </div>
-<div class="container-fluid subfeature">
+<div class="container subfeature">
     <div class="d-flex align-items-stretch">
       @yield('subfeature')
     </div>
 </div>
 
-<div class="container-fluid campaign"> 
+<div class="container campaign"> 
   @yield('campaign') 
 </div>
 <div class="bg-dark">
-  <div class="container-fluid news-events"> 
+  <div class="container news-events"> 
     <div class="py-5">
       @yield('news-events') 
     </div>
@@ -87,7 +87,7 @@
   </div>
 
 <div class="featureicon-container bg-primary">
-  <div class="container-fluid">
+  <div class="container">
     @yield('icons1')
     </div>
 </div>

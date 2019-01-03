@@ -83,7 +83,7 @@ body {
 
   .layout-has-sidebar { 
     // flex-direction: row;   
-    max-width: $screen-xl;
+    // max-width: $screen-xl;
     .sidebar-container { width: 25%; position: relative;}
     .content-container { width:75%;}
     .sidebar-container.overview {

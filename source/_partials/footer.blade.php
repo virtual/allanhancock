@@ -1,5 +1,5 @@
 <footer>
-  <div class="large-footer container-fluid">
+  <div class="large-footer container">
     <div class="inner">
         <div class="row">
      
