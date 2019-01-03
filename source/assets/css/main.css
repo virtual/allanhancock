@@ -1427,17 +1427,14 @@ body {
 }
 
 @media (min-width: 1025px) {
-  .layout-has-sidebar .sidebar-container {
+  .layout-has-sidebar .content-interior-wrapper #interior {
+    width: 75%;
+  }
+  .layout-has-sidebar .content-interior-wrapper .sidebar-container {
     width: 25%;
     position: relative;
   }
-  .layout-has-sidebar .content-container {
-    width: 75%;
-  }
-  .layout-has-sidebar .sidebar-container.overview {
-    position: static;
-  }
-  .layout-has-left-nav .flex-layout-body {
+  .layout-has-left-nav .flex-layout-body, .content-interior-wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1451,27 +1448,12 @@ body {
     margin: 0 auto;
   }
   .layout-has-left-nav .flex-layout-body .left-nav {
-    -webkit-box-ordinal-group: 2;
-        -ms-flex-order: 1;
-            order: 1;
     width: 25%;
     position: relative;
     padding-right: 30px;
   }
   .layout-has-left-nav .flex-layout-body .content-container {
-    -webkit-box-ordinal-group: 3;
-        -ms-flex-order: 2;
-            order: 2;
     width: 75%;
-    padding-left: 10px;
-  }
-  .layout-has-left-nav .flex-layout-body .sidebar-container {
-    -webkit-box-ordinal-group: 4;
-        -ms-flex-order: 3;
-            order: 3;
-  }
-  .layout-has-left-nav.layout-has-sidebar .content-container {
-    width: 50%;
   }
 }
 
@@ -1483,6 +1465,7 @@ body {
   }
   .content-header {
     height: 300px;
+    margin-top: -36px;
   }
   .content-header .header-info {
     display: -webkit-box;
@@ -1500,6 +1483,9 @@ body {
         -ms-flex: 1;
             flex: 1;
   }
+  .layout-has-left-nav .header-info {
+    margin-left: 25%;
+  }
   .header-info {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -1508,16 +1494,19 @@ body {
         -ms-flex-align: center;
             align-items: center;
   }
+  .header-content h1 {
+    padding-bottom: 2rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .content-header {
+    height: 440px;
+  }
 }
 
 #maincontent {
   margin-bottom: 1.5rem;
-}
-
-@media (min-width: 768px) {
-  .layout-has-sidebar .content-container {
-    padding-right: 40px;
-  }
 }
 
 @media (min-width: 992px) {
@@ -2347,6 +2336,15 @@ pre code {
 .btn.purplegradient, .btn.bluegradient {
   min-width: auto;
   color: #fff !important;
+}
+
+.fakeimg {
+  background: #f0af13;
+  padding: 10px;
+  height: 150px;
+  width: 100%;
+  display: block;
+  margin-bottom: 2rem;
 }
 
 .event-feed .post {
@@ -5332,6 +5330,7 @@ header#header {
   width: 100%;
   padding: 0px 23px;
   font-weight: 700;
+  font-size: 15px;
 }
 
 .left-nav .navbar-collapse ul > li > div {
@@ -5458,7 +5457,7 @@ header#header {
   }
   .left-nav .navbar-collapse ul > li a {
     border-bottom: 1px solid rgba(0, 0, 0, 0.3);
-    padding: 12px 20px;
+    padding: 10px 20px;
   }
   .left-nav .navbar-collapse ul > li > ul {
     margin-left: 20px;

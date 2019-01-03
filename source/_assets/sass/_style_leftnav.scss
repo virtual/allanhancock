@@ -24,6 +24,7 @@ background-color: $light-yellow;
       width: 100%; 
       padding: 0px 23px;
       font-weight: 700; 
+      font-size: 15px;
 			> div{
 				position: relative;
 			}
@@ -134,7 +135,7 @@ background-color: $light-yellow;
       a {
         border-bottom: 1px solid rgba(0, 0, 0, 0.3); 
         
-				padding: 12px 20px;
+				padding: 10px 20px;
       }
     }
     .navbar-collapse ul > li > ul { 

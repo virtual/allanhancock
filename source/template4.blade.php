@@ -1,7 +1,7 @@
 @extends('_layouts.master')
 
 @section('pagetitle')
-Template 1
+Template 4
 @endsection
 
 @section('content-header-img')
@@ -13,12 +13,21 @@ https://virtual.github.io/allanhancock/resources/img/stock/alexis-brown-85793-un
 <ol>
     <li><a href="#">Home</a></li>
     <li><a href="#">Templates</a></li>
-    <li><a aria-current="page" href="#">Template 1</a></li>
+    <li><a aria-current="page" href="#">Template 4</a></li>
   </ol>
 @endsection
-   
-@section('main-sidebar-content2')
-mew
+
+
+@section('main-sidebar-content')
+<h3>Manually Maintained Snippet</h3>
+<ul>
+  <li><a href="#">News Event</a></li>
+  <li><a href="#">News Event</a></li>
+  <li><a href="#">News Event</a></li>
+  <li><a href="#">News Event</a></li>
+</ul>
+<div class="fakeimg"></div>
+<div class="fakeimg"></div>
 @endsection
  
 @section('content') 

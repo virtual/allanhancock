@@ -101,28 +101,32 @@
 
         <main class="content-container">
           <div class="content-section ">
-              <div class="breadcrumb" aria-label="breadcrumb">
-                  @yield('breadcrumb')
-                </div>
-                  
-
+            <div class="breadcrumb" aria-label="breadcrumb">
+              @yield('breadcrumb')
+            </div>
+                   
             @if (trim($__env->yieldContent('lead'))) 
+            <div class="content-lead">
               @yield('lead') 
+            </div>
             @endif 
-  
-            <div id="interior">
-              @yield('content')
+            <div class="content-interior-wrapper">
+              <div id="interior">
+                @yield('content')
+              </div>
+
+              <!-- sidebar on -->
+                @if (trim($__env->yieldContent('main-sidebar-content')))
+                <div id="sidebar" class="sidebar-container">
+                  @yield('main-sidebar-content')
+                </div>                
+                @endif
+              <!-- end sidebar on -->
             </div>
           </div>
         </main>
 
-        <!-- sidebar on -->
-        @if (trim($__env->yieldContent('main-sidebar-content')))
-        <div id="sidebar" class="sidebar-container">
-          @yield('main-sidebar-content')
-        </div>                
-        @endif
-        <!-- end sidebar on -->
+       
  
             <!-- end layout has class-->
           </div> <!-- END .flex-layout-body -->

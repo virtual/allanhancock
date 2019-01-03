@@ -1,7 +1,7 @@
 @extends('_layouts.master')
 
 @section('pagetitle')
-Template 1
+Template 2
 @endsection
 
 @section('content-header-img')
@@ -13,12 +13,17 @@ https://virtual.github.io/allanhancock/resources/img/stock/alexis-brown-85793-un
 <ol>
     <li><a href="#">Home</a></li>
     <li><a href="#">Templates</a></li>
-    <li><a aria-current="page" href="#">Template 1</a></li>
+    <li><a aria-current="page" href="#">Template 2</a></li>
   </ol>
 @endsection
    
-@section('main-sidebar-content2')
-mew
+@section('lead')
+<p>Allan Hancock College is a California public community college located in northern Santa Barbara County. The college is ranked as one of the five best community colleges in California and one of the top 120 community colleges in the nation.</p>
+@endsection
+
+@section('main-sidebar-content')
+<div class="fakeimg"></div>
+<div class="fakeimg"></div>
 @endsection
  
 @section('content') 
