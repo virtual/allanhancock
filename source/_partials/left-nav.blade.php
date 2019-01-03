@@ -12,13 +12,7 @@
             <ul>
               <li><a href="/current_students/attendance.php">Attendance Requirements</a></li>
               <li><a href="/admissions_records/calendar.php">Academic Calendar</a></li>
-              <li><a href="/future_students/index.php">Apply &amp; Register</a>
-                <ul>
-                    <li><a href="/current_students/attendance.php">Attendance Requirements</a></li>
-                    <li><a href="/admissions_records/calendar.php">Academic Calendar</a></li>
-                    <li><a href="/future_students/index.php">Apply &amp; Register</a></li>
-                </ul>
-              </li>
+              <li><a href="/future_students/index.php">Apply &amp; Register</a></li>
               <li><a href="/cte/index.php">Career Technical Education Programs</a></li>
               <li><a href="/admissions_records/college-now.php">College Now!</a></li>
               <li><a href="/community_education/about.php">Community Education</a></li>

@@ -1525,34 +1525,11 @@ body {
   .layout-has-sidebar .content-container {
     padding-right: 40px;
   }
-  .page-interior .header-image {
-    margin-bottom: -90px;
-  }
 }
 
 @media (min-width: 992px) {
-  .page-interior {
-    padding-top: 0rem;
-  }
-  .interior-hero + .page-interior, .program-option .content-header {
-    border-top: 0;
-  }
   .content-header {
-    margin-top: 0rem;
-  }
-}
-
-@media (min-width: 1025px) {
-  .layout-has-sidebar #sidebar-nav nav {
-    position: absolute;
-    top: 50px;
-    padding: 0;
-  }
-}
-
-@media (min-width: 1200px) {
-  .layout-has-sidebar #sidebar-nav nav {
-    width: 320px;
+    margin-bottom: 1rem;
   }
 }
 
@@ -5330,10 +5307,11 @@ header#header {
 }
 
 .left-nav {
-  margin-bottom: 0;
+  margin-bottom: 1rem;
   padding: 0;
   margin-left: -15px;
   margin-right: -15px;
+  background-color: #ffedc2;
 }
 
 .left-nav h3 {
@@ -5346,7 +5324,6 @@ header#header {
 .left-nav .navbar-collapse ul {
   padding: 0;
   padding-bottom: 1.5rem;
-  background: #FFFFFF;
   border: 0;
   -webkit-box-shadow: 0;
           box-shadow: 0;
@@ -5375,13 +5352,10 @@ header#header {
 
 .left-nav .navbar-collapse ul > li > a {
   color: #000;
-  padding: 12px 20px;
+  padding: 6px 10px;
   display: block;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
   position: relative;
   z-index: 1;
-  -webkit-transition: background-color 0.2s;
-  transition: background-color 0.2s;
 }
 
 .left-nav .navbar-collapse ul > li > a:hover {
@@ -5428,20 +5402,6 @@ header#header {
   font-weight: 700;
 }
 
-@media (min-width: 480px) {
-  .left-nav {
-    margin-bottom: 25px;
-  }
-  .left-nav ul.nav {
-    padding-bottom: 0.875rem;
-    border: 1px solid rgba(0, 0, 0, 0.05);
-    -webkit-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.05);
-            box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.05);
-    border-radius: 5px;
-    margin-bottom: 1rem;
-  }
-}
-
 .left-nav .navbar-toggler {
   width: 100%;
   background-color: #f0af13;
@@ -5456,7 +5416,7 @@ header#header {
   text-align: left;
 }
 
-.left-nav .navbar-toggler:before {
+.left-nav .navbar-toggler:before, .left-nav ul li a:before {
   content: "\F138";
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
@@ -5483,15 +5443,43 @@ header#header {
           transform: rotate(90deg);
 }
 
+.left-nav ul li a:before {
+  margin-top: 1rem;
+  display: none;
+  margin-right: -15px;
+  height: 1rem;
+  width: 1rem;
+  font-size: 1rem;
+}
+
 @media (min-width: 992px) {
+  .left-nav {
+    background-color: transparent;
+  }
   .left-nav h3 {
     margin: 0;
   }
   .left-nav .navbar-collapse ul > li {
     padding: 0;
   }
+  .left-nav .navbar-collapse ul > li a {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    padding: 12px 20px;
+  }
   .left-nav .navbar-collapse ul > li > ul {
     margin-left: 20px;
+  }
+  .left-nav ul li a {
+    padding-right: 20px;
+  }
+  .left-nav ul li a:before {
+    display: inline-block;
+    visibility: hidden;
+    -webkit-transition: all .05s ease-out;
+    transition: all .05s ease-out;
+  }
+  .left-nav ul li a:hover:before {
+    visibility: visible;
   }
 }
 

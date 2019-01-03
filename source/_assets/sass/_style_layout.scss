@@ -128,25 +128,20 @@ body {
 
 @media (min-width: $screen-md) {
   .layout-has-sidebar .content-container { padding-right: 40px; }    
-  .page-interior .header-image {
-      margin-bottom: -90px; // breadcrumb affects this distance
-  }
 }
 @media (min-width: $screen-lg){
-  .page-interior {  padding-top: 0rem;}
-  .interior-hero + .page-interior, .program-option .content-header { border-top:0;  }
-  .content-header {   margin-top: 0rem;  }  
+  .content-header {   margin-bottom: 1rem;  }  
 }
 
-@media (min-width: $onecol) {
-  .layout-has-sidebar #sidebar-nav nav {
-    position: absolute;
-    top: 50px;
-    padding: 0;
-  }
-}
-@media (min-width: $screen-xl) {
-  .layout-has-sidebar #sidebar-nav nav {
-    width: 320px; // can't be dynamic due to static positioning
-  }
-}
+// @media (min-width: $onecol) {
+//   .layout-has-sidebar #sidebar-nav nav {
+//     position: absolute;
+//     top: 50px;
+//     padding: 0;
+//   }
+// }
+// @media (min-width: $screen-xl) {
+//   .layout-has-sidebar #sidebar-nav nav {
+//     width: 320px; // can't be dynamic due to static positioning
+//   }
+// }
