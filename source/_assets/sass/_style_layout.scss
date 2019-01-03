@@ -36,9 +36,9 @@ body {
   min-height: 1px; // for IE 11
 }  
 .flex-layout-body {
-  .left-nav, .content-container, .sidebar-container {
-    padding-top: 2rem; padding-bottom: 1rem;
-  }
+  // .left-nav, .content-container, .sidebar-container {
+  //   padding-top: 2rem; padding-bottom: 1rem;
+  // }
 } 
 .layout-master {     
   position: relative;
@@ -63,7 +63,9 @@ body {
   .layout-has-left-nav {  
     display: flex;
     flex-direction: column;
-    .left-nav {   flex-grow: 1; flex-shrink: 1; order:3;  }
+    .left-nav {   flex-grow: 1; flex-shrink: 1; 
+      // order:3;  
+    }
     .sidebar-container{  
       order: 2;
     }

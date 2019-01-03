@@ -224,7 +224,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#005aaa', end
 .btn {
  &.purplegradient, &.bluegradient {
    min-width: auto;
-   color: #fff; 
+   color: #fff !important;  
  }
 }
 

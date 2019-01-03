@@ -1,9 +1,8 @@
-.navbar-collapse {
+.megamenu .navbar-collapse {
   max-width: 1200px;
   a {
     padding: 5px 10px;
-    color: #000;
-    text-align: center;
+    color: #000; 
     display: block;
   }
 
@@ -45,7 +44,7 @@
 .dropdown-menu { 
   padding: 0 $mobilepadding/2;
 }
-.navbar-collapse > ul > li > a { padding-right: 24px + $mobilepadding/2;  }
+.megamenu .navbar-collapse > ul > li > a { padding-right: 24px + $mobilepadding/2;  }
 
 @media (min-width: $mobile-xs) {
   .megamenu .navbar-brand {
@@ -54,7 +53,7 @@
   .dropdown-menu {
     padding: 0 $mobilepadding;
   }
-  .navbar-collapse > ul > li > a {
+  .megamenu .navbar-collapse > ul > li > a {
     padding: 25px $mobilepadding; 
     padding-right: 24px + $mobilepadding;  
   }
@@ -172,12 +171,10 @@
 }
 .dropdown-quicklinks a { text-decoration: none; }
 
+.megamenu .navbar-collapse > ul > li.dropdown-search > a { display: none;}
 .megamenu .dropdown-search {
-  border-top: 0; padding-top: .75rem; 
-  &> a {
-    display: none;
-  } 
- 
+  border-top: 0; padding-top: .75rem;  
+  
   .dropdown-menu {    
     top: auto; 
     display: block;
@@ -264,7 +261,7 @@
     flex-grow: 0;
   
   }
-  .dropdown-search, .dropdown-quicklinks {
+  .megamenu .navbar-collapse .dropdown-search .dropdown-menu, .megamenu .navbar-collapse .dropdown-quicklinks .dropdown-menu {
     p, ul, ol, li, a {  color: #fff;  } 
     a { text-decoration: underline; padding: .25rem .5rem .25rem 0; font-weight: 400;  }
     a:hover { color: $secondary;  }
@@ -272,7 +269,7 @@
       background-color: $link-blue;
     }
   }
-  .navbar-collapse > ul > li > a { padding: 10px 15px; font-size: 15px; }
+  .megamenu .navbar-collapse > ul > li > a { padding: 10px 15px; font-size: 15px; }
 
   .dropdown > a:hover {
     text-decoration: none;
@@ -283,11 +280,8 @@
       color: $secondary;
     }
   } 
-
+  .megamenu .navbar-collapse > ul > li.dropdown-search > a { display: block;}
   .megamenu .dropdown-search {
-    &> a {
-      display: block;
-    } 
     .dropdown-menu .dropdown-extra-text {
       display: block;
     }
