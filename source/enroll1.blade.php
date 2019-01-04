@@ -20,6 +20,8 @@ https://virtual.github.io/allanhancock/resources/img/stock/alexis-brown-85793-un
  
 @section('content') 
 @include('_partials/headers')
+
+@include('_partials/cardgrid')
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut feugiat ultricies mauris ac efficitur. Donec.</p>
 
 
