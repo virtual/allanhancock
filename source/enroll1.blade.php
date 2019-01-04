@@ -68,5 +68,5 @@ true
 @endsection
 
 @section('custom-h1')  
-true
+<h1><span class="text-secondary large font-weight-normal">Apply to</span><br/> Allan Hancock<br/> College</h1>
 @endsection 

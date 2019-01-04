@@ -15,7 +15,7 @@ h1, .h1 {
   line-height: 1;
   font-weight: 800;
   text-transform: uppercase;
-  font-size: 3.125rem;
+  font-size: 2.725rem;
   letter-spacing: 0.08em;
 }
 h2, .h2, h3, .h3, h4, .h4 {
@@ -23,12 +23,12 @@ h2, .h2, h3, .h3, h4, .h4 {
   letter-spacing: 0.02em;
 }
 h2, .h2 {
-  font-size: 1.9375rem;
+  font-size: 1.6375rem;
   font-weight: 700;
 }
 h3, .h3 {
   color: #000; 
-  font-size: 1.25rem;
+  font-size: 1.15rem;
   text-transform: uppercase;
   font-weight: 800; 
 }
@@ -42,50 +42,39 @@ h6, .h6 {
 h2, h3, h4, h5, h6 {
   margin-top:.75em;
 }
-// @media (min-width: $screen-md) {
-//   // DESKTOP Heading sizes
-//   h1, .h1 {
-//     font-size: 3.4375rem;
-//     line-height: 1.16;
-//   }
-//   h2, .h2 {
-//     font-size: 2rem;
-//     line-height: 1.25;
-//   }
-//   h3, .h3 { 
-//     font-size: 1.5rem;
-//     line-height: 1.67;
-//   }
-//   h4, .h4 { 
-//     font-size: 1.1875rem;
-//     line-height: 1.68;
-//   }
-//   h5, .h5 { 
-//     font-size: 1rem;
-//     line-height: 1.5;
-//   }   
-// }
+@media (min-width: $screen-md) {
+  // DESKTOP Heading sizes
+  h1, .h1 {
+    font-size: 3.125rem;
+  }
+  h2, .h2 {
+    font-size: 1.9375rem;
+  }
+  h3, .h3 {
+    font-size: 1.25rem;
+  } 
+}
 
  
 .small {
-  font-size: 0.625rem;
-  line-height: 1.85;
+  font-size: 0.625em;
+  // line-height: 1.85;
 }
 .medium {
-  font-size: .75rem;
-  line-height: 1.85;
+  font-size: .75em;
+  // line-height: 1.85;
 }
 .large {
-  font-size: 0.8125rem;
-  line-height: 1.85;
+  font-size: 0.8125em;
+  // line-height: 1.85;
 }
 .xl {
-  font-size: 1rem;
-  line-height: 1.5;
+  font-size: 1em;
+  // line-height: 1.5;
 }
 .xxl {
-  font-size: 1.1875rem;
-  line-height: 2rem;
+  font-size: 1.1875em;
+  // line-height: 2;
 }
 
 // @media (min-width: $screen-md) {

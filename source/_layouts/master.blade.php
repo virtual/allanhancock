@@ -79,7 +79,7 @@
           <div class="header-info">
             <div class="header-content">
                 @if ((trim($__env->yieldContent('custom-h1'))))
-                  mew
+                 @yield('custom-h1')
                 @else 
                   <h1>@yield('pagetitle')</h1>
                 @endif
@@ -108,7 +108,7 @@
             <div class="breadcrumb" aria-label="breadcrumb">
               @yield('breadcrumb')
             </div>
-                   
+            @if (!(trim($__env->yieldContent('content-header'))))<h1>@yield('pagetitle')</h1>@endif
             @if (trim($__env->yieldContent('lead'))) 
             <div class="content-lead">
               @yield('lead') 

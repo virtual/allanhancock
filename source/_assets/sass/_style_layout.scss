@@ -98,6 +98,8 @@ body {
 #maincontent {
   margin-bottom: 1.5rem;
 }
+#interior > *:first-child {  margin-top:0; padding-top:0;}
+.breadcrumb + h1 { margin-bottom: 1rem;}
 @media (min-width: $screen-lg) {
   .layout-master {
     padding-top: 1rem;
