@@ -1,28 +1,22 @@
-$onecol: 1025px;
-
 // Holy grail layout
 body {
   display: flex;
   min-height: 100vh;
   flex-direction: column;
 }
-
 .flex-layout header,
 .flex-layout #footer {
   flex: none;
 }
-
 .flex-layout-body {
   flex-grow: 1;
   flex-direction: column;
   min-height: 1px;
 }
-
 .flex-layout-content {
   flex: 1 0 auto;
   flex-direction: column;
 }
-
 .layout-has-sidebar {
   display: flex;
   min-height: 1px;
@@ -36,19 +30,13 @@ body {
     width: 100%;
   }
 }
-
-.layout-master,
-#sectionals {
+.layout-master {
   flex-grow: 1;
   min-height: 1px; // for IE 11
-}
-
-.layout-master {
   position: relative;
 }
-
 .layout-has-sidebar {
-
+  // min-height: 1px;
   .sidebar-container,
   .content-container {
     min-height: 1px; // IE 11
@@ -56,17 +44,6 @@ body {
     justify-content: center;
   }
 }
-
-
-#maincontent {
-
-  // TODO: Need to test this more, causing too much extra space
-  // .layout-has-sidebar {  min-height: 100vh;  }
-  &.program-option .layout-has-sidebar {
-    min-height: 1px;
-  }
-}
-
 .layout-has-left-nav {
   display: flex;
   flex-direction: column;
@@ -74,41 +51,17 @@ body {
   .left-nav {
     flex-grow: 1;
     flex-shrink: 1;
-    // order:3;  
   }
-
-  .sidebar-container {
-    order: 2;
-  }
-
   .content-container {
     flex-grow: 1;
     flex-shrink: 1;
     flex-direction: column;
-    order: 1;
   }
 }
-
-.content-header .header-info {
-  padding-top: 3rem;
-}
-
 @media (min-width: $screen-lg) {
-
-
-  .layout-has-sidebar {
-
-    // flex-direction: row;   
-    // max-width: $screen-xl;
-    // .sidebar-container { width: 25%; position: relative;}
-    // .content-container { width:75%;}
-    // .sidebar-container.overview {
-    //   position: static;
-    // }
+ .layout-has-sidebar {
     .content-interior-wrapper {
-      #interior {
-        width: 75%;
-      }
+      #interior { width: 75%; }
 
       .sidebar-container {
         width: 25%;
@@ -129,33 +82,15 @@ body {
 
   .layout-has-left-nav .flex-layout-body {
     .left-nav {
-      // order: 1; 
       width: 25%;
       position: relative;
       padding-right: 30px;
     }
 
     .content-container {
-      // order: 2; 
       width: 75%;
-      // padding-left: 10px;
     }
   }
-
-  // .layout-has-left-nav.layout-has-sidebar .content-container {
-  //     width:50%;
-  // }
-}
-
-/* FEATURE CONTENT HEADER IMAGES */
-@media (min-width: $screen-lg) {
-
-  // If content-header is turned off
-  #header+.layout-master {
-    padding-top: 1rem;
-    margin-top: 20px;
-  }
- 
 }
  
 
@@ -163,4 +98,9 @@ body {
 #maincontent {
   margin-bottom: 1.5rem;
 }
- 
+@media (min-width: $screen-lg) {
+  .layout-master {
+    padding-top: 1rem;
+    margin-top: 20px;
+  }
+}

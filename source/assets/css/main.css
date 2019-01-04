@@ -1343,15 +1343,11 @@ body {
   width: 100%;
 }
 
-.layout-master,
-#sectionals {
+.layout-master {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
   min-height: 1px;
-}
-
-.layout-master {
   position: relative;
 }
 
@@ -1365,10 +1361,6 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-}
-
-#maincontent.program-option .layout-has-sidebar {
-  min-height: 1px;
 }
 
 .layout-has-left-nav {
@@ -1389,12 +1381,6 @@ body {
       flex-shrink: 1;
 }
 
-.layout-has-left-nav .sidebar-container {
-  -webkit-box-ordinal-group: 3;
-      -ms-flex-order: 2;
-          order: 2;
-}
-
 .layout-has-left-nav .content-container {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
@@ -1405,13 +1391,6 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-ordinal-group: 2;
-      -ms-flex-order: 1;
-          order: 1;
-}
-
-.content-header .header-info {
-  padding-top: 3rem;
 }
 
 @media (min-width: 992px) {
@@ -1446,21 +1425,25 @@ body {
   }
 }
 
-/* FEATURE CONTENT HEADER IMAGES */
+#maincontent {
+  margin-bottom: 1.5rem;
+}
+
 @media (min-width: 992px) {
-  #header + .layout-master {
+  .layout-master {
     padding-top: 1rem;
     margin-top: 20px;
   }
 }
 
-#maincontent {
-  margin-bottom: 1.5rem;
-}
-
 .content-header {
   background-position: 40% 50%;
   background-size: cover;
+}
+
+.content-header .header-info {
+  padding-top: 3rem;
+  height: 100%;
 }
 
 .header-image-overlay {
@@ -1469,16 +1452,15 @@ body {
   overflow: hidden;
 }
 
-.header-image-overlay > div,
-.content-header .header-info {
+.header-image-overlay > div {
   height: 100%;
 }
 
-/* FEATURE CONTENT HEADER IMAGES */
 @media (min-width: 992px) {
   .content-header {
     height: 300px;
     margin-top: -36px;
+    margin-bottom: 1rem;
   }
   .content-header .header-info {
     display: -webkit-box;
@@ -1515,12 +1497,6 @@ body {
 @media (min-width: 1200px) {
   .content-header {
     height: 440px;
-  }
-}
-
-@media (min-width: 992px) {
-  .content-header {
-    margin-bottom: 1rem;
   }
 }
 
