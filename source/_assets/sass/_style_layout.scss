@@ -9,79 +9,95 @@ body {
 
 .flex-layout header,
 .flex-layout #footer {
-  flex: none; 
-} 
+  flex: none;
+}
+
 .flex-layout-body {
   flex-grow: 1;
-  flex-direction: column;  
+  flex-direction: column;
   min-height: 1px;
 }
-.flex-layout-content { 
-  flex: 1 0 auto; 
-  flex-direction: column;   
-}  
-.layout-has-sidebar { 
-  display: flex; 
-  min-height: 1px; 
+
+.flex-layout-content {
+  flex: 1 0 auto;
+  flex-direction: column;
+}
+
+.layout-has-sidebar {
+  display: flex;
+  min-height: 1px;
   width: 100%;
   margin: 0 auto;
   flex-direction: column;
-  .sidebar-container, .content-container {
-    flex: 0 1 auto; 
-    width: 100%; 
-  } 
-}
-.layout-master, #sectionals {
-  flex-grow: 1; 
-  min-height: 1px; // for IE 11
-}  
-.flex-layout-body {
-  // .left-nav, .content-container, .sidebar-container {
-  //   padding-top: 2rem; padding-bottom: 1rem;
-  // }
-} 
-.layout-master {     
-  position: relative;
- 
-}
-  .layout-has-sidebar {  
-    // display: flex;
-    // flex-direction: column; 
-    .sidebar-container, .content-container {
-      min-height: 1px; // IE 11
-      flex-direction: column;
-      justify-content: center;
-    }
-  } 
-  .content-header { 
-    background-position: 40% 50%;
-    background-size: cover;
+
+  .sidebar-container,
+  .content-container {
+    flex: 0 1 auto;
+    width: 100%;
   }
-  .header-image-overlay { background: rgba(0, 0, 0, 0.3); height: 100%; overflow: hidden; } 
-  .header-image-overlay > div, .content-header .header-info { height: 100%; }
+}
+
+.layout-master,
+#sectionals {
+  flex-grow: 1;
+  min-height: 1px; // for IE 11
+}
+
+.layout-master {
+  position: relative;
+}
+
+.layout-has-sidebar {
+
+  .sidebar-container,
+  .content-container {
+    min-height: 1px; // IE 11
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+
 #maincontent {
+
   // TODO: Need to test this more, causing too much extra space
   // .layout-has-sidebar {  min-height: 100vh;  }
   &.program-option .layout-has-sidebar {
-    min-height: 1px; 
+    min-height: 1px;
   }
-} 
-  .layout-has-left-nav {  
-    display: flex;
-    flex-direction: column;
-    .left-nav {   flex-grow: 1; flex-shrink: 1; 
-      // order:3;  
-    }
-    .sidebar-container{  
-      order: 2;
-    }
-    .content-container {   flex-grow: 1;flex-shrink: 1; flex-direction: column; order: 1;}
-  } 
-.content-header .header-info { padding-top: 3rem;}
-@media (min-width: $onecol) {
- 
+}
 
-  .layout-has-sidebar { 
+.layout-has-left-nav {
+  display: flex;
+  flex-direction: column;
+
+  .left-nav {
+    flex-grow: 1;
+    flex-shrink: 1;
+    // order:3;  
+  }
+
+  .sidebar-container {
+    order: 2;
+  }
+
+  .content-container {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-direction: column;
+    order: 1;
+  }
+}
+
+.content-header .header-info {
+  padding-top: 3rem;
+}
+
+@media (min-width: $screen-lg) {
+
+
+  .layout-has-sidebar {
+
     // flex-direction: row;   
     // max-width: $screen-xl;
     // .sidebar-container { width: 25%; position: relative;}
@@ -90,71 +106,61 @@ body {
     //   position: static;
     // }
     .content-interior-wrapper {
-      #interior { width:75%;}
+      #interior {
+        width: 75%;
+      }
+
       .sidebar-container {
-      width: 25%; position: relative;
+        width: 25%;
+        position: relative;
       }
     }
   }
-  .layout-has-left-nav .flex-layout-body, .content-interior-wrapper { 
+
+  .layout-has-left-nav .flex-layout-body,
+  .content-interior-wrapper {
     display: flex;
-    flex-direction: row;  
+    flex-direction: row;
     min-height: 1px;
     max-width: $screen-xl;
     width: 100%;
-    margin: 0 auto; 
+    margin: 0 auto;
   }
-  .layout-has-left-nav .flex-layout-body { 
-    .left-nav { 
+
+  .layout-has-left-nav .flex-layout-body {
+    .left-nav {
       // order: 1; 
-      width: 25%; position: relative; padding-right: 30px; }
-    .content-container { 
+      width: 25%;
+      position: relative;
+      padding-right: 30px;
+    }
+
+    .content-container {
       // order: 2; 
-      width:75%; 
+      width: 75%;
       // padding-left: 10px;
     }
-  } 
+  }
+
   // .layout-has-left-nav.layout-has-sidebar .content-container {
   //     width:50%;
   // }
-} 
- 
+}
+
 /* FEATURE CONTENT HEADER IMAGES */
 @media (min-width: $screen-lg) {
- // If content-header is turned off
-  #header + .layout-master { padding-top: 1rem; margin-top:20px; }
-  .content-header {
-    height: 300px;
-    margin-top: -36px;
-  }
-  .content-header .header-info {
 
-    display:flex; 
-    justify-content: flex-end; align-items: flex-end; 
-    .header-content { flex: 1;  }
-  }  
-  .layout-has-left-nav .header-info { margin-left: 25%; }
-  .header-info {
-    justify-content: center;
-    align-items: center;
-  }  
- .header-content h1 { padding-bottom: 2rem; }
-}
-@media (min-width: $screen-xl) {
-  .content-header {
-    height: 440px;
+  // If content-header is turned off
+  #header+.layout-master {
+    padding-top: 1rem;
+    margin-top: 20px;
   }
+ 
 }
+ 
 
 // PADDING AND MARGIN
-// .content-header{ padding-bottom: 1rem; } 
 #maincontent {
-  margin-bottom: 1.5rem; 
-} 
-
-@media (min-width: $screen-md) {
-  // .layout-has-sidebar .content-container { padding-right: 40px; }    
+  margin-bottom: 1.5rem;
 }
-@media (min-width: $screen-lg){
-  .content-header {   margin-bottom: 1rem;  }  
-} 
+ 

@@ -73,12 +73,16 @@
     <!-- CONTENT HEADER ON -->
     @if (trim($__env->yieldContent('content-header')))
     <!-- has content header -->
-    <div class="content-header ">
+    @if ((trim($__env->yieldContent('custom-h1'))))<div class="content-header custom-heading-text">@else<div class="content-header ">@endif
       <div class="header-image-overlay">
         <div class="container">
           <div class="header-info">
             <div class="header-content">
-              <h1>@yield('pagetitle')</h1>
+                @if ((trim($__env->yieldContent('custom-h1'))))
+                  mew
+                @else 
+                  <h1>@yield('pagetitle')</h1>
+                @endif
             </div>
           </div>
         </div><!-- end header info -->
