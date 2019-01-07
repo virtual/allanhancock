@@ -1,7 +1,14 @@
 .cta-cards {
-  margin-bottom: 1rem;
-  
+  justify-content: stretch;
+  align-items: stretch;
   transition: all .2s ease-in-out;
+  > div { margin-bottom: 1rem;
+    a { background-color:  $secondary;
+      height: 100%;
+      display: block;
+      overflow:hidden;
+    }
+  }
 }
 
 .cta-cards a:hover {
@@ -49,7 +56,8 @@
     margin-right: .62rem;
     position: absolute;
     right:0; 
-    top: 30%;
+    top: 50%;
+    margin-top: -.5rem;
   }
 }
 
@@ -75,15 +83,49 @@
   text-align: left;
   text-transform: none;
   background-color: $secondary; 
-}
-
-.cta-cards.cta-heading-overlay a:hover figcaption {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-  .cta-caption { height: auto; visibility: visible;   } 
-  &:after {
-    top: 40%;
+  transition: padding-top, padding-bottom .1s ease-in-out;
+  .cta-caption {
+    transition: height .1s ease-in-out;
   }
 }
 
+.cta-cards.cta-heading-overlay a:hover figcaption {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  // .cta-caption { height: auto; visibility: visible;   } 
+  // &:after {
+  //   top: 50%;
+  // }
+}
+@media (min-width: $screen-sm) {
+  .cta-cards {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  .cta-cards.cta-heading-overlay figcaption {
+    position: relative;
+  }
+  .cta-cards.cta-heading-overlay a:hover figcaption {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}
+@media (min-width: $screen-md) {
+  .cta-cards.cta-heading-overlay figcaption {
+    position: absolute;
+  }
+  .cta-cards.cta-heading-overlay a:hover figcaption {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    .cta-caption { 
+      height: auto; visibility: visible;  
+    } 
+  }
+}
+@media (min-width: $screen-lg) {
+  .cta-cards.cta-heading-overlay a:hover figcaption {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+}
   
