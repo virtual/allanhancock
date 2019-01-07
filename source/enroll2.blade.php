@@ -1,7 +1,7 @@
 @extends('_layouts.master')
 
 @section('pagetitle')
-Enroll 2
+First-time college students
 @endsection
  
 
@@ -16,42 +16,14 @@ Enroll 2
  
  
 @section('content') 
-@include('_partials/headers')
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut feugiat ultricies mauris ac efficitur. Donec.</p>
-
-
- 
-      <h3><em>College Now!</em> Requirements:
-      </h3>
-      
-      <ul>
-         
-         <li>Be at least junior or senior high school status.</li>
-         
-         <li>Reside and be enrolled in Santa Barbara or San Luis Obispo county high schools or
-            home schools.
-         </li>
-         
-         <li>Students who have previously attended AHC must have a 2.0 cumulative GPA at AHC to
-            continue in the program.
-         </li>
-         
-         <li>Meet with their high school counselor to discuss eligibility, academic requirements,
-            and the rigor of college coursework.
-         </li>
-         
-         <li>Complete the <em>College Now!</em> Petition for Enrollment form; and obtain necessary signatures (high school principal/designee
-            and parent/guardian).
-         </li>
-         
-         <li>Enroll in a maximum of six (6) units per semester.</li>
-         
-         <li>Submit a completed AHC <em>College Now!</em> Petition for Enrollment form and unofficial high school transcripts prior to enrollment
-            to the AHC Admissions &amp; Records office or at the Santa Ynez Valley, VAFB, or Lompoc
-            Valley Center offices.
-         </li>
-         
-      </ul>
+<!-- ! Two-column snippet -->
+<div class="row">
+  <div class="col-12 col-md-6"><p>Whether you want to earn degree or certificate, prepare to transfer or embark on a career, AHC gives you the place to start. Follow these 7 steps to begin your journey of higher education at AHC.</p></div>
+  <div class="col-12 col-md-6"></div>
+</div>
+<!-- ! End Two-column snippet -->
+     
+@include('_partials/fancy-list')
        
 @endsection
   
