@@ -134,6 +134,34 @@
   
   h2, h3 { color: #fff; }
 }
+
+.homepage-banner.hero-1 {
+  position: relative;
+  // -webkit-filter: grayscale(100%); 
+  // filter: grayscale(100%);
+  
+  background-blend-mode: hard-light;
+  background-color: #003f7f;
+}
+.homepage-banner.hero-1 .hero-image-wrapper {
+  background: linear-gradient(
+    to top,
+    $primary,
+    rgba($primary, 0)
+  );
+}
+.homepage-banner.hero-1 .hero-image-wrapper:before {
+  background-color: #003f7f;
+  content: "";
+  height: 100%;
+  width: 100%;
+  padding: 30px;
+  display: block;
+  opacity: 1;
+  z-index: -1;
+  top: 0;
+  position: absolute; 
+}
 @media (min-width: $screen-sm) {
 
   .homepage-banner {

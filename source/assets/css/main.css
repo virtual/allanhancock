@@ -4358,12 +4358,11 @@ dl .btn-toggle {
   width: 100%;
   padding: 30px;
   display: block;
-  opacity: .8;
+  opacity: .7;
   z-index: -1;
   top: 0;
   position: absolute;
-  -webkit-filter: contrast(200%);
-          filter: contrast(200%);
+  background-blend-mode: hard-light;
 }
 
 .homepage .subfeature .d-flex .imagebutton:nth-child(4n+1) .imagebutton-title {
@@ -4371,19 +4370,20 @@ dl .btn-toggle {
 }
 
 .homepage .subfeature .d-flex .imagebutton:nth-child(4n+1) > .imagebutton-bgcolor:before {
-  background-color: #fee116;
+  background-color: #ffd803;
 }
 
 .homepage .subfeature .d-flex .imagebutton:nth-child(4n+2) > .imagebutton-bgcolor:before {
-  background-color: #f01f53;
+  background-color: #e30311;
 }
 
 .homepage .subfeature .d-flex .imagebutton:nth-child(4n+3) > .imagebutton-bgcolor:before {
-  background-color: #009574;
+  background-color: #008e77;
 }
 
 .homepage .subfeature .d-flex .imagebutton:nth-child(4n+4) > .imagebutton-bgcolor:before {
-  background-color: #a1228d;
+  background-color: #a3238f;
+  background-blend-mode: multiply;
 }
 
 .imagebutton {
@@ -6109,6 +6109,30 @@ header#header {
 
 .homepage-banner h2, .homepage-banner h3 {
   color: #fff;
+}
+
+.homepage-banner.hero-1 {
+  position: relative;
+  background-blend-mode: hard-light;
+  background-color: #003f7f;
+}
+
+.homepage-banner.hero-1 .hero-image-wrapper {
+  background: -webkit-gradient(linear, left bottom, left top, from(#003d7b), to(rgba(0, 61, 123, 0)));
+  background: linear-gradient(to top, #003d7b, rgba(0, 61, 123, 0));
+}
+
+.homepage-banner.hero-1 .hero-image-wrapper:before {
+  background-color: #003f7f;
+  content: "";
+  height: 100%;
+  width: 100%;
+  padding: 30px;
+  display: block;
+  opacity: 1;
+  z-index: -1;
+  top: 0;
+  position: absolute;
 }
 
 @media (min-width: 480px) {

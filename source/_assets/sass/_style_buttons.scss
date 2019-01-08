@@ -196,24 +196,25 @@ dl .btn-toggle { font-size: 1rem; }
     width: 100%;
     padding: 30px;
     display: block;
-    opacity: .8;
+    opacity: .7;
     z-index: -1;
     top: 0;
-    position: absolute;
-    filter: contrast(200%);
+    position: absolute;    
+    background-blend-mode: hard-light;
   }
   &:nth-child(4n+1) .imagebutton-title { color: #000; }
   &:nth-child(4n+1) > .imagebutton-bgcolor:before {
-    background-color: #fee116;
+    background-color: #ffd803;
   }
   &:nth-child(4n+2) > .imagebutton-bgcolor:before {
-    background-color: #f01f53;
+    background-color: #e30311;
   }
   &:nth-child(4n+3) > .imagebutton-bgcolor:before {
-    background-color: #009574;
+    background-color: #008e77;
   }
   &:nth-child(4n+4) > .imagebutton-bgcolor:before {
-    background-color: #a1228d;
+    background-color: #a3238f;
+    background-blend-mode: multiply;
   }
 }
 .imagebutton {
