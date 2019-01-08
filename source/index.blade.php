@@ -2,11 +2,11 @@
 
 @section('headcode')
 <style>
-  .homepage-banner.hero-1{
+  .homepage-banner.hero-1 .hero-image-wrapper{
     background-image: url(./resources/img/homepage/banner-1920.jpg);
   }
   
-  @media screen and (max-width: 900px) { 						
+  /* @media screen and (max-width: 900px) { 						
    .homepage-banner.hero-1 {
     background-image: url(./resources/img/homepage/banner-1920.jpg);
     }
@@ -16,7 +16,7 @@
    .homepage-banner.hero-1 {
     background-image: url(./resources/img/homepage/banner-1920.jpg);
     }
-  } 						 
+  } 						  */
  </style>
 
  <!-- search -->

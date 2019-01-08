@@ -140,18 +140,25 @@
   // -webkit-filter: grayscale(100%); 
   // filter: grayscale(100%);
   
-  background-blend-mode: hard-light;
-  background-color: #003f7f;
+  background-color: #005baa;
+    filter: contrast(200%);
 }
 .homepage-banner.hero-1 .hero-image-wrapper {
-  background: linear-gradient(
-    to top,
-    $primary,
-    rgba($primary, 0)
-  );
+  
+  -webkit-filter: grayscale(100%); 
+  filter: grayscale(100%);
+  opacity: .5;
+    background-blend-mode: overlay;
+
+  // background: linear-gradient(
+  //   to top,
+  //   $primary,
+  //   rgba($primary, 0)
+  // );
 }
 .homepage-banner.hero-1 .hero-image-wrapper:before {
-  background-color: #003f7f;
+  background-color: rgba(45, 86, 132, 0.25);
+  background-blend-mode: overlay;
   content: "";
   height: 100%;
   width: 100%;
@@ -160,7 +167,7 @@
   opacity: 1;
   z-index: -1;
   top: 0;
-  position: absolute; 
+  position: absolute;
 }
 @media (min-width: $screen-sm) {
 

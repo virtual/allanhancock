@@ -6113,17 +6113,21 @@ header#header {
 
 .homepage-banner.hero-1 {
   position: relative;
-  background-blend-mode: hard-light;
-  background-color: #003f7f;
+  background-color: #005baa;
+  -webkit-filter: contrast(200%);
+          filter: contrast(200%);
 }
 
 .homepage-banner.hero-1 .hero-image-wrapper {
-  background: -webkit-gradient(linear, left bottom, left top, from(#003d7b), to(rgba(0, 61, 123, 0)));
-  background: linear-gradient(to top, #003d7b, rgba(0, 61, 123, 0));
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  opacity: .5;
+  background-blend-mode: overlay;
 }
 
 .homepage-banner.hero-1 .hero-image-wrapper:before {
-  background-color: #003f7f;
+  background-color: rgba(45, 86, 132, 0.25);
+  background-blend-mode: overlay;
   content: "";
   height: 100%;
   width: 100%;
