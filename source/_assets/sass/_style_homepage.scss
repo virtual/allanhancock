@@ -289,6 +289,15 @@
   padding-top: 20px; padding-bottom: 20px;    
   background-position: center;
   background-size: cover;
+  a.more-arrow {
+    text-transform: uppercase;
+    font-weight: 700;
+    display: block;
+  }
+}
+.subcampaign img {
+  max-width: 150px; 
+  height: auto;
 }
 
 @media (min-width: $screen-md) {
