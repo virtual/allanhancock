@@ -88,10 +88,14 @@
 
 <div class="featureicon-container bg-primary">
   <div class="container">
-    @yield('icons1')
+    @yield('icons')
     </div>
 </div>
-  
+
+@if (trim($__env->yieldContent('content'))) 
+  @yield('content')
+@endif
+
 </main>
 
 

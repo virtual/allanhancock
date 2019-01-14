@@ -183,45 +183,10 @@
  </section>
 @endsection
 
-
-@section('content')
  
 
-<div class="hero-expandcontent row" aria-hidden="true">
 
-  <div class="col-12 col-md-12 col-lg-8">
-    <div class="row">
-      <div class="col-md-6">
-        <ul class="card-links">
-          <li><a href="#" class="more-arrow">College/University Transfer</a></li>
-          <li><a href="#" class="more-arrow">Professional & Technical</a></li>
-          <li><a href="#" class="more-arrow">International Students</a></li>
-          <li><a href="#" class="more-arrow">Transitional (ESL, HS21, I-Best GED…)</a></li>
-        </ul>
-      </div>
-      <div class="col-md-6">
-        <ul class="card-links">
-          <li><a href="#" class="more-arrow">Continuing Education</a></li>
-          <li><a href="#" class="more-arrow">Learn Online</a></li>
-          <li><a href="#" class="more-arrow">Veteran</a></li>
-          <li><a href="#" class="more-arrow">Browse All Programs</a></li>
-        </ul>
-      </div>
-    </div>
-  </div>
-  <div class="col-12 col-lg-4">
-    <a class="btn btn-important btn-block" href="/apply-and-aid/apply.aspx">Apply Now</a>
-    <a class="btn btn-secondary btn-block" href="/apply-and-aid/apply.aspx">Ask a Question</a>
-    <a class="btn btn-secondary btn-block" href="/apply-and-aid/apply.aspx">Visit Campus</a>
-  </div>
-
-</div>
-
-  
-@endsection
-
-
-@section ('icons1') 
+@section ('icons') 
 
 <div class="row featureicons delayAnimation" id="results1">
     <div class="col-12 col-sm-4">
@@ -258,6 +223,25 @@
     </div>
 </div>
 @endsection
+
+
+@section('content')
+ 
+  @include('_partials.subcampaign', [ 
+  'desc' => '', 
+  'desc2' => '<h3><img src="./resources/img/logos/promise.png" alt="Hancock Promise"></h3><p><a class="more-arrow" href="#">Find Out More</a></p>', 
+  'img' => './resources/img/homepage/firefighting.jpg'
+  ]) 
+
+  @include('_partials.subcampaign', [ 
+  'desc' => '<h3>Bulldog Athletics</h3><p>Men\'s and Women\'s sports at Allan Hancock College</p><p><a class="more-arrow" href="#">Explore Athletics</a></p>', 
+  'desc2' => '', 
+  'img' => './resources/img/homepage/athletics.jpg'
+  ]) 
+
+
+@endsection
+
 
 @section('locations')  
 true
