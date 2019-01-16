@@ -289,17 +289,21 @@
   padding-top: 20px; padding-bottom: 20px;    
   background-position: center;
   background-size: cover;
+  transition: height .2s ease-in-out;
+  h2 { font-size: 28px; font-weight: 800; text-transform: uppercase; color: $link-blue; line-height: 1.1; }
   a.more-arrow {
     text-transform: uppercase;
     font-weight: 700;
-    display: block;
+    display: block; 
+    letter-spacing: 1px;
   }
 }
 .subcampaign img {
   max-width: 150px; 
   height: auto;
 }
-
+.subcampaign-content {
+  text-align: center; }
 @media (min-width: $screen-md) {
   .subcampaign {
     padding-top: 40px; padding-bottom: 40px;
@@ -309,7 +313,28 @@
     .container, .row {
       height: 100%;
       align-items: center;
-      text-align: center;
     }
   }
+}
+@media (min-width: $screen-lg) {
+  .subcampaign {
+    height: 525px;  
+    h2 { font-size: 34px; }  
+    img { max-width: 200px; }
+    .more-arrow {
+      margin-top: 30px;
+    }
+    a.more-arrow { 
+      font-size: 18px; 
+    }
+  } 
+}
+@media (min-width: $screen-xl) {
+  .subcampaign {
+    height: 630px;    
+    img { max-width: 250px; }
+    .more-arrow {
+      margin-top: 50px;
+    }
+  } 
 }

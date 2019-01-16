@@ -229,12 +229,12 @@
  
   @include('_partials.subcampaign', [ 
   'desc' => '', 
-  'desc2' => '<h2><img src="./resources/img/logos/promise.png" alt="Hancock Promise"></h2><p><a class="more-arrow" href="#">Find Out More</a></p>', 
-  'img' => './resources/img/homepage/firefighting.jpg'
+  'desc2' => '<h2><img src="./resources/img/logos/promise.png" alt="Hancock Promise"></h2><p><a class="text-white icon-white more-arrow" href="#">Find Out More</a></p>', 
+  'img' => './resources/img/homepage/firefighting-grad.jpg'
   ]) 
 
   @include('_partials.subcampaign', [ 
-  'desc' => '<h2>Bulldog Athletics</h2><p>Men\'s and Women\'s sports at Allan Hancock College</p><p><a class="more-arrow" href="#">Explore Athletics</a></p>', 
+  'desc' => '<h2>Bulldog Athletics</h2><p>Men\'s and Women\'s sports at Allan Hancock College</p><p><a class="more-arrow text-dark" href="#">Explore Athletics</a></p>', 
   'desc2' => '', 
   'img' => './resources/img/homepage/athletics.jpg'
   ]) 
