@@ -262,7 +262,7 @@
   h2 small { color: $secondary; text-transform: none; letter-spacing: .02em; font-size: 1.25rem; display: block; clear:both;  }
   h3 { margin-bottom: 1rem; font-size: 1.5rem; font-weight: 600; letter-spacing: .1em; }
   .row > div:last-child h3.bar-bg:after {
-    background-color: $primary;
+    background-color: $primary-dark;
   }
   .btn { width: 100%; margin-bottom: 1rem; margin-left: 0; }
 }

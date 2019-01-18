@@ -69,11 +69,11 @@ p, ul, dl, ol {
 
 ::-moz-selection { 
   color: #fff;
-  background: $primary;
+  background: $primary-dark;
 }
 ::selection {
   color: #fff;
-  background: $primary;
+  background: $primary-dark;
 }
 kbd {
   font-size: .8rem;
@@ -88,13 +88,15 @@ kbd.ouc {
   // position: absolute;
   z-index: 100;
 }
-
+.bg-primary-dark {
+  background-color: $primary-dark !important;
+}
 .sr-only.show-on-focus {  
   width: auto; 
   height: 0;
   transition: all ease-out .3s;
   padding: .5rem;
-  color:$primary;
+  color:$primary-dark;
   border: 3px solid rgba(0, 61, 123, 0.7); 
   background:#fff; 
   position: absolute;

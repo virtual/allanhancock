@@ -148,7 +148,7 @@
   @endif
 
     <!-- FOOTER -->
-  <div class="bg-primary" id="footer">
+  <div class="bg-primary bg-primary-dark" id="footer">
     @include('_partials/footer')
   </div>
   <script src="{{ $page->baseUrl }}/assets/js/jquery-3.3.1.min.js"></script>
