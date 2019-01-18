@@ -1,10 +1,13 @@
+<h2>Degree Options</h2>
 <table class="table" border="1" cellpadding="3">
-  <tbody>
+  <thead>
     <tr>
-      <td>&nbsp;</td>
-      <td align="center" valign="middle"><strong>&nbsp;AA-T</strong></td>
-      <td align="center" valign="middle"><strong>&nbsp;AS-T</strong></td>
+      <th>&nbsp;</th>
+      <th align="center" valign="middle"><strong>&nbsp;AA-T</strong></th>
+      <th align="center" valign="middle"><strong>&nbsp;AS-T</strong></th>
     </tr>
+    </thead>
+    <tbody>
     <tr>
       <td><a href="http://epubs.hancockcollege.edu/catalog/2018-2019/#?page=74" target="_blank">Administration of
           Justice</a></td>
@@ -81,7 +84,7 @@
     </tr>
     <tr>
       <td><a href="http://epubs.hancockcollege.edu/catalog/2018-2019/#?page=122" target="_blank">Political Science</a></td>
-      <td style="border: 1px solid #cdcdcd; text-align: center;" align="center" valign="middle"><strong>x</strong></td>
+      <td align="center" valign="middle"><strong>x</strong></td>
       <td align="center" valign="middle">&nbsp;</td>
     </tr>
     <tr>

@@ -377,3 +377,36 @@ ul.list-unstyled, ol.list-unstyled, %list-unstyled {
     }
   }
 }
+
+
+.blocklist {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  h2, h3 {
+    background-color: $secondary;
+    font-size: 1rem;
+    text-transform: uppercase;
+    padding: .5em 1em;
+    margin-bottom: 0;
+    color: $primary;
+    a { color: inherit;}
+  }
+  ul { margin:0; padding:0; list-style: none;}
+  li a {
+    display: block;
+    width: 100%; 
+    border-bottom: 1px solid #ccc;
+    padding: .5em 1px;
+    color: $dark;
+    font-size: .9rem;
+    position: relative;
+    padding-right: 1.75rem;
+  }
+  .more-arrow a:after { 
+    position: absolute;
+    right: 0;
+    top: 50%;
+    margin-top: -.5em;
+    color: $dark;
+  } 
+}

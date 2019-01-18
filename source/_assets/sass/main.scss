@@ -75,12 +75,15 @@ p, ul, dl, ol {
   color: #fff;
   background: $primary;
 }
+kbd {
+  font-size: .8rem;
+  text-transform: none;
+}
 kbd.ouc {
   // display:none;
   background: rgba(6, 134, 74, 0.9);
   color: #fff;
   font-family: Helvetica;
-  font-size: .8rem;
   padding: .5rem;
   // position: absolute;
   z-index: 100;

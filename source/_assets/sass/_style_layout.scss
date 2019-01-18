@@ -28,6 +28,7 @@ body {
   .content-container {
     flex: 0 1 auto;
     width: 100%;
+    & > *:first-child { margin-top: 0;}
   }
 }
 #interior { width: 100%; }
@@ -62,7 +63,7 @@ body {
 @media (min-width: $screen-lg) {
  .layout-has-sidebar {
     .content-interior-wrapper {
-      #interior { width: 75%; }
+      #interior { width: 75%; padding-right: 30px; }
 
       .sidebar-container {
         width: 25%;

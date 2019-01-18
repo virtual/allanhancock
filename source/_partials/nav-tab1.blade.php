@@ -1,15 +1,17 @@
+<h2>Transfer Overview</h2>
+
 <p>Allan Hancock College now offers another way for you to transfer to the California
   State University system. The simplified process allows students who complete an Associate
   in Arts Transfer Degree (AA-T) or Associate in Science Transfer Degree (AS-T) to receive
   priority admission into the CSU System.
 </p>
-
+<h2 class="h3">Transfer Overview <kbd>.h3</kbd></h2>
 <p>Simply choose your major and complete 60 semester units of required general education
   coursework and major-specific lower division coursework. Students who have earned
   an AA-T or AS-T are admitted to a CSU at junior standing with the opportunity to complete
   a baccalaureate degree with 60 additional semester units.
 </p>
-
+<h2 class="h3 text-primary">Transfer Overview <kbd>.h3.text-primary</kbd></h2>
 <p>An AA-T or AS-T degree guarantees admission to a California State University, but
   not necessarily a specific campus or major. So to stay competitive, make sure you
   keep your grades up and that you meet the admissions requirements for the CSU campus

@@ -19,21 +19,16 @@ https://virtual.github.io/allanhancock/resources/img/stock/alexis-brown-85793-un
 
 
 @section('main-sidebar-content')
-<h3>Manually Maintained Snippet</h3>
-<ul>
-  <li><a href="#">News Event</a></li>
-  <li><a href="#">News Event</a></li>
-  <li><a href="#">News Event</a></li>
-  <li><a href="#">News Event</a></li>
-</ul>
-<div class="fakeimg"></div>
-<div class="fakeimg"></div>
+@include('_partials/block-list')
+@include('_partials/block-list')
+<div class="fakeimg"></div> 
 @endsection
  
 @section('content') 
 @include('_partials/headers')
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut feugiat ultricies mauris ac efficitur. Donec.</p>
  
+      @include('_partials/block-list')
  
       <h3><em>College Now!</em> Requirements:
       </h3>
@@ -66,6 +61,7 @@ https://virtual.github.io/allanhancock/resources/img/stock/alexis-brown-85793-un
          </li>
          
       </ul>
+
        
 @endsection
   
