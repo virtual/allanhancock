@@ -10,6 +10,8 @@
       <li><a class="nav-link" href="{{ $page->baseUrl }}/template1/index.html">T1</a></li>
       <li><a class="nav-link" href="{{ $page->baseUrl }}/template2/index.html">T2</a></li>
       <li><a class="nav-link" href="{{ $page->baseUrl }}/template3/index.html">T3</a></li>
+      <li><a class="nav-link" href="{{ $page->baseUrl }}/template4/index.html">T4</a></li>
+      <li><a class="nav-link" href="{{ $page->baseUrl }}/template5/index.html">T5</a></li>
       <!-- <li class="float-right"><a class="nav-link" href="{{ $page->baseUrl }}/timeline/index.html">Timeline</a></li> -->
     </ul>
   </div>

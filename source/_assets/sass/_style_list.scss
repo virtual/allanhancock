@@ -243,23 +243,7 @@ ul.list-unstyled, ol.list-unstyled, %list-unstyled {
 //     // background:#fafafa;
 //   }
 // } 
-// .nav-tabs li + li  { border-left:0;}
-// .nav-tabs li .nav-link { 
-//   border: 0; 
-//   align-self: center; 
-//   flex: 1;
-// } 
-// .nav-tabs .nav-link[aria-selected=true] {
-//   color: $primary; 
-//   font-weight: 600;  
-//   border-bottom: 1px solid #fff; 
-//   margin-bottom: -1px;
-// }
-// @media (min-width: $screen-sm) {
-//   .nav-tabs li { 
-//     flex: initial; 
-//   }
-// } 
+
 // @media (min-width: $screen-md) {
 //   ul.features, ul.icon-check, ul.icon-x, ul.icon-box {
 //     li:before {
