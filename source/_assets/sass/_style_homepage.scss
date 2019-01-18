@@ -290,6 +290,7 @@
   background-position: center;
   background-size: cover;
   transition: height .2s ease-in-out;
+  height: 315px;
   h2 { font-size: 28px; font-weight: 800; text-transform: uppercase; color: $link-blue; line-height: 1.1; }
   a.more-arrow {
     text-transform: uppercase;
@@ -303,27 +304,24 @@
   height: auto;
 }
 .subcampaign-content {
-  text-align: center; }
+  text-align: center; height: 100%; 
+  .container, .row {
+    height: 100%;
+    align-items: center;
+  }
+}
 @media (min-width: $screen-md) {
   .subcampaign {
     padding-top: 40px; padding-bottom: 40px;
-    height: 400px;    
-  }
-  .subcampaign-content { height: 100%; 
-    .container, .row {
-      height: 100%;
-      align-items: center;
-    }
-  }
+    height: 400px;   
+    a.more-arrow { padding: 30px; } 
+  } 
 }
 @media (min-width: $screen-lg) {
   .subcampaign {
     height: 525px;  
     h2 { font-size: 34px; }  
     img { max-width: 200px; }
-    .more-arrow {
-      margin-top: 30px;
-    }
     a.more-arrow { 
       font-size: 18px; 
     }

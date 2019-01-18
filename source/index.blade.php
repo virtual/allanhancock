@@ -82,7 +82,7 @@
 <h2>See yourself here!</h2>
 <p><a href="#" class="more-arrow">Register for fall classes today!</a></p>
 <div class="delayAnimation">
-  <img class="lazy" src="./resources/img/homepage/ahc-mobile.jpg" alt="Students holding up phones displaying their future selves working in their fields" />
+  <a href="#"><img class="lazy" src="./resources/img/homepage/ahc-mobile.jpg" alt="Students holding up phones displaying their future selves working in their fields" /></a>
 </div>
 
 @endsection
@@ -193,9 +193,6 @@
         @include('_partials.featureicon', [
         'heading' => '11,500',
         'desc' => 'Students Enrolled',
-        'iconalt' => '',     
-        'icon' => '',          
-        'buttontext' => '',
         'link' => '#'
         ])
   
@@ -204,9 +201,6 @@
         @include('_partials.featureicon', [
         'heading' => '100+',
         'desc' => 'Degrees and Options',
-        'iconalt' => '',     
-        'icon' => '',          
-        'buttontext' => '',
         'link' => '#'
         ])
   
@@ -215,9 +209,6 @@
         @include('_partials.featureicon', [
         'heading' => '42+',
         'desc' => 'Clubs and Organization',
-        'iconalt' => '',     
-        'icon' => '',          
-        'buttontext' => '',
         'link' => '#'
         ])
     </div>

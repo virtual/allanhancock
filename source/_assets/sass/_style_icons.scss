@@ -3,23 +3,24 @@ $featureiconborder: rgba(124, 189, 255, 0.50);
   text-align: center; 
   margin-bottom: 1rem; 
   padding-bottom: 1rem;
-  p { margin:0; padding:0; line-height: 1.5;}
-  p a.btn:hover { text-decoration: underline;}
+  &>a {
+    position: absolute;
+    top: 0; left: 0;
+    height: 100%; width: 100%;
+    text-indent: -9999px;
+    z-index: 1;
+    }
+  p { margin:0; padding:0; line-height: 1.5;} 
   h3 { 
   color: $secondary;
   margin: 0;
   line-height: 1.2;
   font-size: 3rem;
   font-weight: 700;
-  }
-  a.btn { color: $link-blue; font-weight: 400; font-size: 1.1875rem;  }
-  .icon {
-    margin: 0 auto;
-    display:block;
-    text-align: center;
-    img { height: 80px; width: auto;}
-  }
+  } 
 }
+
+
 .featureicon-container { position: relative; z-index: 2; padding: 2rem 0;  }
 
 .featureicons > div .featureicon { border-bottom: 1px solid $featureiconborder; }
@@ -34,7 +35,7 @@ $featureiconborder: rgba(124, 189, 255, 0.50);
   .featureicons > div {
     border-right: 1px solid $featureiconborder;
   }
-  .featureicons > div:last-child { border-right: 0; }
+  .featureicons > div:last-child { border-right: 0;  }
 }
 
 @media (min-width: $screen-md) {
@@ -43,12 +44,21 @@ $featureiconborder: rgba(124, 189, 255, 0.50);
     margin-bottom:0;
     padding-top: 2rem;
     padding-bottom: 4rem;
+    transition: padding-bottom .1s ease-in-out;
     h3 { 
       margin-top:0;
       font-size: 4.5rem;  
+      transition: font-size .1s ease-in-out, line-height .1s ease-in-out;
     }
     p { font-size: 1.25rem;}
   }
+  
+  .featureicons > div:last-child .featureicon {   padding-bottom: 4rem; }
+  .featureicon:hover { 
+    padding-bottom: 3.85rem;
+    h3 { font-size: 4.65rem;  line-height: 1.16; }
+  }
+  .featureicon a:focus { background: rgba(255, 255, 255, 0.05); }
 }
 
 .fa-container { min-width: 2rem; text-align: center; margin: 0 .2rem; }
