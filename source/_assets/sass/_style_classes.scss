@@ -280,3 +280,22 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#005aaa', end
   .post-date a:hover { background: $primary;}
 
 }
+
+
+pre {
+    padding: 9.5px;
+    margin: 0 0 10px;
+    line-height: 1.42857143;
+    color: #333;
+    word-break: break-all;
+    word-wrap: break-word;
+    background-color: #f5f5f5;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* easy float right image */
+.small-right, .small-left { margin-bottom: 5px; float:right; width:35%; padding: 0 0 10px 15px; font-size: 12px; line-height: 1.5;}
+.small-right img, .small-left img { margin-bottom: 3px;}
+.small-left { float:left; padding: 0 15px 10px 0;}
+@media (max-width: 480px) { .small-right, .small-left { float:none; width:80%; margin: 0 10%; padding: 5px; }}
