@@ -18,7 +18,7 @@ https://virtual.github.io/allanhancock/resources/img/stock/alexis-brown-85793-un
 @endsection
    
 @section('lead')
-<p>Allan Hancock College is a California public community college located in northern Santa Barbara County. The college is ranked as one of the five best community colleges in California and one of the top 120 community colleges in the nation.</p>
+<p class="text-primary lead">Allan Hancock College is a California public community college located in northern Santa Barbara County. The college is ranked as one of the five best community colleges in California and one of the top 120 community colleges in the nation.</p>
 @endsection
 
 @section('main-sidebar-content')

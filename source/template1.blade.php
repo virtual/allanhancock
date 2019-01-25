@@ -21,15 +21,18 @@ https://virtual.github.io/allanhancock/resources/img/stock/alexis-brown-85793-un
 mew
 @endsection
  
-@section('content') 
+@section('lead')
+<p class="text-primary lead">Your journey starts here.</p>
+@endsection
 
-      <p class="text-primary lead">Your journey starts here.</p>
+@section('content') 
+ 
  
       @include ('_partials/accordion')
  
       <h2>2018-2019</h2>
-      <p><strong>SUMMER 2018</strong> <br />Admission Application: Oct 2, 2017 <br />Online Class Search: April 9, 2018 <br />Priority Registration begins: April 30, 2018 <br />Classes begin: June 11, 2018</p>
-      <p><strong>FALL 2018</strong> <br />Admission Application: Oct 2, 2017 <br />Online Class Search: April 9, 2018 <br />Priority Registration begins: April 30, 2018 <br />Classes begin: August 2, 2018</p>
+      <p><strong class="text-uppercase">Summer 2018</strong> <br />Admission Application: Oct 2, 2017 <br />Online Class Search: April 9, 2018 <br />Priority Registration begins: April 30, 2018 <br />Classes begin: June 11, 2018</p>
+      <p><strong class="text-uppercase">Fall 2018</strong> <br />Admission Application: Oct 2, 2017 <br />Online Class Search: April 9, 2018 <br />Priority Registration begins: April 30, 2018 <br />Classes begin: August 2, 2018</p>
       
  
        
