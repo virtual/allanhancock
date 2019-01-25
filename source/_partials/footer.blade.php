@@ -13,22 +13,22 @@
           <div class="row links">
             <div class="col-12 col-sm-6">
               <ul>
-                <li><a href="/lap/accessibility.php">Accessibility</a></li>
-                <li><a href="/public_affairs/college-directory.php">College Directory</a></li>
-                <li><a href="/complaints/index.php">Complaints</a></li>
-                <li><a href="/consumerinfo/">Consumer Disclosures</a></li>
-                <li><a href="/human_resources/index.php">Employment</a></li>
-                <li><a href="/gainful-employment/">Gainful Employment</a></li>
+                <li><a href="https://www.hancockcollege.edu/lap/accessibility.php">Accessibility</a></li>
+                <li><a href="https://www.hancockcollege.edu/public_affairs/college-directory.php">College Directory</a></li>
+                <li><a href="https://www.hancockcollege.edu/complaints/index.php">Complaints</a></li>
+                <li><a href="https://www.hancockcollege.edu/consumerinfo/">Consumer Disclosures</a></li>
+                <li><a href="https://www.hancockcollege.edu/human_resources/index.php">Employment</a></li>
+                <li><a href="https://www.hancockcollege.edu/gainful-employment/">Gainful Employment</a></li>
               </ul>
             </div>
             <div class="col-12 col-sm-6">
               <ul>
-                <li><a href="/measure_i/">Measure I</a></li>
-                <li><a href="/public_affairs/privacy_policy.php">Privacy Policy</a></li>
-                <li><a href="/facilities/">Facilities and Construction</a></li>
-                <li><a href="/planning/">Planning and Shared Governance</a></li>
-                <li><a href="/accreditation/">Accreditation</a></li>
-                <li><a href="/public_affairs/directories.php">Contact Us</a></li>
+                <li><a href="https://www.hancockcollege.edu/measure_i/">Measure I</a></li>
+                <li><a href="https://www.hancockcollege.edu/public_affairs/privacy_policy.php">Privacy Policy</a></li>
+                <li><a href="https://www.hancockcollege.edu/facilities/">Facilities and Construction</a></li>
+                <li><a href="https://www.hancockcollege.edu/planning/">Planning and Shared Governance</a></li>
+                <li><a href="https://www.hancockcollege.edu/accreditation/">Accreditation</a></li>
+                <li><a href="https://www.hancockcollege.edu/public_affairs/directories.php">Contact Us</a></li>
               </ul>
             </div>
           </div>
@@ -55,7 +55,7 @@
 
 <script>
   // For ref only; inactive on dev; Navigation Variables
-  var ou_path = "/currentstudents/default.aspx";
-  var ou_child = "/currentstudents/";
+  var ou_path = "https://www.hancockcollege.edu/currentstudents/default.aspx";
+  var ou_child = "https://www.hancockcollege.edu/currentstudents/";
   var ou_index = "default.aspx";
 </script>
