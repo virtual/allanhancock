@@ -43,7 +43,7 @@
   @include('_partials.topbar') 
 
 
-  <nav class="topnav nav nav-underline navbar-light d-none d-lg-block">
+  <nav class="topnav nav nav-underline navbar-light d-none d-lg-block" aria-label="Secondary Navigation">
     <div class="container d-flex">
       <ul>
         <!-- com.omniupdate.div label="top-nav" group="TOP_Nav" button="792" path="/includes/top-nav.inc" break="break" -->
