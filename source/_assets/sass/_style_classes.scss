@@ -30,7 +30,7 @@
   border-bottom: 0;  
   display:inline-block;
 } 
-a.more-arrow:after, ul.more-arrow > li a:after { 
+a.more-arrow:after, ul.more-arrow > li a:after, button.more-arrow:after { 
   content: "\f138";
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
@@ -47,7 +47,7 @@ a.more-arrow:after, ul.more-arrow > li a:after {
   transition: margin-left .15s ease-in-out, margin-right .15s ease-in-out;
   margin-right: .62rem; 
 } 
-a.more-arrow:hover:after, ul.more-arrow > li a:hover:after {
+a.more-arrow:hover:after, ul.more-arrow > li a:hover:after  {
   margin-left: .62rem;  
   margin-right:.5rem;
 }
@@ -234,6 +234,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#005aaa', end
   margin-top: 2rem;
   margin-bottom: 1rem;
 }
+.lead { font-weight: 600; font-size: 1.5rem;  }
 
 
 .event-feed {

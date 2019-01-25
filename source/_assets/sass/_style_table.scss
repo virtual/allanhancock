@@ -6,7 +6,7 @@ table, table.table {
     border-bottom: 1px solid rgb(230, 230, 230);
     border: 1px solid rgb(230, 230, 230);
   }
-
+  tbody { background-color: #fff; }
   thead th {
     border: 0; 
     border-bottom: 2px solid $secondary;
