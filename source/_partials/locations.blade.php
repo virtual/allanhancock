@@ -1,7 +1,7 @@
 <div class="py-5 bg-secondary">
   <div class="container">
-    <section class="sectional sectional-padded">
-        <h2 class="h3">Campus Locations</h2>
+    <section class="sectional sectional-padded" aria-labelledby="subfooterheading">
+        <h2 id="subfooterheading" class="h3">Campus Locations</h2>
         <div class="row">
             <div class="col-12 col-sm-6 col-md-6 col-lg-3">
               @include('_partials.location', [

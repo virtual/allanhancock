@@ -56,19 +56,19 @@
 
   @include('_partials.header')
   <main id="maincontent">
-<div class="homepage-banner-container">
+<banner class="homepage-banner-container" role="banner" aria-label="Banner">
   <div class="homepage-banner hero-1 ">
     @yield('hero1')
 
   </div> 
-</div>
-<div class="container subfeature">
+</banner>
+<div class="container subfeature" aria-label="Featured Links">
     <div class="d-flex align-items-stretch">
       @yield('subfeature')
     </div>
 </div>
 
-<div class="container campaign"> 
+<div class="container campaign" aria-label="Secondary Banner"> 
   @yield('campaign') 
 </div>
 <div class="bg-dark">
@@ -79,14 +79,14 @@
   </div>
 </div>
 
-<div class="homepage-banner-container banner-search">
+<div class="homepage-banner-container banner-search" aria-label="Search Programs">
     <div class="homepage-banner">
       @yield('banner-search')
   
     </div> 
   </div>
 
-<div class="featureicon-container bg-primary bg-primary-dark">
+<div class="featureicon-container bg-primary bg-primary-dark" aria-label="Statistics">
   <div class="container">
     @yield('icons')
     </div>
