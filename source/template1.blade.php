@@ -22,9 +22,10 @@ mew
 @endsection
  
 @section('content') 
-@include('_partials/headers')
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut feugiat ultricies mauris ac efficitur. Donec.</p>
+
+      <p class="text-primary lead"><strong>Your journey starts here.</strong></p>
  
+      @include ('_partials/accordion')
  
       <h3><em>College Now!</em> Requirements:
       </h3>
@@ -57,6 +58,8 @@ mew
          </li>
          
       </ul>
+      
+@include('_partials/headers')
        
 @endsection
   

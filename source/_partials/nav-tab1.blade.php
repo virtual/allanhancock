@@ -20,4 +20,4 @@
 </p>
 
 <p><a title="ADT 2018-19 brochure" href="/transferdegrees/ADT_CTE%20Transfer%20Degrees%20Brochure%20%202018-2019.pdf">See
-    Associate Degrees for Transfer Brochure</a> <span style="color: #888888; font-size: x-small;">PDF</span></p>
+    Associate Degrees for Transfer Brochure</a> <span class="small">PDF</span></p>
