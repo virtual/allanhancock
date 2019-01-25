@@ -37,7 +37,7 @@ https://virtual.github.io/allanhancock/resources/img/stock/alexis-brown-85793-un
     <div class="fakeimg"></div>
     <h3 class="text-primary">Athletics</h3>
     <p>Hancock’s well known and much accomplished athletic program offers intercollegiate football, basketball, soccer, tennis, baseball, softball, golf, volleyball, cross country, and track and field.</p>
-    <p><a class="more-arrow" href="/public_affairs/about-long.php">Read more about Allan Hancock College</a></p>
+    <p><a class="more-arrow" href="https://www.hancockcollege.edu/public_affairs/about-long.php">Read more about Allan Hancock College</a></p>
   </div>
 </div>
  

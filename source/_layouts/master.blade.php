@@ -7,8 +7,8 @@
   <meta http-equiv="x-ua-compatible" content="ie=edge">
 
   <meta name="theme-color" content="#003d7b">
-  <title>Allan Hancock College</title>
-  <meta property="og:title" content="Allan Hancock College" />
+  <title>@yield('pagetitle') | Allan Hancock College</title>
+  <meta property="og:title" content="@yield('pagetitle') | Allan Hancock College" />
   <meta property="og:type" content="website" />
   <meta property="og:image" content="images/thumbnail.jpg" />
   <meta property="og:url" content="http://www.Allan Hancockcollege.edu/" />
