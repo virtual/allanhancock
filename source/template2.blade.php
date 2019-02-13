@@ -63,6 +63,11 @@ https://virtual.github.io/allanhancock/resources/img/stock/alexis-brown-85793-un
          </li>
          
       </ul>
+
+      <blockquote>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, commodi animi? Deleniti sunt soluta id illo. Numquam necessitatibus obcaecati modi, dignissimos quas non? Quo tenetur ratione temporibus, necessitatibus cum repudiandae.</p>
+        <cite><strong>Jane Doe</strong><br/>Degree</cite> 
+      </blockquote>
        
 @endsection
   

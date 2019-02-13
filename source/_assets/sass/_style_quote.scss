@@ -1,98 +1,18 @@
-
-  blockquote {
-    font-size: 1.5rem; 
-    margin-left: 0;
-    color: $text-dark;
-    position: relative;
-    margin-left: 2rem;
-    p { font-size: 1.3rem; margin-bottom: 0;  }
-    p + p { margin-top: .5rem; }
-    cite, small { 
-      font-size: .9rem;
-      font-style: normal;  
-      margin-top: .5rem;
-      display: block;
-      strong { color: #000;}
-    }
-  }
-  blockquote:before {
-    content: "";
-    background-image: url('../../resources/img/icons/quote@3x.png');
-    background-position: top left; 
-    background-repeat: no-repeat;
-    height: 20.6px;
-    width: 26.2px;
+blockquote {
+  font-size: 1.25rem; 
+  margin-left: 0;
+  color: $text-dark;
+  position: relative; 
+  border-top: 2px solid $secondary;
+  border-bottom: 2px solid $secondary;
+  padding: 1rem;
+  p { font-size: 1.25rem; margin-bottom: 0;  }
+  p + p { margin-top: .5rem; }
+  cite, small { 
+    font-size: .9rem;
+    font-style: normal;  
+    margin-top: .5rem;
     display: block;
-    
-    position: absolute;
-    left: -2.25rem;
-    top: .5rem;
-    background-size: contain;
-  }
-  @media (min-width: $screen-md) {
-    blockquote {
-      padding-left: 1rem;
-    }
-    blockquote:before {
-      height: 31px;
-      width: 40px; 
-      left: -2.25rem; 
-    }
-  }
-.quote-feature {
-  line-height: 1.25; 
-  img { 
-    text-align: left;  
-    background:linear-gradient($primary, $primary) no-repeat 10px 10px;
-    background-color: transparent;
-    padding: 0 10px 10px 0;
-    margin: 0 auto;
-    margin-bottom: 0.70625rem; 
-    max-height: 200px;
-    max-width: 200px;
-    height: auto; 
-    width: auto;
-  } 
-  blockquote {  margin-left: 0; 
-    padding-left: 0; }
-  blockquote:before  { 
-    position: relative;
-    left: auto;
-    top: auto;
-  }
-  figcaption { font-size: 1rem; color: $text-dark; line-height: 1.5 }
-  figcaption strong { color:#000; }
-}
-@media (min-width: $screen-md) {
-  .quote-feature {
-    display:flex; 
-    align-items: center;
-    img { max-width: 100%; max-height: none;}
-    blockquote:before {
-      width: 52.4px; 
-      height: 41.1px;
-      position: absolute;
-      left: -4.25rem;
-    } 
-    .quote-feature-text {
-      flex-grow: 1;
-      padding-left: 6rem;
-    }
-    .quote-feature-img {
-      flex: 0 0 25%;
-    } 
-    .quote-feature-img + .quote-feature-text { flex: 0 0 75%; }
-  }
-}
-@media (min-width: $screen-lg) {
-  .quote-feature .quote-feature-img.vertical {
-  // Add extra padding; checked through main.js
-    padding: 0 1.25rem;
-  }
-}
-@media (min-width: $screen-xl) {
-  .quote-feature .quote-feature-img.vertical {
-  // Add extra padding; checked through main.js
-    padding: 0 1.75rem;
+    strong { color: #000;}
   }
 }

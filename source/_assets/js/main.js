@@ -2,22 +2,22 @@
 
 jQuery(document).ready(function() {
   
-  // Check testimonial picture if vertical for spacing
-  $('.quote-feature-img').each(function () {
-    var $this = $(this);
-    var img = $(this).find('img')[0];
-    if (img.naturalWidth < img.naturalHeight) {
-      $this.addClass('vertical');
-    }
-  });
+  // // Check testimonial picture if vertical for spacing
+  // $('.quote-feature-img').each(function () {
+  //   var $this = $(this);
+  //   var img = $(this).find('img')[0];
+  //   if (img.naturalWidth < img.naturalHeight) {
+  //     $this.addClass('vertical');
+  //   }
+  // });
 
  
-  // Adds margins for 100% height cards in flexbox
-  // TODO: Fix this for only direct descendants 
-  $("[class*='col-sm-']:has('.card')").addClass('card-margin');
-  $("[class*='col-md-']:has('.card')").addClass('card-margin');
-  $("[class*='col-sm-']:has('p.card-link')").addClass('card-link-margin');
-  $("[class*='col-md-']:has('p.card-link')").addClass('card-link-margin');
+  // // Adds margins for 100% height cards in flexbox
+  // // TODO: Fix this for only direct descendants 
+  // $("[class*='col-sm-']:has('.card')").addClass('card-margin');
+  // $("[class*='col-md-']:has('.card')").addClass('card-margin');
+  // $("[class*='col-sm-']:has('p.card-link')").addClass('card-link-margin');
+  // $("[class*='col-md-']:has('p.card-link')").addClass('card-link-margin');
 
   $('body').on('click','.dropdown-toggle',function(e){
     e.preventDefault();
@@ -143,26 +143,26 @@ jQuery(document).ready(function() {
 }); // END FUNCTION READY
 
 
-function calcOverviewOffset() {
-  //var sidebarOffset = $('#sidebar-nav').offset().top; // doesn't matter
-  var contentHeaderOffset = $('.content-header').offset().top;
-  return contentHeaderOffset + 50;
-}
+// function calcOverviewOffset() {
+//   //var sidebarOffset = $('#sidebar-nav').offset().top; // doesn't matter
+//   var contentHeaderOffset = $('.content-header').offset().top;
+//   return contentHeaderOffset + 50;
+// }
 
-function setOverviewOffset(offset) {
-  document.getElementById('sidebar-nav').setAttribute('style', "top: -" + offset + "px");
-  return true;
-}
+// function setOverviewOffset(offset) {
+//   document.getElementById('sidebar-nav').setAttribute('style', "top: -" + offset + "px");
+//   return true;
+// }
 
 require('jquery-colorbox');
-var twitterFetcher = require('twitter-fetcher');
+// var twitterFetcher = require('twitter-fetcher');
 
 
 // jquery-colorbox/jquery.colorbox-min.js
 
 // Start the namespace
 var ahapp = {
-  scrollableOffset: 101,
+  // scrollableOffset: 101,
   colorBox: function(){
     $('.video-lightbox').colorbox({
       iframe:true, 
@@ -198,31 +198,31 @@ var ahapp = {
   changeScrollableOffset: function(px) {
     this.scrollableOffset = px;
   }, // end mobileScrolltoTab
-  twitterFeed: function () {
-    // $('.twitter-feed').twittie({
-    //   dateFormat: '%b %d',
-    //   template: '<div class="date">{{date}}</div> {{tweet}} ',
-    //   count: 6
-    // });
+  // twitterFeed: function () {
+  //   // $('.twitter-feed').twittie({
+  //   //   dateFormat: '%b %d',
+  //   //   template: '<div class="date">{{date}}</div> {{tweet}} ',
+  //   //   count: 6
+  //   // });
 
-    // setTimeout(function () {
-    //   $('.twitter-feed > ul > li').matchHeight();
-    // }, 2000);
+  //   // setTimeout(function () {
+  //   //   $('.twitter-feed > ul > li').matchHeight();
+  //   // }, 2000);
 
-    var twitterConfig = {
-      "profile": {"screenName": 'ahappcc'},
-      "domId": 'twitter-feed',
-      "maxTweets": 3,
-      "enableLinks": true,
-      "showImages": false,
-      "showInteraction": false,
-      "showUser": false
-    };
-    var twitterHtml = twitterFetcher.fetch(twitterConfig); 
-    // console.log(twitterHtml)
-    // $('.twitter-feed').html = twitterHtml;
+  //   var twitterConfig = {
+  //     "profile": {"screenName": 'ahappcc'},
+  //     "domId": 'twitter-feed',
+  //     "maxTweets": 3,
+  //     "enableLinks": true,
+  //     "showImages": false,
+  //     "showInteraction": false,
+  //     "showUser": false
+  //   };
+  //   var twitterHtml = twitterFetcher.fetch(twitterConfig); 
+  //   // console.log(twitterHtml)
+  //   // $('.twitter-feed').html = twitterHtml;
 
-  }, // twitterFeed
+  // }, // twitterFeed
   scrollAccordion: function() {
   // For reference only; minified version in main.js
   var topScrollHeader = ($('header').height()) // height of header when first loaded
@@ -317,43 +317,43 @@ var ahapp = {
 
 
   },
-  tableHTML: function() {
+  // tableHTML: function() {
 
-    // table js
-    var switched=false;
-    var updateTables=function(){
-      if(($(window).width()<9999)&&!switched){
-        switched=true;$("table.responsive").each(function(i,element){splitTable($(element));});return true;}
-      else if(switched&&($(window).width()>9999)){switched=false;$("table.responsive").each(function(i,element){unsplitTable($(element));});}};$(window).on('load', updateTables);$(window).bind("resize",updateTables);function splitTable(original)
-    {original.wrap("<div class='table-wrapper' />");var copy=original.clone();copy.find("td:not(:first-child), th:not(:first-child)").css("display","none");copy.removeClass("responsive");original.closest(".table-wrapper").append(copy);copy.wrap("<div class='pinned' />");original.wrap("<div class='scrollable' />");}
-    function unsplitTable(original){original.closest(".table-wrapper").find(".pinned").remove();original.unwrap();original.unwrap();}
+  //   // table js
+  //   var switched=false;
+  //   var updateTables=function(){
+  //     if(($(window).width()<9999)&&!switched){
+  //       switched=true;$("table.responsive").each(function(i,element){splitTable($(element));});return true;}
+  //     else if(switched&&($(window).width()>9999)){switched=false;$("table.responsive").each(function(i,element){unsplitTable($(element));});}};$(window).on('load', updateTables);$(window).bind("resize",updateTables);function splitTable(original)
+  //   {original.wrap("<div class='table-wrapper' />");var copy=original.clone();copy.find("td:not(:first-child), th:not(:first-child)").css("display","none");copy.removeClass("responsive");original.closest(".table-wrapper").append(copy);copy.wrap("<div class='pinned' />");original.wrap("<div class='scrollable' />");}
+  //   function unsplitTable(original){original.closest(".table-wrapper").find(".pinned").remove();original.unwrap();original.unwrap();}
 
-    // table-stacked js
-    $('.table-r1').each( function(e) {
-      var headerNames = [];
-      var rowTitles = [];
-      $(this).find('thead th').each( function(e, item) {
-        headerNames.push(item.innerText); // context causes errors, removed
-      });
-      $(this).find('tbody th').each( function(e, item) {			
-        rowTitles.push(item.innerText); // context causes errors, removed
-      });
-      $(this).find('tbody tr').each( function(e) {
-        $(this).children('th').text(rowTitles[e]); 
-        $(this).children('td').each( function(e) {
-          $(this).attr('data-title', headerNames[e+1]) 
-        });
-      }); 
-    });
+  //   // table-stacked js
+  //   $('.table-r1').each( function(e) {
+  //     var headerNames = [];
+  //     var rowTitles = [];
+  //     $(this).find('thead th').each( function(e, item) {
+  //       headerNames.push(item.innerText); // context causes errors, removed
+  //     });
+  //     $(this).find('tbody th').each( function(e, item) {			
+  //       rowTitles.push(item.innerText); // context causes errors, removed
+  //     });
+  //     $(this).find('tbody tr').each( function(e) {
+  //       $(this).children('th').text(rowTitles[e]); 
+  //       $(this).children('td').each( function(e) {
+  //         $(this).attr('data-title', headerNames[e+1]) 
+  //       });
+  //     }); 
+  //   });
 
-  },
-  twoColNav: function() {
-    if ( $( ".option-explore-nav" ).length ) {
-    // Adds class to first item in second column 
-      var itemPos = Math.ceil($('.option-explore-nav .card-body ul li').length /2);
-      $($('.option-explore-nav .card-body ul li')[itemPos]).addClass('list-top');
-    }
-  },
+  // },
+  // twoColNav: function() {
+  //   if ( $( ".option-explore-nav" ).length ) {
+  //   // Adds class to first item in second column 
+  //     var itemPos = Math.ceil($('.option-explore-nav .card-body ul li').length /2);
+  //     $($('.option-explore-nav .card-body ul li')[itemPos]).addClass('list-top');
+  //   }
+  // },
   addBreadcrumbPosition: function() {
     // used for google structure data
     $('.breadcrumb li').each(function (index) {
@@ -371,9 +371,9 @@ var ahapp = {
 };
 
 ahapp.colorBox();
-if ( $( "#twitter-feed" ).length ) {
-  ahapp.twitterFeed();
-}
+// if ( $( "#twitter-feed" ).length ) {
+//   ahapp.twitterFeed();
+// }
 // ahapp.scrollAccordion();
 ahapp.loadNavChild();
 ahapp.highlightActiveNav();
@@ -409,11 +409,11 @@ var ResponsiveBootstrapToolkit = require('responsive-toolkit');
       viewport.changed(function() {
         // showBreakpoint();
 
-        if( viewport.is('>=md') ) {
-          ahapp.changeScrollableOffset(40);
-        } else {
-          ahapp.changeScrollableOffset(101);
-        }
+        // if( viewport.is('>=md') ) {
+        //   ahapp.changeScrollableOffset(40);
+        // } else {
+        //   ahapp.changeScrollableOffset(101);
+        // }
 
       })
   ).resize();
