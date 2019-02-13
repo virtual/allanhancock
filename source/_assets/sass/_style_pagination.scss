@@ -1,0 +1,26 @@
+.dataTables_paginate, .pagination-block {
+  font-size: .9rem;
+  text-align: right;
+  margin-bottom: 1rem; 
+  a { text-decoration: none; font-size: 1.2rem; }
+}
+
+.dataTables_paginate .paginate_button, .pagination-block .paginate_button {
+  padding: 8px 16px;
+  margin-right: 4px;
+  cursor: pointer;
+}
+
+.dataTables_paginate .paginate_button:hover, .pagination-block .paginate_button:hover {
+  background-color: #eee;
+}
+
+.dataTables_paginate .paginate_button.disabled, .pagination-block .paginate_button.disabled {
+  display: none;
+}
+
+.dataTables_paginate .paginate_button.current, .dataTables_paginate .paginate_button.current:hover, .pagination-block .paginate_button.current, .pagination-block .paginate_button.current:hover {
+  color: #fff !important;
+  border: darken($primary, 20);
+  background-color: $primary;
+}

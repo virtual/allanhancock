@@ -5,7 +5,7 @@
       <a href="{{ $link }}"><img class="card-img-top" src="{{ $img }}" alt="{{ $alt }}" /></a>
       @endif
     </div>
-    <div class="col-12 col-sm-8 col-md-7">
+    <div class="col-12 col-sm-8 col-md-9">
       <h3><a href="{{ $link }}">{{ $heading }}</a></h3>
       {{ $desc }}
     </div>

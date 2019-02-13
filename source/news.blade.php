@@ -1,7 +1,7 @@
 @extends('_layouts.master')
 
 @section('pagetitle')
-News and Announcements
+Newsroom
 @endsection
 
 
@@ -18,7 +18,7 @@ News and Announcements
 @section('content') 
 
 
-<div class="news-row news-bordered">
+<div class="news-row news-bordered news-page-feed">
     @include('_partials.article', [
     'heading' => 'Watch Historic Mars Landing Live at Allan Hancock College',
     'desc' => 'The event is free and open to the public',

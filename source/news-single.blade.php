@@ -9,7 +9,7 @@ Author and Hancock Professor Offers Free Lecture on the Art of Publishing a Book
 <ol>
     <li><a href="#">Home</a></li>
     <li><a href="#">About</a></li>
-    <li><a href="#">Announcements</a></li>
+    <li><a href="../news">Announcements</a></li>
     <li><a aria-current="page" href="#">Author and Hancock Professor Offers Free Lecture on the Art of Publishing a Book</a></li>
   </ol>
 @endsection
@@ -17,7 +17,9 @@ Author and Hancock Professor Offers Free Lecture on the Art of Publishing a Book
  
 @section('content') 
 
-<div class="fakeimg"></div>
+<div class="fakeimg" style="height: 40vw; max-height: 500px; ">if there is a big image available</div>
+
+<div class="byline"><time datetime="2019-02-06 11:31" class="datetime">February 6, 2019</time> - <span class="author" itemscope="" itemtype="http://schema.org/Person">Written by: <span itemprop="name"></span>Phil Hamer</span>  </div>
 
 <!-- pulled from existing website for legacy support test -->
 <p>Don't miss this series of exciting lectures and film screenings -- register today!</p>
