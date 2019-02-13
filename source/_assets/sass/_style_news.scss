@@ -44,3 +44,15 @@
       .datetime { display:none;}
   }
 // }
+
+.news-row.news-bordered {
+  .news-article {
+    border-bottom: 1px solid #ccc; 
+    margin-bottom: 1.5rem;
+    padding-bottom: 1.5rem; 
+  }
+}
+.news-row.news-page-feed {
+  .image-container { width: 50%; }
+  .news-article .article-info-container { justify-content: flex-start; }
+}

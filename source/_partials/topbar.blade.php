@@ -1,5 +1,5 @@
 <div id="skiptocontent">
-  <a href="#maincontent" title="Skip Main Navigation">Skip Main Navigation</a>
+  <a href="#content" title="Skip Main Navigation">Skip Main Navigation</a>
 </div>
 <nav class="topnav nav nav-underline navbar-dark text-white" aria-label="Demo Navigation">
   <div class="container d-flex justify-content-between align-items-center w-100">
@@ -12,6 +12,8 @@
       <li><a class="nav-link" href="{{ $page->baseUrl }}/template3/index.html">T3</a></li>
       <li><a class="nav-link" href="{{ $page->baseUrl }}/template4/index.html">T4</a></li>
       <li><a class="nav-link" href="{{ $page->baseUrl }}/template5/index.html">T5</a></li>
+      <li><a class="nav-link" href="{{ $page->baseUrl }}/news/index.html">News (List)</a></li>
+      <li><a class="nav-link" href="{{ $page->baseUrl }}/news-single/index.html">News (Single)</a></li>
       <!-- <li class="float-right"><a class="nav-link" href="{{ $page->baseUrl }}/timeline/index.html">Timeline</a></li> -->
     </ul>
   </div>

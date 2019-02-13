@@ -1,0 +1,42 @@
+/*===== Universal classes =====*/
+.imgLeft {
+	float: left;
+	margin: 5px 15px 8px 0;
+}
+
+.imgRight {
+	float: right;
+	margin: 5px 20px 8px 15px;
+}
+
+div.imgLeft, div.imgRight {width: 175px;}
+
+.imgCircle {
+	border-radius: 50%
+}
+.imgCircle:hover {
+		background-color: #8f8d87;
+	}
+
+a.toTop {
+	color: #878787;
+	font-size: 11px;
+	text-transform: lowercase;
+}
+
+.show-for-sr {
+  position: absolute !important;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0); 
+}
+
+/* Screen Reader Text - PH */
+.screenreader { 
+   clip: rect(1px, 1px, 1px, 1px); 
+   height: 1px; 
+   width: 1px; 
+   overflow: hidden; 
+   position: absolute !important;
+}

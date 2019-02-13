@@ -65,10 +65,10 @@
 
 <!-- INTERIOR TEMPLATE -->
 @if ((trim($__env->yieldContent('left-nav'))) && (trim($__env->yieldContent('main-sidebar-content'))))
-<div class="layout-has-left-nav layout-has-sidebar layout-master page-interior" id="maincontent">
-@elseif (trim($__env->yieldContent('left-nav'))) <div class="layout-has-left-nav layout-master page-interior" id="maincontent">
-@elseif (trim($__env->yieldContent('main-sidebar-content'))) <div class="layout-has-sidebar layout-master page-interior" id="maincontent">
-@else<div class="layout-master page-interior" id="maincontent"> @endif 
+<div class="layout-has-left-nav layout-has-sidebar layout-master page-interior" id="content">
+@elseif (trim($__env->yieldContent('left-nav'))) <div class="layout-has-left-nav layout-master page-interior" id="content">
+@elseif (trim($__env->yieldContent('main-sidebar-content'))) <div class="layout-has-sidebar layout-master page-interior" id="content">
+@else<div class="layout-master page-interior" id="content"> @endif 
       
     <!-- CONTENT HEADER ON -->
     @if (trim($__env->yieldContent('content-header')))

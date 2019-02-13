@@ -1,0 +1,52 @@
+$main: rgb(250, 206, 141); 
+$section: purple;
+$nav: red;
+$h1: teal;
+$h2: orange;
+$h3: pink;
+
+main, section, nav, h1, h2, h3 {
+  &:before { font-size: 10px; font-family: 'Courier New', Courier, monospace; font-weight: 400; }
+}
+main {
+  border: 3px solid $main !important;
+  background: rgba($main, 0.5) !important;
+  &:before { 
+    content: "main"
+  }
+}
+section {
+  border: 3px solid $section !important;
+  background: rgba($section, 0.5) !important;
+  &:before { 
+    content: "section"
+  }
+}
+nav {
+  border: 3px solid $nav !important;
+  background: rgba($nav, 0.5) !important;
+  &:before { 
+    content: "nav"
+  }
+}
+h1 { 
+  border: 3px solid $h1 !important;
+  background: rgba($h1, 0.5) !important;
+  &:before { 
+    content: "h1"
+  }
+}
+h2 { 
+  border: 3px solid $h2 !important;
+  background: rgba($h2, 0.5) !important;
+  &:before { 
+    content: "h2"
+  }
+}
+h3 { 
+  border: 3px solid $h3 !important;
+  background: rgba($h3, 0.5) !important;
+  &:before { 
+    content: "h3"
+  }
+}

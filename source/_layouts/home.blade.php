@@ -55,7 +55,7 @@
   </nav>
 
   @include('_partials.header')
-  <main id="maincontent">
+  <main id="content">
 <banner class="homepage-banner-container" role="banner" aria-label="Banner">
   <div class="homepage-banner hero-1 ">
     @yield('hero1')
