@@ -50,15 +50,8 @@ https://virtual.github.io/allanhancock/resources/img/stock/alexis-brown-85793-un
       
 @endsection
   
-
-
-
 @section('left-nav')
 @include ('_partials/left-nav')
-@endsection
-
-@section('locations')  
-true
 @endsection
 
 @section('content-header')  

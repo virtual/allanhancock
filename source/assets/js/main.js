@@ -1425,65 +1425,16 @@ if (typeof module !== 'undefined' && module.exports) {
 /***/ "./source/_assets/js/main.js":
 /***/ (function(module, exports, __webpack_require__) {
 
-//import lazyLoadInit from "./lazyload-init";
-
 jQuery(document).ready(function () {
-
-  // // Check testimonial picture if vertical for spacing
-  // $('.quote-feature-img').each(function () {
-  //   var $this = $(this);
-  //   var img = $(this).find('img')[0];
-  //   if (img.naturalWidth < img.naturalHeight) {
-  //     $this.addClass('vertical');
-  //   }
-  // });
-
-
-  // // Adds margins for 100% height cards in flexbox
-  // // TODO: Fix this for only direct descendants 
-  // $("[class*='col-sm-']:has('.card')").addClass('card-margin');
-  // $("[class*='col-md-']:has('.card')").addClass('card-margin');
-  // $("[class*='col-sm-']:has('p.card-link')").addClass('card-link-margin');
-  // $("[class*='col-md-']:has('p.card-link')").addClass('card-link-margin');
-
   $('body').on('click', '.dropdown-toggle', function (e) {
     e.preventDefault();
     e.stopPropagation();
-
     var _d = $(this).closest('.dropdown');
-    // console.log(_d);
-
     if (_d.hasClass('show')) {
-      // console.log('remove')
       $(_d).removeClass('show');
     } else {
-      // console.log('add')      
       $(_d).removeClass('show');
       _d.addClass('show');
-    }
-  });
-
-  $('body').on('click', '.expand-button', function (e) {
-    e.preventDefault();
-    e.stopPropagation();
-
-    var _d = $(this).closest('.homepage-banner').siblings('.homepage-expand');
-    if (_d.hasClass('show')) {
-      // Close the element, change it to hidden
-      $(this).parents('.homepage-banner-container').removeClass("expanded");
-      $(this).attr('aria-expanded', 'false').text('Expand');
-      $(_d).removeClass('show');
-      $(_d).find('.hero-expandcontent').attr('aria-hidden', 'true');
-    } else {
-      $(this).parents('.homepage-banner-container').addClass("expanded");
-      $(this).attr('aria-expanded', 'true').text('Close');
-      $(_d).addClass('show');
-      $(_d).find('.hero-expandcontent').attr('aria-hidden', 'false');
-
-      // Scroll to open area when expanded
-      $("html, body").animate({
-        scrollTop: $(_d).offset().top - 40
-      }, 100);
     }
   });
 
@@ -1543,48 +1494,12 @@ jQuery(document).ready(function () {
   $(".dropdown>a").focus(function () {
     $('.dropdown.show').removeClass('show');
   });
-
-  /* from ahapp */
-  // table-stacked js
-  $('.table-r1').each(function (e) {
-    var headerNames = [];
-    var rowTitles = [];
-    $(this).find('thead th').each(function (e, item) {
-      headerNames.push(item.innerText); // context causes errors, removed
-    });
-    $(this).find('tbody th').each(function (e, item) {
-      rowTitles.push(item.innerText); // context causes errors, removed
-    });
-    $(this).find('tbody tr').each(function (e) {
-      $(this).children('th').text(rowTitles[e]);
-      $(this).children('td').each(function (e) {
-        $(this).attr('data-title', headerNames[e + 1]);
-      });
-    });
-  });
 }); // END FUNCTION READY
 
-
-// function calcOverviewOffset() {
-//   //var sidebarOffset = $('#sidebar-nav').offset().top; // doesn't matter
-//   var contentHeaderOffset = $('.content-header').offset().top;
-//   return contentHeaderOffset + 50;
-// }
-
-// function setOverviewOffset(offset) {
-//   document.getElementById('sidebar-nav').setAttribute('style', "top: -" + offset + "px");
-//   return true;
-// }
-
 __webpack_require__("./node_modules/jquery-colorbox/jquery.colorbox.js");
-// var twitterFetcher = require('twitter-fetcher');
-
-
-// jquery-colorbox/jquery.colorbox-min.js
 
 // Start the namespace
 var ahapp = {
-  // scrollableOffset: 101,
   colorBox: function colorBox() {
     $('.video-lightbox').colorbox({
       iframe: true,
@@ -1600,7 +1515,6 @@ var ahapp = {
         $("body").removeClass('menu-open');
       }
     });
-
     $('.lightbox').colorbox({
       maxWidth: "95%",
       maxHeight: "100%",
@@ -1617,31 +1531,6 @@ var ahapp = {
   changeScrollableOffset: function changeScrollableOffset(px) {
     this.scrollableOffset = px;
   }, // end mobileScrolltoTab
-  // twitterFeed: function () {
-  //   // $('.twitter-feed').twittie({
-  //   //   dateFormat: '%b %d',
-  //   //   template: '<div class="date">{{date}}</div> {{tweet}} ',
-  //   //   count: 6
-  //   // });
-
-  //   // setTimeout(function () {
-  //   //   $('.twitter-feed > ul > li').matchHeight();
-  //   // }, 2000);
-
-  //   var twitterConfig = {
-  //     "profile": {"screenName": 'ahappcc'},
-  //     "domId": 'twitter-feed',
-  //     "maxTweets": 3,
-  //     "enableLinks": true,
-  //     "showImages": false,
-  //     "showInteraction": false,
-  //     "showUser": false
-  //   };
-  //   var twitterHtml = twitterFetcher.fetch(twitterConfig); 
-  //   // console.log(twitterHtml)
-  //   // $('.twitter-feed').html = twitterHtml;
-
-  // }, // twitterFeed
   scrollAccordion: function scrollAccordion() {
     // For reference only; minified version in main.js
     var topScrollHeader = $('header').height(); // height of header when first loaded
@@ -1658,7 +1547,6 @@ var ahapp = {
         newPt = newPt - innerSectionHeight;
       }
       if (prevMoveTopOffset > clickPos - prevAccContent) {
-        // prevMoveTopOffset = newPt;
         $('html,body').animate({
           scrollTop: newPt
         }, animateSpeed);
@@ -1671,42 +1559,8 @@ var ahapp = {
         prevMoveTopOffset = newPt;
       }
     }
-
-    $(document).ready(function () {
-      $('.accordion .btn-toggle').on('mousedown', function (e) {
-        // if (panel) {
-        //   prevAccContent = panel.nextElementSibling.offsetHeight
-        // } else {
-        prevAccContent = 0;
-        // }
-        panel = e.target;
-      }).on('mouseup', function (e) {
-        if ($(e.target).hasClass('active')) {
-          togglerHeight = 0;
-          panel = undefined;
-          prevMoveTopOffset = 0;
-        } else {
-
-          togglerHeight = $(e.target).height();
-          var thisHeight = $(e.target).offset().top;
-          move(thisHeight);
-        }
-      });
-    });
   },
-  // loadNavChild: function() {
-  //   $("ul#subnav_parent > li").each(function(index){
-  //     if ($(this).children('a').attr("href").toLowerCase().indexOf(ou_child.toLowerCase()) >= 0){
-  //       var link = $(this).children('a').first().attr("href");
-  //       //console.log("Match = " + link);
-  //       $(this).append($("ul#subnav_child")).addClass('current');
-  //       $("ul#subnav_child").show();
 
-  //       var leftColHeight = $(".left-nav").height(); 
-  //         $(".content").css("minHeight", leftColHeight + 40);
-  //     }	
-  //   });
-  // },
   highlightActiveNav: function highlightActiveNav() {
     // Current Page Link Highlighting
     $(".left-nav nav ul.nav a,.button-row a").each(function (index) {
@@ -1726,49 +1580,7 @@ var ahapp = {
       });
     });
   },
-  // unWrapDuplicateULs: function() {
-  //   // remove duplicate <ul> in sidenav
-  //   $('.list-wrapper ul > ul').children().unwrap();
 
-
-  // },
-  // tableHTML: function() {
-
-  //   // table js
-  //   var switched=false;
-  //   var updateTables=function(){
-  //     if(($(window).width()<9999)&&!switched){
-  //       switched=true;$("table.responsive").each(function(i,element){splitTable($(element));});return true;}
-  //     else if(switched&&($(window).width()>9999)){switched=false;$("table.responsive").each(function(i,element){unsplitTable($(element));});}};$(window).on('load', updateTables);$(window).bind("resize",updateTables);function splitTable(original)
-  //   {original.wrap("<div class='table-wrapper' />");var copy=original.clone();copy.find("td:not(:first-child), th:not(:first-child)").css("display","none");copy.removeClass("responsive");original.closest(".table-wrapper").append(copy);copy.wrap("<div class='pinned' />");original.wrap("<div class='scrollable' />");}
-  //   function unsplitTable(original){original.closest(".table-wrapper").find(".pinned").remove();original.unwrap();original.unwrap();}
-
-  //   // table-stacked js
-  //   $('.table-r1').each( function(e) {
-  //     var headerNames = [];
-  //     var rowTitles = [];
-  //     $(this).find('thead th').each( function(e, item) {
-  //       headerNames.push(item.innerText); // context causes errors, removed
-  //     });
-  //     $(this).find('tbody th').each( function(e, item) {			
-  //       rowTitles.push(item.innerText); // context causes errors, removed
-  //     });
-  //     $(this).find('tbody tr').each( function(e) {
-  //       $(this).children('th').text(rowTitles[e]); 
-  //       $(this).children('td').each( function(e) {
-  //         $(this).attr('data-title', headerNames[e+1]) 
-  //       });
-  //     }); 
-  //   });
-
-  // },
-  // twoColNav: function() {
-  //   if ( $( ".option-explore-nav" ).length ) {
-  //   // Adds class to first item in second column 
-  //     var itemPos = Math.ceil($('.option-explore-nav .card-body ul li').length /2);
-  //     $($('.option-explore-nav .card-body ul li')[itemPos]).addClass('list-top');
-  //   }
-  // },
   addBreadcrumbPosition: function addBreadcrumbPosition() {
     // used for google structure data
     $('.breadcrumb li').each(function (index) {
@@ -1787,16 +1599,8 @@ var ahapp = {
 };
 
 ahapp.colorBox();
-// if ( $( "#twitter-feed" ).length ) {
-//   ahapp.twitterFeed();
-// }
-// ahapp.scrollAccordion();
-// ahapp.loadNavChild();
 ahapp.highlightActiveNav();
 ahapp.navTabs();
-// ahapp.unWrapDuplicateULs();
-// ahapp.tableHTML();
-// ahapp.twoColNav();
 ahapp.addBreadcrumbPosition();
 if (!ahapp.isMobile()) {
   ahapp.runParallax();
@@ -1821,16 +1625,11 @@ var ResponsiveBootstrapToolkit = __webpack_require__("./node_modules/responsive-
   };
 
   // on resize
-  $(window).resize(viewport.changed(function () {
-    // showBreakpoint();
-
-    // if( viewport.is('>=md') ) {
-    //   ahapp.changeScrollableOffset(40);
-    // } else {
-    //   ahapp.changeScrollableOffset(101);
-    // }
-
-  })).resize();
+  // $(window).resize(
+  //     viewport.changed(function() {
+  //       // showBreakpoint();
+  //     })
+  // ).resize();
 })(jQuery, ResponsiveBootstrapToolkit);
 
 // TODO: For images uses arrow notation :\

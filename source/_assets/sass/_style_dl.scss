@@ -6,35 +6,8 @@ dl.list-inline {
   dt { border-top: 1px solid $dl-border; padding: 1.5rem 0 0 0;  }
   dt:first-of-type { border-top:0;}
   dt { clear:both;}
-
-  [class*="icon-bg-"] + dd { padding-left: 3.1875rem; }
-  [class*="icon-bg-"]:before {
-    content: "";
-    
-    background-size: 2rem;
-    background-repeat: no-repeat; 
-    position: absolute;
-    height: 32px;
-    width: 32px;
-    left:0;
-    background-image:url('../../resources/img/icons/icons.svg');
-  } 
-
-  [class*="icon-bg-"] {
-    position:relative;
-    padding-left: 3.1875rem; 
-    &.icon-bg-book:before { background-position:0 0;}
-    &.icon-bg-calendar:before{background-position:0 -32px;}
-    &.icon-bg-clock-o:before{background-position:0 -64px;}
-    &.icon-bg-credit-card:before{background-position:0 -96px;}
-    &.icon-bg-map-marker:before{background-position:0 -128px;}
-    &.icon-bg-money:before{background-position:0 -160px;}
-    &.icon-bg-mortar-board:before{background-position:0 -192px;}
-    &.icon-bg-trophy-board:before{background-position:0 -232px;}
-  }
 }
 dl:after { content: ''; clear:both; display:block;}
-
 
 @media (min-width: $screen-md) {
   dl.list-inline {
@@ -42,13 +15,11 @@ dl:after { content: ''; clear:both; display:block;}
     margin:0; padding:0;
     display:block;
 
-    dd, dt { width:60%; 
-      //display:inline-block; 
+    dd, dt { width:60%;  
       padding: 1.5rem 0; 
       display:block; 
       float:right;
     }
-    [class*="icon-bg-"] + dd { padding-left: initial; }
     dt { 
       float:left;
       width: 40%;
@@ -58,9 +29,7 @@ dl:after { content: ''; clear:both; display:block;}
     dd {
       border-top: 1px solid $dl-border; }
     dd:first-of-type { border-top:0;}
-  }
-
- 
+  } 
 }
 @media (min-width: $screen-lg) {
   dl.list-inline {
@@ -78,6 +47,6 @@ dl:after { content: ''; clear:both; display:block;}
 .muted-dl {
   margin-bottom: 0; 
   dt {    color: $text-midgray;font-size: 1rem;
-    line-height: 1.5; font-weight: 400; }
-    dl { margin-bottom: 0;}
+  line-height: 1.5; font-weight: 400; }
+  dl { margin-bottom: 0;}
 }

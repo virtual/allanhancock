@@ -1,3 +1,4 @@
+// Used on Enroll page, grid of links
 .cta-cards {
   justify-content: stretch;
   align-items: stretch;
@@ -13,11 +14,7 @@
 
 .cta-cards a:hover {
   text-decoration: none;
-}
-
-// .cta-cards a:hover figcaption {
-//   background-color:  $secondary;
-// }
+} 
 
 .cta-cards figcaption {
   -webkit-transition: background-color 0.2s ease-out;

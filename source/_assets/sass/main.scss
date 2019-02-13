@@ -18,17 +18,8 @@ img {
 h2 { font-weight: 600; }
 h2.small { font-size: 1.5rem;}
 section { min-height:1px;}
+.container { max-width: $screen-xl; }  
 
-.container { max-width: $screen-xl; 
-  
-}  
-@media (min-width: $screen-lg) {
-  .container { 
-    // padding-left: 40px; padding-right: 40px; 
-    // margin-left: 40px; margin-right: 40px;
-    // padding-left: 0; padding-right: 0; 
-  }  
-}
 @media (min-width: $screen-xl + 80px) {
   .container { padding-left: 0; padding-right: 0;   }
 }
@@ -57,15 +48,11 @@ html {
   flex-direction: column;
   min-height: 1px;
 }
-
 p, ul, dl, ol {
   font-size: 1rem;
     line-height: 1.5; 
 } 
 .content-container a { text-decoration: underline; }
-.contact-section {
-  flex: none;
-} 
 
 ::-moz-selection { 
   color: #fff;
@@ -80,12 +67,10 @@ kbd {
   text-transform: none;
 }
 kbd.ouc {
-  // display:none;
   background: rgba(6, 134, 74, 0.9);
   color: #fff;
   font-family: Helvetica;
   padding: .5rem;
-  // position: absolute;
   z-index: 100;
 }
 .bg-primary-dark {
@@ -109,24 +94,10 @@ kbd.ouc {
   overflow: auto;
   top:0;
   clip-path: initial;
-  
   white-space: normal;
   display: inline-block;
-
   z-index: 1000;
 }
-
-// @media (min-width: $screen-md) {
-//   p, ul, dl, ol, div {
-//     font-size: 1.1875rem;
-//     line-height: 1.68;
-//     }
-//   footer, header {
-//     div { font-size: 1rem; line-height: 1.5; }
-//   }  
-// }
-
- 
 
 // Customizations
 @import "_style_prev.scss"; 
@@ -139,17 +110,14 @@ kbd.ouc {
 @import "_style_accordion.scss";
 @import "_style_classes.scss";
 @import "_style_topnav.scss";
-@import "_style_quote.scss"; 
-// @import "_style_form.scss"; 
+@import "_style_quote.scss";  
 @import "_style_table.scss"; 
 @import "_style_dl.scss"; 
 @import "_style_breadcrumb.scss"; 
 @import "_style_navtabs.scss"; 
 @import "_style_alert.scss"; 
 @import "_style_news.scss"; 
-@import "_style_pagination.scss"; 
-// @import "_style_sectionals.scss"; 
-// @import "_style_timeline.scss"; 
+@import "_style_pagination.scss";   
 @import "_style_buttons.scss"; 
 @import "_style_list.scss"; 
 @import "_style_video.scss"; 
@@ -161,11 +129,8 @@ kbd.ouc {
 @import "_style_icons.scss"; 
 @import "_style_homepage.scss"; 
 @import "_style_snippets.scss";
-@import "_style_gallery.scss";
-// @import "_style_twitter.scss";
 @import "_style_animations.scss";
 @import "_style_subfooter.scss";
-@import "_style_searchbanner.scss";
-// @import "_style_shame.scss";
+@import "_style_searchbanner.scss"; 
 
 @import "_style_print.scss";

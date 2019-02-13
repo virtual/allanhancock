@@ -10,8 +10,7 @@ a:hover { color: darken($link-blue, 5)}
 
 @include headings(1,6) { font-weight: 800; }
 h1, .h1, h2, .h2 { color: $primary; }
-h1, .h1 {
-  // line-height: 0.88;
+h1, .h1 { 
   line-height: 1;
   font-weight: 800;
   text-transform: uppercase;
@@ -34,11 +33,7 @@ h3, .h3 {
 }
 h4, .h4 { 
   font-weight: 700; 
-}
-h5, .h5 { 
-}
-h6, .h6 {  
-}
+} 
 h2, h3, h4, h5, h6 {
   margin-top:.75em;
 }
@@ -54,48 +49,19 @@ h2, h3, h4, h5, h6 {
     font-size: 1.25rem;
   } 
 }
-
  
 .small {
   font-size: 0.625em;
-  // line-height: 1.85;
 }
 .medium {
   font-size: .75em;
-  // line-height: 1.85;
 }
 .large {
   font-size: 0.8125em;
-  // line-height: 1.85;
 }
 .xl {
   font-size: 1em;
-  // line-height: 1.5;
 }
 .xxl {
   font-size: 1.1875em;
-  // line-height: 2;
 }
-
-// @media (min-width: $screen-md) {
-//   .small {
-//     font-size: 0.8125rem;
-//     line-height: 1.85;
-//   }
-//   .medium {
-//     font-size: 1rem;
-//     line-height: 1.5;
-//   }
-//   .large {
-//     font-size: 1.1875rem;
-//     line-height: 1.68;
-//   }
-//   .xl {
-//     font-size: 1.5rem;
-//     line-height: 1.67;
-//   }
-//   .xxl {
-//     font-size: 2rem;
-//     line-height: 1.25;
-//   }
-// }

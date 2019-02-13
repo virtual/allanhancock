@@ -37,11 +37,8 @@
   } 
   ol {
     li+li:before {
-      // content: '>';
-      // content: '\f054';
       content: "/";
       background-color: transparent;
-      // font-family: $font-awesome;
       display: inline-block;
       text-align: center;
       padding: .05em .55em 0 .35em;
