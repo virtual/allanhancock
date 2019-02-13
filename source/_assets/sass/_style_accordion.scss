@@ -44,28 +44,12 @@
       margin-top: -.125em;
       margin-right: -.125em;
     }
-    .btn-toggle:hover:after {
-      
-    }
-
-    .btn-toggle[aria-expanded=true]  {
-    }
-
     .btn-toggle[aria-expanded=true]:after {
       transform: rotate(90deg);
-      
-    }
-    .btn-toggle[aria-expanded=true]:hover:after {
-     
-    }
- 
-
+    } 
     h1, h2, h3, h4, h5, h6 { color:#000;
       margin:0; padding:0;
       a { color:inherit;}
     }
   }
-  // .accordion-header.active {background-color: $secondary; color: #fff; 
-  //   h1, h2, h3, h4, h5, h6 { color:#fff;   }
-  // } 
 }

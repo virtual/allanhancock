@@ -1451,14 +1451,13 @@ jQuery(document).ready(function () {
     e.stopPropagation();
 
     var _d = $(this).closest('.dropdown');
-    console.log(_d);
+    // console.log(_d);
 
     if (_d.hasClass('show')) {
-      console.log('remove');
+      // console.log('remove')
       $(_d).removeClass('show');
     } else {
-      console.log('add');
-
+      // console.log('add')      
       $(_d).removeClass('show');
       _d.addClass('show');
     }
@@ -1695,19 +1694,19 @@ var ahapp = {
       });
     });
   },
-  loadNavChild: function loadNavChild() {
-    $("ul#subnav_parent > li").each(function (index) {
-      if ($(this).children('a').attr("href").toLowerCase().indexOf(ou_child.toLowerCase()) >= 0) {
-        var link = $(this).children('a').first().attr("href");
-        //console.log("Match = " + link);
-        $(this).append($("ul#subnav_child")).addClass('current');
-        $("ul#subnav_child").show();
+  // loadNavChild: function() {
+  //   $("ul#subnav_parent > li").each(function(index){
+  //     if ($(this).children('a').attr("href").toLowerCase().indexOf(ou_child.toLowerCase()) >= 0){
+  //       var link = $(this).children('a').first().attr("href");
+  //       //console.log("Match = " + link);
+  //       $(this).append($("ul#subnav_child")).addClass('current');
+  //       $("ul#subnav_child").show();
 
-        var leftColHeight = $(".left-nav").height();
-        $(".content").css("minHeight", leftColHeight + 40);
-      }
-    });
-  },
+  //       var leftColHeight = $(".left-nav").height(); 
+  //         $(".content").css("minHeight", leftColHeight + 40);
+  //     }	
+  //   });
+  // },
   highlightActiveNav: function highlightActiveNav() {
     // Current Page Link Highlighting
     $(".left-nav nav ul.nav a,.button-row a").each(function (index) {
@@ -1727,10 +1726,12 @@ var ahapp = {
       });
     });
   },
-  unWrapDuplicateULs: function unWrapDuplicateULs() {
-    // remove duplicate <ul> in sidenav
-    $('.list-wrapper ul > ul').children().unwrap();
-  },
+  // unWrapDuplicateULs: function() {
+  //   // remove duplicate <ul> in sidenav
+  //   $('.list-wrapper ul > ul').children().unwrap();
+
+
+  // },
   // tableHTML: function() {
 
   //   // table js
@@ -1790,12 +1791,12 @@ ahapp.colorBox();
 //   ahapp.twitterFeed();
 // }
 // ahapp.scrollAccordion();
-ahapp.loadNavChild();
+// ahapp.loadNavChild();
 ahapp.highlightActiveNav();
 ahapp.navTabs();
-ahapp.unWrapDuplicateULs();
-ahapp.tableHTML();
-ahapp.twoColNav();
+// ahapp.unWrapDuplicateULs();
+// ahapp.tableHTML();
+// ahapp.twoColNav();
 ahapp.addBreadcrumbPosition();
 if (!ahapp.isMobile()) {
   ahapp.runParallax();

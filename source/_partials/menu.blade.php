@@ -260,7 +260,7 @@
               <h2>Paying for College</h2>
               </li>
               <li><a onclick="ga('send','event','Main-Nav', 'Financial Aid Cost to Attend');" href="https://www.hancockcollege.edu/cashier_services/index.php">Cost to Attend</a></li>
-              <li>Cost Comparison</li>
+              <li><a href="#">Cost Comparison</a></li>
               <li class="last"><a onclick="ga('send','event','Main-Nav', 'Financial Aid Bulldog Card');" href="https://www.hancockcollege.edu/cashier_services/bulldog-card.php">AHC Bulldog Card</a></li>
               </ul>
               <ul class="no-border">
