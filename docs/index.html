@@ -601,8 +601,8 @@
   <section class="hero left bg-primary">
     <div class="hero-image-wrapper"></div>
     <div class="hero-caption large-text">
-      <p>Start here.</p>
-      <p>Go anywhere.</p>
+      <p><a href="https://www.hancockcollege.edu/academic_departments/public_safety/fire/internships.php">Start here
+      <span class="line2">Go anywhere.</span></a></p>
     </div>
   </section>
 </div>
@@ -610,8 +610,8 @@
   <section class="hero left bg-primary">
     <div class="hero-image-wrapper"></div>
     <div class="hero-caption large-text">
-      <p>Education</p>
-      <p>For life.</p>
+        <p><a href="https://www.hancockcollege.edu/community_education/index.php">Education
+        <span class="line2">for Life.</span></a></p>
     </div>
   </section>
 </div>
@@ -959,8 +959,14 @@
     return 'hero-'+(1 + Math.floor(Math.random() * heroCt));
   }
   $(function() {
+    // Link whole slide based on inner link
+    $('.hero-images .homepage-banner').click(function(e){
+      var link = $(this).find('.hero-caption a').attr('href');
+      window.location.href = link;
+    })
+
+    // Randomize slide
     var heroClass = showRandomHero($('.hero-images .homepage-banner').length)
-    console.log(heroClass)
     $('.hero-images .homepage-banner.' + heroClass).show(); 
     $('.hero-images').addClass('initialized');
   });
