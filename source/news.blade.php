@@ -10,9 +10,7 @@ Newsroom
 @endsection
    
  
-@section('content') 
-
-<h2 class="sr-only">Recent News</h2>
+@section('content')  
 
 <div class="news-row news-bordered news-page-feed">
     @include('_partials.article', [

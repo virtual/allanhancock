@@ -2,7 +2,7 @@
   <div class="image-container">@if(!empty($img)) <a href="{{ $link }}"><img src="{{$img}}" alt="{{$alt}}"></a>@endif</div>  
   <div class="article-info-container">
     <header>
-      <h2 class="h4"><a href="{{ $link }}">{{ $heading }}</a></h2>
+      <h4><a href="{{ $link }}">{{ $heading }}</a></h4>
       @if(!empty($datetime))<p class="datetime"><time datetime="{{$datetime}}"><?php echo date("F j, Y", strtotime($datetime)) ?> </time></p>@endif
     </header>
       <p class="description">{{ $desc }} </p>

@@ -119,7 +119,7 @@
     <div class="article-listing news-row">
     
     <!-- Add option for # of news items to show -->
-    @include('_partials.article', [
+    @include('_partials.article-feed', [
     'heading' => 'Watch Historic Mars Landing Live at Allan Hancock College',
     'desc' => 'The event is free and open to the public',
     'alt' => 'students at a table',
@@ -128,7 +128,7 @@
     'datetime' => '2018-09-13 11:31'
     ])
     
-    @include('_partials.article', [
+    @include('_partials.article-feed', [
     'heading' => 'Allan Hancock College Renames Health, Science & Mathematics Building in Honor of Marian Regional Medical Center',
     'desc' => 'More than 150 guests were in attendance',
     'alt' => 'students at a table',
@@ -137,7 +137,7 @@
     'datetime' => '2018-09-13 11:31'
     ])
         
-    @include('_partials.article', [
+    @include('_partials.article-feed', [
     'heading' => 'Hancock\'s Winter and Spring Class Schedules Now Available Online; Registration for Both Semesters Starts November 13',
     'desc' => 'Classes include accounting, drama, history, and much more!',
     'alt' => '',
