@@ -68,7 +68,7 @@ jQuery(document).ready(function() {
     $('.dropdown.show').removeClass('show');
   });
 }); // END FUNCTION READY
- 
+
 require('jquery-colorbox');
 
 // Start the namespace

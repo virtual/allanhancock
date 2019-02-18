@@ -2,21 +2,21 @@
 
 @section('headcode')
 <style>
-  .homepage-banner.hero-1 .hero-image-wrapper{
-    background-image: url(./resources/img/homepage/banner-1920.jpg);
+  .homepage-banner.hero-1 .hero-image-wrapper { background-image: url(./resources/img/homepage/hero-1/banner-768.jpg); }
+  @media (min-width: 480px) {
+    .homepage-banner.hero-1 .hero-image-wrapper { background-image: url(./resources/img/homepage/hero-1/banner-1200.jpg); }
   }
-  
-  /* @media screen and (max-width: 900px) { 						
-   .homepage-banner.hero-1 {
-    background-image: url(./resources/img/homepage/banner-1920.jpg);
-    }
-  } 
-  
-  @media screen and (max-width: 479px) {  
-   .homepage-banner.hero-1 {
-    background-image: url(./resources/img/homepage/banner-1920.jpg);
-    }
-  } 						  */
+  @media (min-width: 992px) {
+    .homepage-banner.hero-1 .hero-image-wrapper { background-image: url(./resources/img/homepage/hero-1/banner-1920.jpg); }
+  }
+
+  .homepage-banner.hero-2 .hero-image-wrapper { background-image: url(./resources/img/homepage/hero-2/banner-768.jpg); }
+  @media (min-width: 480px) {
+    .homepage-banner.hero-2 .hero-image-wrapper { background-image: url(./resources/img/homepage/hero-2/banner-1200.jpg); }
+  }
+  @media (min-width: 992px) {
+    .homepage-banner.hero-2 .hero-image-wrapper { background-image: url(./resources/img/homepage/hero-2/banner-1920.jpg); }
+  }
  </style>
 
  <!-- search -->
@@ -24,33 +24,44 @@
   .banner-search .homepage-banner .hero-image-wrapper  {
     background-image: url('./resources/img/stock/alexis-brown-85793-unsplash.jpg')
   }
-  
-  /* @media screen and (max-width: 900px) { 						
-   .banner-search .homepage-banner .hero-image-wrapper  {
-      background-image: url('./resources/img/ctas/cta-01.jpg')
-    }
-  } 
-  
-  @media screen and (max-width: 479px) {  
-    .banner-search .homepage-banner .hero-image-wrapper  {
-      background-image: url('./resources/img/ctas/cta-01.jpg')
-    }
-  } 						  */
  </style>
 @endsection
 
-@section('hero1')
-
-
-<section class="hero left bg-primary">
-  <div class="hero-image-wrapper"></div>
-
-  <div class="hero-caption large-text">
-    <p>Start here.</p>
-    <p>Go anywhere.</p>
-  </div>
-</section>
+@section('footcode')
+<script>
+  function showRandomHero(heroCt) {
+    return 'hero-'+(1 + Math.floor(Math.random() * heroCt));
+  }
+  $(function() {
+    var heroClass = showRandomHero($('.hero-images .homepage-banner').length)
+    console.log(heroClass)
+    $('.hero-images .homepage-banner.' + heroClass).show(); 
+    $('.hero-images').addClass('initialized');
+  });
+</script>
 @endsection
+
+@section('hero')
+<div class="homepage-banner hero-1">
+  <section class="hero left bg-primary">
+    <div class="hero-image-wrapper"></div>
+    <div class="hero-caption large-text">
+      <p>Start here.</p>
+      <p>Go anywhere.</p>
+    </div>
+  </section>
+</div>
+<div class="homepage-banner hero-2">
+  <section class="hero left bg-primary">
+    <div class="hero-image-wrapper"></div>
+    <div class="hero-caption large-text">
+      <p>Education</p>
+      <p>For life.</p>
+    </div>
+  </section>
+</div>
+@endsection
+
 
 @section ('subfeature') 
 @include('_partials.imagebutton', [

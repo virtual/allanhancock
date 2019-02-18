@@ -35,21 +35,21 @@
     </style>
   </noscript>
   <style>
-  .homepage-banner.hero-1 .hero-image-wrapper{
-    background-image: url(./resources/img/homepage/banner-1920.jpg);
+  .homepage-banner.hero-1 .hero-image-wrapper { background-image: url(./resources/img/homepage/hero-1/banner-768.jpg); }
+  @media (min-width: 480px) {
+    .homepage-banner.hero-1 .hero-image-wrapper { background-image: url(./resources/img/homepage/hero-1/banner-1200.jpg); }
   }
-  
-  /* @media  screen and (max-width: 900px) { 						
-   .homepage-banner.hero-1 {
-    background-image: url(./resources/img/homepage/banner-1920.jpg);
-    }
-  } 
-  
-  @media  screen and (max-width: 479px) {  
-   .homepage-banner.hero-1 {
-    background-image: url(./resources/img/homepage/banner-1920.jpg);
-    }
-  } 						  */
+  @media (min-width: 992px) {
+    .homepage-banner.hero-1 .hero-image-wrapper { background-image: url(./resources/img/homepage/hero-1/banner-1920.jpg); }
+  }
+
+  .homepage-banner.hero-2 .hero-image-wrapper { background-image: url(./resources/img/homepage/hero-2/banner-768.jpg); }
+  @media (min-width: 480px) {
+    .homepage-banner.hero-2 .hero-image-wrapper { background-image: url(./resources/img/homepage/hero-2/banner-1200.jpg); }
+  }
+  @media (min-width: 992px) {
+    .homepage-banner.hero-2 .hero-image-wrapper { background-image: url(./resources/img/homepage/hero-2/banner-1920.jpg); }
+  }
  </style>
 
  <!-- search -->
@@ -57,18 +57,6 @@
   .banner-search .homepage-banner .hero-image-wrapper  {
     background-image: url('./resources/img/stock/alexis-brown-85793-unsplash.jpg')
   }
-  
-  /* @media  screen and (max-width: 900px) { 						
-   .banner-search .homepage-banner .hero-image-wrapper  {
-      background-image: url('./resources/img/ctas/cta-01.jpg')
-    }
-  } 
-  
-  @media  screen and (max-width: 479px) {  
-    .banner-search .homepage-banner .hero-image-wrapper  {
-      background-image: url('./resources/img/ctas/cta-01.jpg')
-    }
-  } 						  */
  </style>
 
   <!-- Analytics -->
@@ -127,7 +115,7 @@
 
                 <!-- H1 on homepage only -->
         <h1>
-            <a class="navbar-brand" href="/">
+            <a class="navbar-brand" href="https://www.hancockcollege.edu/">
 	<img height="65" width="165" src="https://virtual.github.io/allanhancock/resources/img/logos/ahc-logo.png" alt="Allan Hancock College" />
 </a>        </h1>
         
@@ -159,9 +147,7 @@
         </button>
       </div>
     </div>
-    <div class="collapse navbar-collapse" id="navbarCollapse">
-
-      
+    <div class="collapse navbar-collapse" id="navbarCollapse">     
         <div class="d-block d-lg-none"> 
         <ul class="secondary-menu">
   <li><a class="btn icon-white purplegradient more-arrow" href="#">Canvas</a></li>
@@ -170,10 +156,6 @@
 </ul> 
         </div>
       <ul>
-
-         
-
-
         <li class="dropdown">
           <a class="dropdown-toggle" href="#">About AHC</a>
 
@@ -432,9 +414,6 @@
               </div>
           </div>
         </li> 
-
-
-
         <li class="dropdown dropdown-quicklinks">
           <a class="dropdown-toggle" href="#"><span class="d-lg-none">Quick Links</span> <span class="d-none d-lg-block sr-only">Quick Links</span><span class="fas fa-link"></span>
         </a>
@@ -589,10 +568,6 @@
         </div>
         </div>
       </li>
-
-
-
-
       
       </ul>
       <div class="d-block d-lg-none"> 
@@ -621,20 +596,25 @@
         <span class="sr-only">Dismiss alert</span></span></a>
   </div>
 </div></header>  <main id="content">
-<banner class="homepage-banner-container" role="banner" aria-label="Banner">
-  <div class="homepage-banner hero-1 ">
-    
-
-<section class="hero left bg-primary">
-  <div class="hero-image-wrapper"></div>
-
-  <div class="hero-caption large-text">
-    <p>Start here.</p>
-    <p>Go anywhere.</p>
-  </div>
-</section>
-
-  </div> 
+<banner class="homepage-banner-container hero-images" role="banner" aria-label="Banner">
+  <div class="homepage-banner hero-1">
+  <section class="hero left bg-primary">
+    <div class="hero-image-wrapper"></div>
+    <div class="hero-caption large-text">
+      <p>Start here.</p>
+      <p>Go anywhere.</p>
+    </div>
+  </section>
+</div>
+<div class="homepage-banner hero-2">
+  <section class="hero left bg-primary">
+    <div class="hero-image-wrapper"></div>
+    <div class="hero-caption large-text">
+      <p>Education</p>
+      <p>For life.</p>
+    </div>
+  </section>
+</div>
 </banner>
 <div class="container subfeature" aria-label="Featured Links">
     <div class="d-flex align-items-stretch">
@@ -973,6 +953,18 @@
   
   <!-- <script src="https://virtual.github.io/allanhancock/assets/js/lazyload.js"></script> -->
   <script src="https://virtual.github.io/allanhancock/assets/js/main.js"></script> 
+
+  <script>
+  function showRandomHero(heroCt) {
+    return 'hero-'+(1 + Math.floor(Math.random() * heroCt));
+  }
+  $(function() {
+    var heroClass = showRandomHero($('.hero-images .homepage-banner').length)
+    console.log(heroClass)
+    $('.hero-images .homepage-banner.' + heroClass).show(); 
+    $('.hero-images').addClass('initialized');
+  });
+</script>
      
 </body>
 

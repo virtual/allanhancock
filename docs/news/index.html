@@ -95,7 +95,7 @@
     <div class="row">
       <div class="header-logo d-none d-lg-block">
 
-                  <a class="navbar-brand" href="/">
+                  <a class="navbar-brand" href="https://www.hancockcollege.edu/">
 	<img height="65" width="165" src="https://virtual.github.io/allanhancock/resources/img/logos/ahc-logo.png" alt="Allan Hancock College" />
 </a>        
       </div>
@@ -126,9 +126,7 @@
         </button>
       </div>
     </div>
-    <div class="collapse navbar-collapse" id="navbarCollapse">
-
-      
+    <div class="collapse navbar-collapse" id="navbarCollapse">     
         <div class="d-block d-lg-none"> 
         <ul class="secondary-menu">
   <li><a class="btn icon-white purplegradient more-arrow" href="#">Canvas</a></li>
@@ -137,10 +135,6 @@
 </ul> 
         </div>
       <ul>
-
-         
-
-
         <li class="dropdown">
           <a class="dropdown-toggle" href="#">About AHC</a>
 
@@ -399,9 +393,6 @@
               </div>
           </div>
         </li> 
-
-
-
         <li class="dropdown dropdown-quicklinks">
           <a class="dropdown-toggle" href="#"><span class="d-lg-none">Quick Links</span> <span class="d-none d-lg-block sr-only">Quick Links</span><span class="fas fa-link"></span>
         </a>
@@ -556,10 +547,6 @@
         </div>
         </div>
       </li>
-
-
-
-
       
       </ul>
       <div class="d-block d-lg-none"> 
@@ -645,13 +632,24 @@
         <main class="content-container">
           <div class="content-section ">
             <div class="breadcrumb" aria-label="breadcrumb">
-              <ol>
-    <li><a href="#">Home</a></li>
-    <li><a href="#">About</a></li>
-    <li><a href="#">Announcements</a></li>
-    <li><a aria-current="page" href="#">News and Announcements</a></li>
-  </ol>
-            </div>
+              <!-- Similar to Shoreline CC implementation -->
+<ol vocab="http://schema.org/" typeof="BreadcrumbList">
+  <li property="itemListElement" typeof="ListItem">
+    <a property="item" typeof="WebPage" href="https://www.hancockcollege.edu/">
+      <span property="name">Home</span></a>
+    <meta property="position" content="1">
+  </li> 
+  <li property="itemListElement" typeof="ListItem">
+    <a property="item" typeof="WebPage" href="https://www.hancockcollege.edu/academic_departments/programs.php">
+      <span property="name">Directory Example</span></a>
+    <meta property="position" content="2">
+  </li> 
+  <li property="itemListElement" typeof="ListItem">
+    <a property="item" typeof="WebPage" class="active" aria-current="page" href="https://www.hancockcollege.edu/academic_departments/business/accounting/index.php">
+      <span property="name">Current Page Example</span></a>
+    <meta property="position" content="3">
+  </li>
+</ol>            </div>
             <h1>Newsroom
 </h1>             
             <div class="content-interior-wrapper">

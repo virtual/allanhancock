@@ -56,11 +56,8 @@
 
   @include('_partials.header')
   <main id="content">
-<banner class="homepage-banner-container" role="banner" aria-label="Banner">
-  <div class="homepage-banner hero-1 ">
-    @yield('hero1')
-
-  </div> 
+<banner class="homepage-banner-container hero-images" role="banner" aria-label="Banner">
+  @yield('hero')
 </banner>
 <div class="container subfeature" aria-label="Featured Links">
     <div class="d-flex align-items-stretch">
@@ -118,6 +115,8 @@
   
   <!-- <script src="{{ $page->baseUrl }}/assets/js/lazyload.js"></script> -->
   <script src="{{ $page->baseUrl }}/assets/js/main.js"></script> 
+
+  @yield('footcode')
      
 </body>
 

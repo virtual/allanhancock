@@ -89,20 +89,21 @@
   
   h2, h3 { color: #fff; }
 }
-
-.homepage-banner.hero-1 {
+// .homepage-banner.hero-1 // previously specific
+.homepage-banner {
   position: relative;  
   background-color: #005baa;
     filter: contrast(200%);
 }
-.homepage-banner.hero-1 .hero-image-wrapper {
-  
+.hero-images .homepage-banner { display: none; } // for randomization of target area only
+
+.homepage-banner .hero-image-wrapper {  
   -webkit-filter: grayscale(100%); 
   filter: grayscale(100%);
   opacity: .5;
     background-blend-mode: overlay; 
 }
-.homepage-banner.hero-1 .hero-image-wrapper:before {
+.homepage-banner .hero-image-wrapper:before {
   background-color: rgba(45, 86, 132, 0.25);
   background-blend-mode: overlay;
   content: "";
@@ -177,7 +178,7 @@
   }
 }
 @media (min-width: $screen-sm) {
-  .homepage .subfeature { padding-top: 0; margin-top: -50px; padding-bottom: 30px; }
+  .homepage .hero-images.initialized + .subfeature { padding-top: 0; margin-top: -50px; padding-bottom: 30px; }
 
   .homepage .subfeature .d-flex {
     flex-direction: row;
