@@ -59,7 +59,7 @@
   <div class="hero left bg-primary">
     <div class="hero-image-wrapper"></div>
     <div class="hero-caption large-text">
-      <h2><a href="https://www.hancockcollege.edu/academic_departments/public_safety/fire/internships.php">Start here
+      <h2><a href="https://www.hancockcollege.edu/academic_departments/public_safety/fire/internships.php">Start here.
       <span class="line2">Go anywhere.</span></a></h2>
     </div>
   </div>
