@@ -1,5 +1,5 @@
-<section class="subcampaign" style="background-image: url({{$img}})"> 
-  <div class="subcampaign-content">
+<section class="subcampaign {{$class}}" style="background-image: url({{$img}})"> 
+  <div class="subcampaign-content delayAnimation">
     <div class="container">
       
       <!-- wysiwyg with options for selecting snippets -->

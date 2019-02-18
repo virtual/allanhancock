@@ -177,7 +177,7 @@
 <section class="hero left">
     <div class="hero-image-wrapper jarallax"></div>
 
-<div class="hero-caption">
+<div class="hero-caption delayAnimation">
        <h2 class="heading">What are you interested in learning?</h2>
 
 
@@ -235,16 +235,19 @@
 
 @section('content')
  
+  <!-- If parallax option turned on, add class "jarallax" -->
   @include('_partials.subcampaign', [ 
   'desc' => '', 
   'desc2' => '<h2><img src="./resources/img/logos/promise.png" alt="Hancock Promise"></h2><p><a class="text-white icon-white more-arrow" href="#">Find Out More</a></p>', 
-  'img' => './resources/img/homepage/firefighting-grad.jpg'
+  'img' => './resources/img/homepage/firefighting-grad.jpg',
+  'class' => 'jarallax'
   ]) 
 
   @include('_partials.subcampaign', [ 
   'desc' => '<h2>Bulldog Athletics</h2><p>Men\'s and Women\'s sports at Allan Hancock College</p><p><a class="more-arrow text-dark" href="#">Explore Athletics</a></p>', 
   'desc2' => '', 
-  'img' => './resources/img/homepage/athletics.jpg'
+  'img' => './resources/img/homepage/athletics.jpg',
+  'class' => ''
   ]) 
 
 

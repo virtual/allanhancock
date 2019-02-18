@@ -18,6 +18,12 @@
   transform: translateX(-100%);   
   animation: slide-in 2s forwards;  
 }
+.subcampaign-content.runAnimation {
+  animation: fadein 2s;
+}
+.banner-search .hero-caption.runAnimation {
+  animation: fadein 2s;
+}
 
 @keyframes slide-in {
   0% { opacity:0;}
@@ -70,4 +76,9 @@
     opacity: 1;
     left:0;
   }
+}
+
+@keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
 }

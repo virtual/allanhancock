@@ -241,6 +241,7 @@
   background-size: cover;
   transition: height .2s ease-in-out;
   height: 315px;
+  position: relative;
   h2 { font-size: 28px; font-weight: 800; text-transform: uppercase; color: $link-blue; line-height: 1.1; }
   a.more-arrow {
     text-transform: uppercase;
