@@ -7,11 +7,7 @@ First-time college students
 
 
 @section('breadcrumb')
-<ol>
-    <li><a href="#">Home</a></li>
-    <li><a href="#">Templates</a></li>
-    <li><a aria-current="page" href="#">Enroll 2</a></li>
-  </ol>
+@include('_partials/breadcrumbs')
 @endsection
  
  

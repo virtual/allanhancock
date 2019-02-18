@@ -10,11 +10,7 @@ https://virtual.github.io/allanhancock/resources/img/stock/alexis-brown-85793-un
 
 
 @section('breadcrumb')
-<ol>
-    <li><a href="#">Home</a></li>
-    <li><a href="#">Templates</a></li>
-    <li><a aria-current="page" href="#">Template 4</a></li>
-  </ol>
+@include('_partials/breadcrumbs')
 @endsection
 
 

@@ -13,17 +13,11 @@
         </button>
       </div>
     </div>
-    <div class="collapse navbar-collapse" id="navbarCollapse">
-
-      
+    <div class="collapse navbar-collapse" id="navbarCollapse">     
         <div class="d-block d-lg-none"> 
         @include ('_partials.topnav2') 
         </div>
       <ul>
-
-         
-
-
         <li class="dropdown">
           <a class="dropdown-toggle" href="#">About AHC</a>
 
@@ -282,9 +276,6 @@
               </div>
           </div>
         </li> 
-
-
-
         <li class="dropdown dropdown-quicklinks">
           <a class="dropdown-toggle" href="#"><span class="d-lg-none">Quick Links</span> <span class="d-none d-lg-block sr-only">Quick Links</span><span class="fas fa-link"></span>
         </a>
@@ -316,10 +307,6 @@
         </div>
         </div>
       </li>
-
-
-
-
       
       </ul>
       <div class="d-block d-lg-none"> 

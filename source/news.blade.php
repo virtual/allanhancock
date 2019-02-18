@@ -6,12 +6,7 @@ Newsroom
 
 
 @section('breadcrumb')
-<ol>
-    <li><a href="#">Home</a></li>
-    <li><a href="#">About</a></li>
-    <li><a href="#">Announcements</a></li>
-    <li><a aria-current="page" href="#">News and Announcements</a></li>
-  </ol>
+@include('_partials/breadcrumbs')
 @endsection
    
  
