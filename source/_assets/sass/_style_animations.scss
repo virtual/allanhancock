@@ -25,6 +25,16 @@
   animation: fadein 2s;
 }
 
+.animated-news-events.runAnimation {
+  article {
+    height: 0;
+    opacity: 0;
+    transform: translateY(-100%);   
+    animation: fadeinTop .75s; // match delay of JS on homepage
+    animation-fill-mode: forwards;
+  }
+}
+
 @keyframes slide-in {
   0% { opacity:0;}
   100% { transform: translateX(0%); opacity:1;}
@@ -80,5 +90,9 @@
 
 @keyframes fadein {
   from { opacity: 0; }
-  to   { opacity: 1; }
+  to   { opacity: 1;  }
+}
+@keyframes fadeinTop {
+  from { opacity: 0; height: auto; }
+  to   { opacity: 1; height: auto; transform: translateY(0%); }
 }

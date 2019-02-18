@@ -25,7 +25,7 @@ a.btn { text-decoration: none; }
 .btn-block:first-child { margin-top: 1.1875rem; }
 .btn-block:last-child { margin-bottom: 1.1875rem; }
 
-.btn-outline-light:hover { background-color: $primary; }
+.btn-outline-light:hover, .btn-outline-light:focus, .btn-outline-light:active { background-color: $primary; color: #fff; }
  
 dl .btn-toggle { font-size: 1rem; }
 @media (min-width: $screen-md) {
