@@ -25,12 +25,26 @@ $tabinactive: #e7e7e7;
     background-color: $tabinactive;
     font-weight: 800;
     border-radius: 0;
-    padding-right: .5rem;
+    padding-right: 2.5rem;
+    position: relative;
     text-decoration: none;
     &:after {
       color: $dark;
-      float: right;
-      margin-top: .25rem;
+      position: absolute;
+      top: auto; 
+      right: 10px;
+      left: auto;
+      bottom: auto;
+      padding: 0; 
+      margin: 4px;
+      display: inline-block;      
+      transition: right .2s ease-in-out;
+    }
+    &:hover:after { 
+      right: 8px;
+      left: auto; 
+      padding: 0; 
+      margin: 4px;
     }
   }
 
@@ -39,19 +53,16 @@ $tabinactive: #e7e7e7;
     background-color: $tabactive;
     margin-bottom: -1px;
 
-    &:after {
-      padding-left: 0;
-      transform: rotate(90deg);
-      margin-right: .62rem;
-      margin-left: .8rem;
+    &:after { 
+      transform: rotate(90deg); 
     }
-
     &:hover:after { 
-      margin-left: .8rem;
-      margin-right: .62rem;
-    }
+      right: 10px;
+      left: auto; 
+      padding: 0; 
+      margin: 4px;
+    }   
   }
-
   &+.tab-content {
     width: 100%;
   }
