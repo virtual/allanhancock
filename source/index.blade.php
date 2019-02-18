@@ -56,22 +56,22 @@
 
 @section('hero')
 <div class="homepage-banner hero-1">
-  <section class="hero left bg-primary">
+  <div class="hero left bg-primary">
     <div class="hero-image-wrapper"></div>
     <div class="hero-caption large-text">
-      <p><a href="https://www.hancockcollege.edu/academic_departments/public_safety/fire/internships.php">Start here
-      <span class="line2">Go anywhere.</span></a></p>
+      <h2><a href="https://www.hancockcollege.edu/academic_departments/public_safety/fire/internships.php">Start here
+      <span class="line2">Go anywhere.</span></a></h2>
     </div>
-  </section>
+  </div>
 </div>
 <div class="homepage-banner hero-2">
-  <section class="hero left bg-primary">
+  <div class="hero left bg-primary">
     <div class="hero-image-wrapper"></div>
     <div class="hero-caption large-text">
-        <p><a href="https://www.hancockcollege.edu/community_education/index.php">Education
-        <span class="line2">for Life.</span></a></p>
+        <h2><a href="https://www.hancockcollege.edu/community_education/index.php">Education
+        <span class="line2">for Life.</span></a></h2>
     </div>
-  </section>
+  </div>
 </div>
 @endsection
 

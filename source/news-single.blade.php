@@ -81,7 +81,7 @@ Author and Hancock Professor Offers Free Lecture on the Art of Publishing a Book
    Maria campus.
 </p>
 
-<p align="center">- AHC -</p>
+<p class="text-center">- AHC -</p>
 
 <p>Caption: Diane Auten, pictured at one of her book signings, will be giving a free
    lecture, called “So You Want to be an Author,” at Allan Hancock College on Feb. 8.

@@ -56,9 +56,9 @@
 
   @include('_partials.header')
   <main id="content">
-<banner class="homepage-banner-container hero-images" role="banner" aria-label="Banner">
+<section class="homepage-banner-container hero-images">
   @yield('hero')
-</banner>
+</section>
 <div class="container subfeature" aria-label="Featured Links">
     <div class="d-flex align-items-stretch">
       @yield('subfeature')

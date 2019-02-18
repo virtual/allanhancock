@@ -10,7 +10,7 @@
       <p> By clicking on the "Apply for Admission" link below, you will be directed to the California Community College Online Application.  It is important that you complete BOTH steps:</p>
       <ol>
         <li>Create a CCCApply account and receive a CCCID, and</li>
-        <li>Complete the application for admission for Allan Hancock College.</p></li>
+        <li>Complete the application for admission for Allan Hancock College.</li>
       </ol>
         <p><a href="#" class="btn btn-primary">Apply for Admission</a></p>
     </div>
@@ -26,7 +26,7 @@
         <p> By clicking on the "Apply for Admission" link below, you will be directed to the California Community College Online Application.  It is important that you complete BOTH steps:</p>
         <ol>
           <li>Create a CCCApply account and receive a CCCID, and</li>
-          <li>Complete the application for admission for Allan Hancock College.</p></li>
+          <li>Complete the application for admission for Allan Hancock College.</li>
         </ol>
           <p><a href="#" class="btn btn-primary">Apply for Admission</a></p>
       </div>
@@ -42,7 +42,7 @@
           <p> By clicking on the "Apply for Admission" link below, you will be directed to the California Community College Online Application.  It is important that you complete BOTH steps:</p>
           <ol>
             <li>Create a CCCApply account and receive a CCCID, and</li>
-            <li>Complete the application for admission for Allan Hancock College.</p></li>
+            <li>Complete the application for admission for Allan Hancock College.</li>
           </ol>
             <p><a href="#" class="btn btn-primary">Apply for Admission</a></p>
         </div>
