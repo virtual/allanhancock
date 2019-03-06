@@ -204,7 +204,9 @@
   text-align: center;
   h2 { font-weight: 800; text-transform: uppercase; font-size: 1.875rem; letter-spacing: .06em; padding-bottom: 0; margin: 0; }
   p { font-size: 1.25rem;}
-  a { font-weight: 700; display: block; margin-bottom: 2rem; }
+  a { font-weight: 700; display: block; 
+    // margin-bottom: 2rem; 
+  }
 }
 
 .homepage .news-events {

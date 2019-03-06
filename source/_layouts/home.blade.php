@@ -19,6 +19,8 @@
 
   <link rel="stylesheet" href="{{ $page->baseUrl }}/assets/css/bootstrap.css">
   <link rel="stylesheet" href="{{ $page->baseUrl }}/assets/css/main.css?v=2">
+  <link rel="stylesheet" href="{{ $page->baseUrl }}/assets/css/slick-theme.css">
+  <link rel="stylesheet" href="{{ $page->baseUrl }}/assets/css/slick.css">
 
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
   <noscript>
@@ -115,6 +117,11 @@
   
   <!-- <script src="{{ $page->baseUrl }}/assets/js/lazyload.js"></script> -->
   <script src="{{ $page->baseUrl }}/assets/js/main.js"></script> 
+
+    
+  <script src="{{ $page->baseUrl }}/assets/js/slick.min.js"></script>
+  <script src="{{ $page->baseUrl }}/assets/js/slick-app.js?v=4"></script>
+ 
 
   @yield('footcode')
      

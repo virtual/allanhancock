@@ -103,9 +103,55 @@
 
 <h2>See yourself here!</h2>
 <p><a href="#" class="more-arrow">Register for fall classes today!</a></p>
+ 
 <div class="delayAnimation">
-  <a href="#"><img class="lazy" src="./resources/img/homepage/ahc-mobile.jpg" alt="Students holding up phones displaying their future selves working in their fields" /></a>
-</div>
+<div class="slick-slider">
+ <!-- Available asset fields: title, description, caption, link -->
+
+  @include('_partials.carousel', [ 
+  'title' => "Apply to Graduate",
+  'caption' => "Follow the steps to graduate this Spring!",
+  'description' => 'Students in graduation robes', 
+  'img' => '/resources/img/carousel/apply.jpg',          
+  'link' => 'https://www.hancockcollege.edu/counseling/ready-to-graduate.php'
+  ])  
+
+  @include('_partials.carousel', [ 
+  'title' => "Hancock Promise",
+  'caption' => "New high school graduates in the district get free tuition!",
+  'description' => 'Students holding up phones displaying their future selves working in their fields', 
+  'img' => '/resources/img/carousel/ahc-mobile.jpg',          
+  'link' => 'https://www.hancockcollege.edu/promise/index.php'
+  ])   
+  
+  @include('_partials.carousel', [ 
+  'title' => "",
+  'caption' => "",
+  'description' => 'Public Safety Training Complex', 
+  'img' => '/resources/img/carousel/pstc.jpg',          
+  'link' => 'https://www.hancockcollege.edu/pstc/index.php'
+  ])  
+
+  
+  @include('_partials.carousel', [ 
+  'title' => "Duplicate: Apply to Graduate",
+  'caption' => "Follow the steps to graduate this Spring!",
+  'description' => 'Students in graduation robes', 
+  'img' => '/resources/img/carousel/apply.jpg',          
+  'link' => 'https://www.hancockcollege.edu/counseling/ready-to-graduate.php'
+  ])  
+
+  @include('_partials.carousel', [ 
+  'title' => "Duplicate: Hancock Promise",
+  'caption' => "New high school graduates in the district get free tuition!",
+  'description' => 'Students holding up phones displaying their future selves working in their fields', 
+  'img' => '/resources/img/carousel/ahc-mobile.jpg',          
+  'link' => 'https://www.hancockcollege.edu/promise/index.php'
+  ])   
+  
+ 
+  </div>
+</div> 
 
 @endsection
 

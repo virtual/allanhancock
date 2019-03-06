@@ -1,1 +1,114 @@
-!function(t){var e={};function i(r){if(e[r])return e[r].exports;var s=e[r]={i:r,l:!1,exports:{}};return t[r].call(s.exports,s,s.exports,i),s.l=!0,s.exports}i.m=t,i.c=e,i.d=function(t,e,r){i.o(t,e)||Object.defineProperty(t,e,{configurable:!1,enumerable:!0,get:r})},i.n=function(t){var e=t&&t.__esModule?function(){return t.default}:function(){return t};return i.d(e,"a",e),e},i.o=function(t,e){return Object.prototype.hasOwnProperty.call(t,e)},i.p="/",i(i.s=1)}({1:function(t,e,i){t.exports=i("VVHG")},VVHG:function(t,e){function i(t,e,i){return e in t?Object.defineProperty(t,e,{value:i,enumerable:!0,configurable:!0,writable:!0}):t[e]=i,t}$(function(){var t,e,r="<button type='button' aria-label='Previous' class='slick-prev pull-left'><span class='button-left' aria-hidden='true'></span></button>",s="<button type='button' aria-label='Next' class='slick-next pull-right'><span class='button-right' aria-hidden='true'></span></button>";contentfeatureslider=$(".slick-slider.content-feature"),contentfeatureOptions={arrows:!0,infinite:!0,prevArrow:"<button type='button' aria-label='Previous' class='slick-prev pull-left'><span class='fas fa-chevron-left' aria-hidden='true'></span></button>",nextArrow:"<button type='button' aria-label='Next' class='slick-next pull-right'><span class='fas fa-chevron-right' aria-hidden='true'></span></button>"},contentfeatureslider.slick(contentfeatureOptions),carouselslider=$(".slick-slider.carousel-slider"),carouselsliderOptions=(i(e={arrows:!0,dots:!0,cssEase:"linear",variableWidth:!0,infinite:!0,autoplay:!0},"arrows",!0),i(e,"slick",!0),i(e,"slidesToShow",1),i(e,"speed",500),i(e,"variableWidth",!0),i(e,"autoplaySpeed",8e3),i(e,"prevArrow",r),i(e,"nextArrow",s),i(e,"responsive",[(t={breakpoint:480,settings:{variableWidth:!1,slidesToShow:1}},i(t,"breakpoint",992),i(t,"settings",{variableWidth:!1,slidesToShow:1}),t)]),e),$(carouselslider.each(function(t,e){var i="carousel"+t;if(this.id=i,$(this).slick(carouselsliderOptions),$(this).find(".slick-current .carousel-feature-text")[0]){var r=$(this).find(".slick-current").width()>0?$(this).find(".slick-current").width()+"px":"100%";$('<div class="carousel-feature-caption" style="max-width: '+r+'">'+$(this).find(".slick-current .carousel-feature-text")[0].innerHTML+"</div>").insertAfter($(this)),$(this).on("afterChange",function(t,e,i,r){var s=$(e.$slides.get(i)).attr("id"),n=$("#"+s).find(".carousel-feature-text")[0].innerHTML;$(this).next(".carousel-feature-caption").html(n);var a=$(this).find(".slick-current").width()>0?$(this).find(".slick-current").width()+"px":"100%";$(this).next(".carousel-feature-caption").attr("style","max-width: "+a)})}})),$(".slick-slider.flex-items").slick({infinite:!0,slidesToShow:4,slidesToScroll:4,autoplaySpeed:5e3,autoplay:!1,dots:!0,arrows:!0,prevArrow:r,nextArrow:s,responsive:[{breakpoint:992,settings:{slidesToShow:3,slidesToScroll:3,infinite:!0,dots:!0}},{breakpoint:768,settings:{slidesToShow:2,slidesToScroll:2,infinite:!0,dots:!0}},{breakpoint:480,settings:{slidesToShow:1,slidesToScroll:1,infinite:!0,dots:!0}}]}),$(".slick-slider").each(function(){var t=$(this);(t.hasClass("simple-slickslider")||1===t.attr("class").split(" ").length)&&t.slick({arrows:!0,infinite:!0,dots:!0,prevArrow:r,nextArrow:s})})})}});
+/******/ (function(modules) { // webpackBootstrap
+/******/ 	// The module cache
+/******/ 	var installedModules = {};
+/******/
+/******/ 	// The require function
+/******/ 	function __webpack_require__(moduleId) {
+/******/
+/******/ 		// Check if module is in cache
+/******/ 		if(installedModules[moduleId]) {
+/******/ 			return installedModules[moduleId].exports;
+/******/ 		}
+/******/ 		// Create a new module (and put it into the cache)
+/******/ 		var module = installedModules[moduleId] = {
+/******/ 			i: moduleId,
+/******/ 			l: false,
+/******/ 			exports: {}
+/******/ 		};
+/******/
+/******/ 		// Execute the module function
+/******/ 		modules[moduleId].call(module.exports, module, module.exports, __webpack_require__);
+/******/
+/******/ 		// Flag the module as loaded
+/******/ 		module.l = true;
+/******/
+/******/ 		// Return the exports of the module
+/******/ 		return module.exports;
+/******/ 	}
+/******/
+/******/
+/******/ 	// expose the modules object (__webpack_modules__)
+/******/ 	__webpack_require__.m = modules;
+/******/
+/******/ 	// expose the module cache
+/******/ 	__webpack_require__.c = installedModules;
+/******/
+/******/ 	// define getter function for harmony exports
+/******/ 	__webpack_require__.d = function(exports, name, getter) {
+/******/ 		if(!__webpack_require__.o(exports, name)) {
+/******/ 			Object.defineProperty(exports, name, {
+/******/ 				configurable: false,
+/******/ 				enumerable: true,
+/******/ 				get: getter
+/******/ 			});
+/******/ 		}
+/******/ 	};
+/******/
+/******/ 	// getDefaultExport function for compatibility with non-harmony modules
+/******/ 	__webpack_require__.n = function(module) {
+/******/ 		var getter = module && module.__esModule ?
+/******/ 			function getDefault() { return module['default']; } :
+/******/ 			function getModuleExports() { return module; };
+/******/ 		__webpack_require__.d(getter, 'a', getter);
+/******/ 		return getter;
+/******/ 	};
+/******/
+/******/ 	// Object.prototype.hasOwnProperty.call
+/******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
+/******/
+/******/ 	// __webpack_public_path__
+/******/ 	__webpack_require__.p = "/";
+/******/
+/******/ 	// Load entry module and return exports
+/******/ 	return __webpack_require__(__webpack_require__.s = 1);
+/******/ })
+/************************************************************************/
+/******/ ({
+
+/***/ "./source/_assets/js/slick-app.js":
+/***/ (function(module, exports) {
+
+$(function () {
+
+  var buttonPrev = "<button type='button' aria-label='Previous' class='slick-prev pull-left'><span class='button-left' aria-hidden='true'></span></button>";
+  var buttonNext = "<button type='button' aria-label='Next' class='slick-next pull-right'><span class='button-right' aria-hidden='true'></span></button>";
+
+  // Default settings for slick-silder class only (no other class)
+  $('.slick-slider').each(function () {
+    var $this = $(this);
+    // IF { has 'simple-slickslider' with additional classes } 
+    // OR { it ONLY has class 'slick-slider' with NO other classes } 
+    // if (($this.hasClass('simple-slickslider')) || ($this.attr("class").split(' ').length === 1)) {
+    $this.slick({
+      autoplaySpeed: 5000,
+      autoplay: false, // option: true or false
+      infinite: true,
+      dots: true,
+      prevArrow: buttonPrev,
+      nextArrow: buttonNext,
+      swipe: true,
+      slide: '.slide',
+
+      responsive: [{
+        breakpoint: 480,
+        settings: {
+          dots: false,
+          arrows: false
+        }
+      }]
+    });
+    // }
+  });
+});
+
+/***/ }),
+
+/***/ 1:
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__("./source/_assets/js/slick-app.js");
+
+
+/***/ })
+
+/******/ });

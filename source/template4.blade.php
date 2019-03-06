@@ -23,6 +23,33 @@ https://virtual.github.io/allanhancock/resources/img/stock/alexis-brown-85793-un
 @section('content') 
   @include('_partials/headers')
   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut feugiat ultricies mauris ac efficitur. Donec.</p>
+  <div class="slick-slider">
+    <!-- Available asset fields: title, description, caption, link -->
+    @include('_partials.carousel', [ 
+    'title' => "Apply to Graduate",
+    'caption' => "Follow the steps to graduate this Spring!",
+    'description' => 'Students in graduation robes', 
+    'img' => '/resources/img/carousel/apply.jpg',          
+    'link' => 'https://www.hancockcollege.edu/counseling/ready-to-graduate.php'
+    ])  
+
+    @include('_partials.carousel', [ 
+    'title' => "",
+    'caption' => "",
+    'description' => 'Public Safety Training Complex', 
+    'img' => '/resources/img/carousel/pstc.jpg',          
+    'link' => 'https://www.hancockcollege.edu/pstc/index.php'
+    ])  
+    
+    @include('_partials.carousel', [ 
+    'title' => "Hancock Promise",
+    'caption' => "New high school graduates in the district get free tuition!",
+    'description' => 'Students holding up phones displaying their future selves working in their fields', 
+    'img' => '/resources/img/carousel/ahc-mobile.jpg',          
+    'link' => 'https://www.hancockcollege.edu/promise/index.php'
+    ])   
+  </div>
+
   @include('_partials/block-list')
   @include('_partials/snippets') 
 
@@ -44,6 +71,7 @@ https://virtual.github.io/allanhancock/resources/img/stock/alexis-brown-85793-un
   'link' => 'https://www.hancockcollege.edu/public_affairs/announcements/2019Feb6FacultyLectureSeries.php'
   ]) 
       
+  
 @endsection
   
 @section('left-nav')
