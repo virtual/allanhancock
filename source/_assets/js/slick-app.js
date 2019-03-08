@@ -6,12 +6,16 @@ $(function () {
   // Default settings for slick-silder class only (no other class)
   $('.slick-slider').each(function () {
       var $this = $(this);
+      var $auto = true;
+      if ($(this).hasClass('autoplayfalse')) {
+        $auto = false;
+      }
       // IF { has 'simple-slickslider' with additional classes } 
       // OR { it ONLY has class 'slick-slider' with NO other classes } 
       // if (($this.hasClass('simple-slickslider')) || ($this.attr("class").split(' ').length === 1)) {
         $this.slick({
           autoplaySpeed: 5000,
-          autoplay: false,  // option: true or false
+          autoplay: $auto,  // option: true or false
           infinite: true,
           dots: true,
           prevArrow: buttonPrev,

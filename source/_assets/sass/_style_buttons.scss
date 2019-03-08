@@ -71,7 +71,7 @@ dl .btn-toggle { font-size: 1rem; }
     
     filter: grayscale(25%);
   } 
-  &:nth-child(4n+1) .imagebutton-title { color: #000; }
+  // &:nth-child(4n+1) .imagebutton-title { color: #000; }
   &:nth-child(4n+1) .imagebutton-bgcolor { 
     background-color: #fdb913;
     &:before {
