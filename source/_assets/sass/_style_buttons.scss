@@ -51,8 +51,7 @@ dl .btn-toggle { font-size: 1rem; }
 }
 
 .homepage .subfeature .d-flex .imagebutton {
-  & > .imagebutton-bgcolor:before {
-    background-color: $primary;
+  & > div:before { 
     content: "";
     height: 100%;
     width: 100%;
@@ -62,6 +61,12 @@ dl .btn-toggle { font-size: 1rem; }
     z-index: -1;
     top: 0;
     position: absolute;    
+  } 
+  & > .imagebutton-bgcolor:before {
+    background-color: $primary;
+    
+    opacity: .3;
+    z-index: -1; 
     background-blend-mode: hard-light;
     
     filter: grayscale(25%);
@@ -99,8 +104,7 @@ dl .btn-toggle { font-size: 1rem; }
   background-color:#000;
   flex-grow: 1;
   overflow: hidden;
-  .imagebutton-bgcolor {
-    background-blend-mode: overlay;
+  &>div {
     display: flex;
     align-items: flex-end;
     background-size: cover; 
@@ -109,13 +113,16 @@ dl .btn-toggle { font-size: 1rem; }
     transition: all .2s ease-in-out;
     height: 100%;
   }
-  &:hover .imagebutton-bgcolor, a:focus + .imagebutton-bgcolor {
+  .imagebutton-bgcolor {
+    background-blend-mode: overlay;    
+  }
+  &:hover > div, a:focus + div {
     transform: scale(1.08,1.08);    
   }  
-  a:focus + .imagebutton-bgcolor {  
+  a:focus + div {  
     filter:contrast(115%);
    }
-  &:hover .imagebutton-bgcolor p.imagebutton-title, a:focus + .imagebutton-bgcolor p.imagebutton-title {
+  &:hover > div p.imagebutton-title, a:focus + div p.imagebutton-title {
     transform: scale(.925925992592593,.925925992592593);        
   }
   

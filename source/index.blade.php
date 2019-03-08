@@ -48,7 +48,7 @@
     var delay = 0;
     $(".animated-news-events article").each(function() {
       $(this).css('animation-delay', delay + 's');
-      delay = delay + .75;
+      delay = delay + .25; // was .75
     });
   });
 </script>

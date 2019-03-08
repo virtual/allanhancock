@@ -1,4 +1,4 @@
-.featureicons.runAnimation  {
+.featureicons.runAnimation  { // natural movement calls for not waiting for end of prev
   .featureicon {
     position: relative;
   }
@@ -7,10 +7,10 @@
     animation: move-in-steps 3s;
   }
   &>div:nth-child(3n+2) .featureicon {
-    animation: move-in-steps2 3s;
+    animation: move-in-steps2 2.5s;
   }
   &>div:nth-child(3n+3) .featureicon {
-    animation: move-in-steps3 2.8s;
+    animation: move-in-steps3 2s;
   }
 }
 .campaign .runAnimation {
@@ -30,7 +30,7 @@
     height: 0;
     opacity: 0;
     transform: translateY(-100%);   
-    animation: fadeinTop .75s; // match delay of JS on homepage
+    animation: fadeinTop .95s; // natural movement calls for not matching JS movement (.25)
     animation-fill-mode: forwards;
   }
 }
