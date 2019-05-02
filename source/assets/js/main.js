@@ -1595,6 +1595,17 @@ var ahapp = {
   isMobile: function isMobile() {
     return (/iPad|iPhone|iPod|Android/.test(navigator.userAgent)
     );
+  },
+  prettyPhoto: function prettyPhoto() {
+    $("a[rel^='prettyPhoto']").prettyPhoto({
+      social_tools: false,
+      theme: 'pp_default pp-custom'
+    });
+    $("a[rel^='lightbox']").prettyPhoto({
+      show_title: false,
+      social_tools: false,
+      theme: 'pp_default pp-custom'
+    });
   }
 };
 
@@ -1603,8 +1614,11 @@ ahapp.highlightActiveNav();
 ahapp.navTabs();
 ahapp.addBreadcrumbPosition();
 if (!ahapp.isMobile()) {
-  ahapp.runParallax();
+  if ($(".jarallax")[0]) {
+    ahapp.runParallax();
+  }
 }
+ahapp.prettyPhoto();
 
 // Detect breakpoint ResponsiveBootstrapToolkit
 var ResponsiveBootstrapToolkit = __webpack_require__("./node_modules/responsive-toolkit/src/bootstrap-toolkit.js");

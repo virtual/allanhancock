@@ -4672,6 +4672,100 @@ header#header {
   }
 }
 
+.prettyphoto-gallery {
+  display: grid;
+  grid-gap: 20px 20px;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
+
+.prettyphoto-gallery, .prettyphoto-gallery li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+@media (min-width: 480px) and (-ms-high-contrast: none) {
+  .prettyphoto-gallery li {
+    float: left;
+    width: 30%;
+    margin-right: 3%;
+    margin-bottom: 40px;
+  }
+  .prettyphoto-gallery li:nth-of-type(3n+1) {
+    clear: both;
+  }
+  .prettyphoto-gallery:after {
+    clear: both;
+    display: block;
+    content: "";
+  }
+}
+
+@media (min-width: 992px) and (-ms-high-contrast: none) {
+  .prettyphoto-gallery li {
+    width: 22%;
+  }
+  .prettyphoto-gallery li:nth-of-type(3n+1) {
+    clear: none;
+  }
+  .prettyphoto-gallery li:nth-of-type(4n+1) {
+    clear: both;
+  }
+}
+
+.prettyphoto-lightbox {
+  margin: 15px 0;
+}
+
+.prettyphoto-lightbox a {
+  position: relative;
+  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.prettyphoto-lightbox a img {
+  border-bottom: 3px solid #f0af13;
+}
+
+.prettyphoto-lightbox a:before {
+  content: " ";
+  background-image: url(../../resources/img/prettyPhoto/pp-custom/play-circle.svg);
+  background-position: 0px 0px;
+  height: 30px;
+  width: 30px;
+  display: inline-block;
+  height: 50px;
+  width: 50px;
+  text-align: center;
+  background-size: 50px;
+  position: absolute;
+  z-index: 2;
+  opacity: .7;
+  -webkit-transition: opacity .2 ease-in-out;
+  transition: opacity .2 ease-in-out;
+}
+
+.prettyphoto-lightbox a:hover:before {
+  opacity: 1;
+}
+
+@media (-ms-high-contrast: none) {
+  .prettyphoto-lightbox a:before {
+    left: 50%;
+    top: 50%;
+    margin-top: -25px;
+    margin-left: -25px;
+  }
+}
+
 @media print {
   * {
     text-align: left !important;

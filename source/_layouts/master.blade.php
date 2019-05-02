@@ -21,6 +21,7 @@
   <link rel="stylesheet" href="{{ $page->baseUrl }}/assets/css/main.css?v=2">
   <link rel="stylesheet" href="{{ $page->baseUrl }}/assets/css/slick-theme.css">
   <link rel="stylesheet" href="{{ $page->baseUrl }}/assets/css/slick.css">
+  <link rel="stylesheet" href="{{ $page->baseUrl }}/assets/css/prettyPhoto.css">
 
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
   <noscript>
@@ -156,12 +157,12 @@
   <script src="{{ $page->baseUrl }}/assets/js/jquery-3.3.1.min.js"></script>
   <script src="{{ $page->baseUrl }}/assets/js/popper.min.js"></script>
   <script src="{{ $page->baseUrl }}/assets/js/bootstrap.min.js"></script>
+  <script src="{{ $page->baseUrl }}/assets/js/jquery.prettyPhoto.js"></script>
   <script src="{{ $page->baseUrl }}/assets/js/main.js"></script> 
-
     
   <script src="{{ $page->baseUrl }}/assets/js/slick.min.js"></script>
   <script src="{{ $page->baseUrl }}/assets/js/slick-app.js?v=4"></script>
  
-    
+
 </body>
 </html>

@@ -168,6 +168,17 @@ var ahapp = {
   },
   isMobile: function () {
     return /iPad|iPhone|iPod|Android/.test(navigator.userAgent);
+  },
+  prettyPhoto: function() {
+    $("a[rel^='prettyPhoto']").prettyPhoto({
+      social_tools: false,
+      theme: 'pp_default pp-custom' 
+    });
+    $("a[rel^='lightbox']").prettyPhoto({
+      show_title: false,
+      social_tools: false,
+      theme: 'pp_default pp-custom'
+			});
   }
 };
 
@@ -176,8 +187,11 @@ ahapp.highlightActiveNav();
 ahapp.navTabs(); 
 ahapp.addBreadcrumbPosition();
 if (!(ahapp.isMobile())) { 
+  if ($(".jarallax")[0]){
   ahapp.runParallax(); 
-}
+  }
+} 
+ahapp.prettyPhoto();  
 
 // Detect breakpoint ResponsiveBootstrapToolkit
 var ResponsiveBootstrapToolkit = require('responsive-toolkit');
