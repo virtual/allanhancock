@@ -170,14 +170,16 @@ var ahapp = {
     return /iPad|iPhone|iPod|Android/.test(navigator.userAgent);
   },
   prettyPhoto: function() {
-    $("a[rel^='prettyPhoto']").prettyPhoto({
+    $("a[data-gallery^='prettyPhoto']").prettyPhoto({
       social_tools: false,
       theme: 'pp_default pp-custom' 
     });
-    $("a[rel^='lightbox']").prettyPhoto({
+    $("a[data-gallery^='lightbox']").prettyPhoto({
       show_title: false,
       social_tools: false,
-      theme: 'pp_default pp-custom'
+      theme: 'pp_default pp-custom',
+      default_width: 800,
+			default_height: 550,
 			});
   }
 };

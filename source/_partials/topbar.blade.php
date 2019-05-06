@@ -14,6 +14,7 @@
       <li><a class="nav-link" href="{{ $page->baseUrl }}/template5/index.html">T5</a></li>
       <li><a class="nav-link" href="{{ $page->baseUrl }}/news/index.html">News (List)</a></li>
       <li><a class="nav-link" href="{{ $page->baseUrl }}/news-single/index.html">News (Single)</a></li>
+      <li><a class="nav-link" href="{{ $page->baseUrl }}/prettyphoto/index.html">prettyPhoto</a></li>
     </ul>
   </div>
 </nav>
