@@ -81,6 +81,9 @@
     #000,
     rgba(#000, 0)
   );
+  opacity:.8;
+}
+.homepage-banner.primary-overlay .hero .hero-image-wrapper {
   opacity:.5;
 }
 .homepage-banner {
@@ -90,35 +93,38 @@
   
   h2, h3 { color: #fff; }
 }
+.hero-images .homepage-banner.primary-overlay {
+  background-color: #005baa;
+  filter: contrast(200%);
+  .hero-image-wrapper {  
+    -webkit-filter: grayscale(100%); 
+    filter: grayscale(100%);
+    opacity: .5;
+      background-blend-mode: overlay; 
+  }
+  .hero-image-wrapper:before {
+    background-color: rgba(45, 86, 132, 0.25);
+    background-blend-mode: overlay;
+    content: "";
+    height: 100%;
+    width: 100%;
+    padding: 30px;
+    display: block;
+    opacity: 1;
+    z-index: -1;
+    top: 0;
+    position: absolute;
+  }
+}
 // .homepage-banner.hero-1 // previously specific
 .hero-images .homepage-banner {
   position: relative;  
-  background-color: #005baa;
-  filter: contrast(200%);
   cursor: pointer;
   a { text-decoration: none; color: inherit; display: block; }  
 }
 .hero-images .homepage-banner { display: none; } // for randomization of target area only
+ 
 
-.hero-images .homepage-banner .hero-image-wrapper {  
-  -webkit-filter: grayscale(100%); 
-  filter: grayscale(100%);
-  opacity: .5;
-    background-blend-mode: overlay; 
-}
-.hero-images .homepage-banner .hero-image-wrapper:before {
-  background-color: rgba(45, 86, 132, 0.25);
-  background-blend-mode: overlay;
-  content: "";
-  height: 100%;
-  width: 100%;
-  padding: 30px;
-  display: block;
-  opacity: 1;
-  z-index: -1;
-  top: 0;
-  position: absolute;
-}
 @media (min-width: $screen-sm) {
 
   .homepage-banner {

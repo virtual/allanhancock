@@ -55,7 +55,7 @@
 @endsection
 
 @section('hero')
-<div class="homepage-banner hero-1">
+<div class="homepage-banner hero-1 primary-overlay">
   <div class="hero left bg-primary">
     <div class="hero-image-wrapper"></div>
     <div class="hero-caption large-text">
